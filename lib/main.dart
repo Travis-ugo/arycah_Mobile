@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'mobile_hr/Pages/On_Boarding/on_boarding.dart';
+import 'mobile_hr/Pages/Authentication/log_in.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         primaryColor: Colors.blue,
-        textTheme: GoogleFonts.montserratTextTheme(),
+        textTheme: GoogleFonts.varelaRoundTextTheme(),
       ),
       debugShowCheckedModeBanner: false,
-      home: const OnBoadding(),
+      home: const LogIn(),
     );
   }
 }
