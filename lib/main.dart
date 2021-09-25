@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'mobile_hr/Pages/Authentication/log_in.dart';
+import 'mobile_hr/Pages/User_Profile/profil.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.varelaRoundTextTheme(),
       ),
       debugShowCheckedModeBanner: false,
-      home: const LogIn(),
+      home: const UserProfile(),
     );
   }
 }

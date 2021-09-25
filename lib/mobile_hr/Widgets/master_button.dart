@@ -11,15 +11,16 @@ class MasterButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(5),
-      child: Container(
-        height: 50,
-        width: 370,
-        color: Colors.blueAccent,
-        child: Center(
-          child: TextButton(
-            onPressed: onPressed,
+    return InkWell(
+      splashColor: Colors.white,
+      onTap: onPressed,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(5),
+        child: Container(
+          height: 50,
+          width: 370,
+          color: Colors.blueAccent,
+          child: Center(
             child: Text(
               text,
               style: const TextStyle(color: Colors.white, fontSize: 14),

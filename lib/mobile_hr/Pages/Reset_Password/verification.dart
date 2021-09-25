@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/v_block.dart';
 
-class Verification extends StatelessWidget {
-  const Verification({Key? key}) : super(key: key);
+class RVerification extends StatelessWidget {
+  const RVerification({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,23 +16,27 @@ class Verification extends StatelessWidget {
     final _block_5 = TextEditingController();
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(38.0),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 80),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const Icon(Icons.arrow_back),
-            Text(
-              "Verification",
-              style: TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.w700,
-                color: Colors.grey[700],
-              ),
+            Row(
+              children: const [
+                Icon(Icons.arrow_back, size: 20),
+                SizedBox(width: 15),
+                Text(
+                  'Verification',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
             ),
+            const SizedBox(height: 30),
             const Text(
-              'Enter your the verification code we just sent to your email address',
-            ),
+                'Enter your the verification code we just sent to your email address'),
+            const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -62,13 +67,9 @@ class Verification extends StatelessWidget {
                 ),
               ],
             ),
-            Center(
-              child: MasterButton(
-                onPressed: () {},
-                text: 'Verify',
-              ),
-            ),
-            const SizedBox(),
+            const SizedBox(height: 30),
+            MasterButton(text: 'Verify', onPressed: () {}),
+            const SizedBox(height: 10),
           ],
         ),
       ),
