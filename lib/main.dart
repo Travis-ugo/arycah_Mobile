@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'my_test_file.dart';
+import 'mobile_hr/Pages/Home/home.dart';
+import 'mobile_hr/Pages/Jobs/jobs.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.varelaRoundTextTheme(),
       ),
       debugShowCheckedModeBanner: false,
-      home: const FileArt(),
+      home: const Jobs(),
     );
   }
 }
