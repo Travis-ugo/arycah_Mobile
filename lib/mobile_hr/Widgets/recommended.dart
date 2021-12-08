@@ -7,26 +7,48 @@ class Recommended extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      isThreeLine: true,
-      leading: Container(
-        height: 48,
-        width: 48,
-        child: Image(
-          image: AssetImage(companyData[index].assest),
-        ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 5),
+      child: Container(
         decoration: BoxDecoration(
-          color: Colors.grey.shade50,
-          borderRadius: BorderRadius.circular(15),
-          border: Border.all(color: Colors.blueAccent),
+          borderRadius: BorderRadius.circular(5),
+          color: Colors.white,
+          border: Border.all(color: Colors.grey.shade200),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade200,
+              spreadRadius: 5,
+              blurRadius: 9,
+              offset: Offset.fromDirection(
+                1,
+                9,
+              ),
+            ),
+          ],
         ),
-      ),
-      trailing: const Icon(Icons.flag_sharp),
-      subtitle: Text(
-        companyData[index].jobdescription,
-      ),
-      title: Text(
-        companyData[index].companyName,
+        child: ListTile(
+          tileColor: Colors.white,
+          isThreeLine: true,
+          leading: Container(
+            height: 55,
+            width: 55,
+            // child: Image(
+            //   image: AssetImage(companyData[index].assest),
+            // ),
+            decoration: BoxDecoration(
+              color: Colors.grey.shade50,
+              borderRadius: BorderRadius.circular(5),
+              border: Border.all(color: Colors.blueAccent),
+            ),
+          ),
+          trailing: const Icon(Icons.bookmark),
+          title: Text(
+            companyData[index].companyName,
+          ),
+          subtitle: Text(
+            companyData[index].jobdescription,
+          ),
+        ),
       ),
     );
   }
