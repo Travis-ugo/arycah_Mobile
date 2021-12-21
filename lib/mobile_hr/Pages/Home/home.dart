@@ -1,29 +1,33 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_hr/mobile_hr/Pages/Home/drawer.dart';
-import 'package:mobile_hr/mobile_hr/Utils/company_data.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/drawer_button.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/featured_jobs_card.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/recommended.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/search_filter.dart';
+import 'package:iconly/iconly.dart';
+import 'package:test_subject/mobile_hr/Utils/company_data.dart';
+import 'package:test_subject/mobile_hr/Widgets/drawer_button.dart';
+import 'package:test_subject/mobile_hr/Widgets/featured_jobs_card.dart';
+import 'package:test_subject/mobile_hr/Widgets/recommended.dart';
+import 'package:test_subject/mobile_hr/Widgets/search_filter.dart';
+import 'drawer.dart';
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class HomeMo extends StatelessWidget {
+  const HomeMo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     ScrollController _featuredJobs = ScrollController();
-    final mediaQuery = MediaQuery.of(context).size;
+    final mediaQuery = MediaQuery.of(context).size; 
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.transparent,
           elevation: 0.0,
           onTap: (int index) {},
           type: BottomNavigationBarType.fixed,
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.work), label: "Jobs"),
-            BottomNavigationBarItem(icon: Icon(Icons.save), label: "Wishlist"),
-            BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Chat"),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+            BottomNavigationBarItem(icon: Icon(IconlyBold.home), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(IconlyBold.work), label: "Jobs"),
+            BottomNavigationBarItem(
+                icon: Icon(IconlyBold.bookmark), label: "Wishlist"),
+            BottomNavigationBarItem(icon: Icon(IconlyBold.chat), label: "Chat"),
+            BottomNavigationBarItem(
+                icon: Icon(IconlyBold.profile), label: "Profile"),
           ]),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -41,7 +45,7 @@ class Home extends StatelessWidget {
               ),
             ),
             DrawerButton(
-              icon: Icons.notifications,
+              icon: IconlyBold.notification,
               onPressed: () {},
             )
           ],
@@ -158,6 +162,7 @@ class Home extends StatelessWidget {
               Container(
                 color: Colors.transparent,
                 child: Expanded(
+                  flex: 3,
                   child: ListView.builder(
                     shrinkWrap: true,
                     controller: _featuredJobs,

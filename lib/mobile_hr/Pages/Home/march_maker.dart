@@ -2,9 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:iconly/iconly.dart';
 
-class MatchMaker extends StatelessWidget {
-  const MatchMaker({Key? key}) : super(key: key);
+class MarchMaker extends StatelessWidget {
+  const MarchMaker({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class MatchMaker extends StatelessWidget {
           'Discover',
         ),
         leading: const Icon(
-          CupertinoIcons.back,
+         IconlyBold.arrow_left,
           color: Colors.black,
           size: 18,
         ),
@@ -115,7 +116,7 @@ class MatchMaker extends StatelessWidget {
                         children: [
                           iconButton(
                             context: context,
-                            icon: Icons.swap_vert,
+                            icon: IconlyBold.swap,
                             iconColor: Colors.black,
                             size: 45,
                             onTap: () {},
@@ -124,7 +125,7 @@ class MatchMaker extends StatelessWidget {
                           iconButton(
                             size: 75,
                             context: context,
-                            icon: Icons.favorite,
+                            icon: IconlyBold.heart,
                             iconColor: Colors.white,
                             bodyColor: Colors.lightBlueAccent,
                             onTap: () {},
@@ -132,7 +133,7 @@ class MatchMaker extends StatelessWidget {
                           iconButton(
                             bodyColor: Colors.white,
                             context: context,
-                            icon: Icons.bookmark,
+                            icon: IconlyBold.bookmark,
                             iconColor: Colors.black,
                             onTap: () {},
                             size: 45,

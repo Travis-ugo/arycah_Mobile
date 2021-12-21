@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 
 import 'formfiel.dart';
 
@@ -19,10 +20,10 @@ class _SearchFilterState extends State<SearchFilter> {
       children: [
         Container(
           height: 48,
-          width: 305,
+          width: MediaQuery.of(context).size.width - 100,
           decoration: BoxDecoration(
-            color: const Color(0xFF949EB0),
-            borderRadius: BorderRadius.circular(15),
+            color: const Color(0xFFE7E7E7),
+            borderRadius: BorderRadius.circular(5),
           ),
           child: FormBlock(
             controller: _searchFilter,
@@ -31,7 +32,8 @@ class _SearchFilterState extends State<SearchFilter> {
               return 'speack';
             },
             prefixIcons: const Icon(
-              CupertinoIcons.search,
+              IconlyBold.search,
+              color: Colors.blueAccent,
             ),
             suffixIcon: null,
           ),
@@ -40,12 +42,15 @@ class _SearchFilterState extends State<SearchFilter> {
           height: 48,
           width: 48,
           decoration: BoxDecoration(
-            color: const Color(0xFF949EB0),
-            borderRadius: BorderRadius.circular(15),
+            color: const Color(0xFFE7E7E7),
+            borderRadius: BorderRadius.circular(5),
           ),
-          child: const Icon(
-            Icons.filter_1_outlined,
-            color: Colors.blue,
+          child: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              IconlyBold.filter,
+              color: Colors.blue,
+            ),
           ),
         ),
       ],

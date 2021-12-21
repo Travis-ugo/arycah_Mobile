@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/form_bar.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
+import 'package:test_subject/mobile_hr/Widgets/form_bar.dart';
+import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
+import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 
 class PassWord extends StatelessWidget {
   const PassWord({Key? key}) : super(key: key);
@@ -14,9 +14,9 @@ class PassWord extends StatelessWidget {
     final _confirmPassword = TextEditingController();
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 80),
+        padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
               children: const [
@@ -32,7 +32,8 @@ class PassWord extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 30),
-            const Text('Enter your new password to continue'),
+           const  Align(alignment: Alignment.topLeft,
+             child: Text('Enter your new password to continue')),
             const SizedBox(height: 30),
             FormBar(
               child: FormBlock(
@@ -68,7 +69,7 @@ class PassWord extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 100),
-            MasterButton(text: 'Reset', onPressed: () {}),
+            MasterButton(text: 'Change', onPressed: () {}),
           ],
         ),
       ),

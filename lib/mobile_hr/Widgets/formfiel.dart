@@ -10,26 +10,34 @@ class FormBlock extends StatelessWidget {
     required this.suffixIcon,
   }) : super(key: key);
   final String Function(String?) validator;
-  final Widget prefixIcons;
+  final Widget? prefixIcons;
   final String hintText;
   final TextEditingController controller;
   final Widget? suffixIcon;
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: controller,
-      decoration: InputDecoration(
-        border: InputBorder.none,
-        focusedBorder: InputBorder.none,
-        enabledBorder: InputBorder.none,
-        disabledBorder: InputBorder.none,
-        errorBorder: InputBorder.none,
-        prefixIcon: prefixIcons,
-        hintText: hintText,
-        suffixIcon: suffixIcon,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: TextFormField(
+        style: const TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.w400,
+        ),
+        controller: controller,
+        decoration: InputDecoration(
+          border: InputBorder.none,
+          focusedBorder: InputBorder.none,
+          enabledBorder: InputBorder.none,
+          disabledBorder: InputBorder.none,
+          errorBorder: InputBorder.none,
+          hintText: hintText,
+          hintStyle: const TextStyle(fontSize: 13),
+          icon: prefixIcons,
+          suffixIcon: suffixIcon,
+        ),
+        validator: validator,
       ),
-      validator: validator,
     );
   }
 }

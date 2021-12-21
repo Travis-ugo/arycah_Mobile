@@ -54,23 +54,23 @@ class VBlockContainer extends StatelessWidget {
         child: Center(
           child: child,
         ),
-        height: 75,
-        width: 50,
+        height: 70,
+        width: 45,
         decoration: BoxDecoration(
           color: Colors.grey.shade50,
-          borderRadius: BorderRadius.circular(15),
-          border: Border.all(color: Colors.grey.shade300),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.shade200,
-              spreadRadius: 7,
-              blurRadius: 9,
-              offset: Offset.fromDirection(
-                1,
-                9,
-              ),
-            ),
-          ],
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: Colors.grey.shade500),
+          // boxShadow: [
+          //   BoxShadow(
+          //     color: Colors.grey.shade200,
+          //     spreadRadius: 7,
+          //     blurRadius: 9,
+          //     offset: Offset.fromDirection(
+          //       1,
+          //       9,
+          //     ),
+          //   ),
+          // ],
         ),
       ),
     );

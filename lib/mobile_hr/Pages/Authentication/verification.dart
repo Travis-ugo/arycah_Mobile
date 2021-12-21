@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
+import 'package:iconly/iconly.dart';
+import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/v_block.dart';
+import 'package:test_subject/mobile_hr/Widgets/v_block.dart';
 
 class Verification extends StatelessWidget {
   const Verification({Key? key}) : super(key: key);
@@ -14,23 +16,28 @@ class Verification extends StatelessWidget {
     final _block_5 = TextEditingController();
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(38.0),
+        padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const Icon(Icons.arrow_back),
+             IconButton(onPressed: () {
+                   Navigator.pop(context);
+                 }, icon: const Icon(IconlyBold.arrow_left)),
+            const SizedBox(height: 35),
             Text(
               "Verification",
               style: TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.w700,
+                fontSize: 26,
+                fontWeight: FontWeight.w600,
                 color: Colors.grey[700],
               ),
             ),
+            const SizedBox(height: 25),
             const Text(
               'Enter your the verification code we just sent to your email address',
+              style: TextStyle(fontSize: 12),
             ),
+            const SizedBox(height: 70),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -61,13 +68,13 @@ class Verification extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(height: 255),
             Center(
               child: MasterButton(
                 onPressed: () {},
                 text: 'Verify',
               ),
             ),
-            const SizedBox(),
           ],
         ),
       ),

@@ -12,6 +12,7 @@ class Pages extends StatelessWidget {
     required this.secondText,
     required this.buttonText,
     required this.onPressed,
+    String assets,
   }) : super(key: key);
   final String firstText;
   final String secondText;
@@ -25,9 +26,12 @@ class Pages extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          skipButton(context),
+          Align(
+            alignment: Alignment.topRight,
+            child: skipButton(context),
+          ),
           Container(
             color: Colors.blue,
             height: 400,
@@ -36,7 +40,7 @@ class Pages extends StatelessWidget {
           Text(
             firstText,
             style: const TextStyle(
-              fontSize: 20,
+              fontSize: 16,
               color: Colors.blue,
               fontWeight: FontWeight.w500,
             ),
@@ -44,7 +48,7 @@ class Pages extends StatelessWidget {
           Text(
             secondText,
             style: const TextStyle(
-              fontSize: 14,
+              fontSize: 12,
               fontWeight: FontWeight.w100,
             ),
           ),
@@ -58,3 +62,12 @@ class Pages extends StatelessWidget {
     );
   }
 }
+
+// Skip Button located at the top of the page
+// function to jump to finish page.
+Widget skipButton(BuildContext context) => TextButton(
+    onPressed: () {},
+    child: const Text(
+      "Skip",
+      style: TextStyle(fontSize: 14, color: Colors.black),
+    ));

@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:mobile_hr/mobile_hr/Pages/User_Profile/profile_data.dart';
+import 'package:iconly/iconly.dart';
+import 'package:test_subject/mobile_hr/Pages/User_Profile/profile_data.dart';
 
 class UserProfile extends StatelessWidget {
   const UserProfile({Key? key}) : super(key: key);
@@ -12,7 +13,13 @@ class UserProfile extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        leading: const Icon(Icons.arrow_back, size: 20, color: Colors.black),
+        leading: IconButton(
+          icon:
+              const Icon(IconlyBold.arrow_left, size: 20, color: Colors.black),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         centerTitle: false,
         elevation: 0.0,
         backgroundColor: Colors.white,
@@ -47,7 +54,7 @@ class UserProfile extends StatelessWidget {
                       child: const Align(
                         alignment: Alignment.topRight,
                         child: Icon(
-                          Icons.edit_outlined,
+                          IconlyBold.edit,
                           color: Colors.white,
                           size: 17,
                         ),
@@ -83,7 +90,7 @@ class UserProfile extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 15),
-              Container(
+              SizedBox(
                 height: 600,
                 child: ListView.builder(
                   itemCount: cardData.length,
@@ -127,9 +134,9 @@ class ProfileCard extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           Container(
-            padding: const EdgeInsets.all(30),
-            height: 113,
-            width: 374,
+            padding: const EdgeInsets.all(10),
+            height: 115,
+            width: MediaQuery.of(context).size.width - 50,
             decoration: BoxDecoration(
               color: Colors.grey[50],
               border: Border.all(color: Colors.grey.shade300),
@@ -143,12 +150,14 @@ class ProfileCard extends StatelessWidget {
                 ),
               ],
             ),
-            child: Text(
-              subTitle,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w100,
-                color: Colors.grey.shade600,
+            child: Center(
+              child: Text(
+                subTitle,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w100,
+                  color: Colors.grey.shade600,
+                ),
               ),
             ),
           )
@@ -170,15 +179,15 @@ class Profilcontainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
-      width: 70,
+      height: 65,
+      width: 65,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
         boxShadow: <BoxShadow>[
           BoxShadow(
-            offset: const Offset(0, 10),
-            blurRadius: 20,
+            offset: const Offset(0, 4),
+            blurRadius: 8,
             spreadRadius: 4,
             color: Colors.grey.shade200,
           ),
@@ -190,7 +199,7 @@ class Profilcontainer extends StatelessWidget {
           Text(
             count,
             style: TextStyle(
-              fontSize: 32,
+              fontSize: 16,
               fontWeight: FontWeight.w400,
               color: Colors.grey.shade800,
             ),
@@ -198,7 +207,7 @@ class Profilcontainer extends StatelessWidget {
           Text(
             title,
             style: TextStyle(
-              fontSize: 12,
+              fontSize: 10,
               fontWeight: FontWeight.w100,
               color: Colors.grey.shade800,
             ),

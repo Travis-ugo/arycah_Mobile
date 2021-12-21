@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
-class Notifications extends StatelessWidget {
-  const Notifications({Key? key}) : super(key: key);
+class WishList extends StatelessWidget {
+  const WishList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,25 +12,6 @@ class Notifications extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
-        actions: [
-          IconButton(
-            icon: const Icon(
-              IconlyBold.video,
-              size: 20,
-              color: Colors.black,
-            ),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: const Icon(
-              IconlyBold.call,
-              size: 20,
-              color: Colors.black,
-            ),
-            onPressed: () {},
-          ),
-          const SizedBox(width: 10),
-        ],
         leading: IconButton(
           icon: const Icon(
             IconlyBold.arrow_left,
@@ -39,7 +20,7 @@ class Notifications extends StatelessWidget {
           onPressed: () {},
         ),
         title: const Text(
-          'Loco',
+          'Wishlist',
           style: TextStyle(
             fontWeight: FontWeight.w100,
             fontSize: 16,
@@ -51,13 +32,14 @@ class Notifications extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(),
+          
           Container(),
           FloatingActionButton(
+            elevation: 0.0,
             onPressed: () {},
             child: const Icon(
-              IconlyBold.plus,
-              color: Colors.black,
+              Icons.add,
+            
             ),
           )
         ],

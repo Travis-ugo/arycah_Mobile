@@ -9,11 +9,18 @@ class InfoButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(13.0),
+      padding: const EdgeInsets.all(5.0),
       child: Container(
-        height: 48,
-        width: 140,
+        height: 65,
+        width: 165,
+        decoration: BoxDecoration(
+          color: Colors.grey.shade50,
+          borderRadius: BorderRadius.circular(5),
+          border: Border.all(color: Colors.grey.shade300),
+        
+        ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               title,
@@ -28,22 +35,6 @@ class InfoButton extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 13,
                 fontWeight: FontWeight.w500,
-              ),
-            ),
-          ],
-        ),
-        decoration: BoxDecoration(
-          color: Colors.grey.shade50,
-          borderRadius: BorderRadius.circular(15),
-          border: Border.all(color: Colors.grey.shade300),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.shade200,
-              spreadRadius: 7,
-              blurRadius: 9,
-              offset: Offset.fromDirection(
-                1,
-                9,
               ),
             ),
           ],

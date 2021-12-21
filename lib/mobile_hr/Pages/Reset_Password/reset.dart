@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/form_bar.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
+import 'package:test_subject/mobile_hr/Widgets/form_bar.dart';
+import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
+import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 
 class ResetPassWord extends StatelessWidget {
   const ResetPassWord({Key? key}) : super(key: key);
@@ -13,9 +13,9 @@ class ResetPassWord extends StatelessWidget {
     final _emailController = TextEditingController();
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 80),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 80),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
               children: const [
@@ -31,9 +31,13 @@ class ResetPassWord extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 30),
-            const Text('Enter your email address below to reset your password'),
+            const Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                    'Enter your email address below to reset your password'),),
             const SizedBox(height: 30),
-            const Text("Emaiil Address"),
+            const Align(
+                alignment: Alignment.topLeft, child: Text("Emaiil Address"),),
             const SizedBox(height: 10),
             FormBar(
               child: FormBlock(
@@ -54,11 +58,14 @@ class ResetPassWord extends StatelessWidget {
             const SizedBox(height: 30),
             MasterButton(text: 'send me code', onPressed: () {}),
             const SizedBox(height: 10),
-            const Text(
-              'Resend code in 30 secs',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w200,
+            const Align(
+              alignment: Alignment.topLeft,
+              child: Text(
+                'Resend code in 30 secs',
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w200,
+                ),
               ),
             ),
           ],

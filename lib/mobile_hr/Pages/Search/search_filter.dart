@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
+import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -31,7 +31,7 @@ class SearchPage extends StatelessWidget {
         ),
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const DropDown(
@@ -47,11 +47,44 @@ class SearchPage extends StatelessWidget {
             label: 'Experience',
           ),
           const Text('Job Type'),
-          const SizedBox(height: 70),
+          // const SizedBox(height: 70),
           const Text('Job Level'),
-          const SizedBox(height: 70),
+          Wrap(
+            children: [
+              CheckboxListTile(
+                title: const Text("Top Level", style: TextStyle(fontSize: 10),),
+                value: true,
+                onChanged: (newValue) {},
+                controlAffinity:
+                    ListTileControlAffinity.leading, //  <-- leading Checkbox
+              ),
+              CheckboxListTile(
+                title: const Text("Mid Level",style: TextStyle(fontSize: 10)),
+                value: true,
+                onChanged: (newValue) {},
+                controlAffinity:
+                    ListTileControlAffinity.leading, //  <-- leading Checkbox
+              ),
+              CheckboxListTile(
+                title: const Text("Senior Level",style: TextStyle(fontSize: 10)),
+                value: true,
+                onChanged: (newValue) {},
+                controlAffinity:
+                    ListTileControlAffinity.leading, //  <-- leading Checkbox
+              ),
+            ],
+          ),
+          // const SizedBox(height: 70),
           const Text('Salary'),
-          const SizedBox(height: 70),
+          Slider(
+            onChanged: (double value) {}, 
+            value: 7,
+            // divisions: 3,
+            min: 0.0,
+            max: 100,
+            activeColor: Colors.orangeAccent,
+            inactiveColor: Colors.blueGrey,
+          ),
           MasterButton(
             onPressed: () {},
             text: 'Apply',
@@ -70,29 +103,31 @@ class DropDown extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(label),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          child: Container(
-            height: 52,
-            width: MediaQuery.of(context).size.width - 50,
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.black),
-              color: const Color(0xFFF3F1F1),
-              borderRadius: BorderRadius.circular(5),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Drops(
-                hintText: hintText,
+    return Center(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(label),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10),
+            child: Container(
+              height: 52,
+              width: MediaQuery.of(context).size.width - 50,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.black),
+                color: const Color(0xFFF3F1F1),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Drops(
+                  hintText: hintText,
+                ),
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
