@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/info_button.dart';
 
-class JobInfo extends StatelessWidget {
-  const JobInfo({Key? key}) : super(key: key);
+class JobDescription extends StatelessWidget {
+  const JobDescription({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +15,7 @@ class JobInfo extends StatelessWidget {
         ),
       ),
       appBar: AppBar(
+        toolbarHeight: 80,
         centerTitle: false,
         elevation: 0.0,
         backgroundColor: Colors.transparent,
@@ -41,14 +41,12 @@ class JobInfo extends StatelessWidget {
           ],
         ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            // mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              const SizedBox(height: 10),
-              Container(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: Container(
                 height: 340,
                 width: 373,
                 decoration: BoxDecoration(
@@ -62,11 +60,7 @@ class JobInfo extends StatelessWidget {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      // crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(
-                          width: 0,
-                        ),
                         Container(
                           height: 48,
                           width: 80,
@@ -121,12 +115,12 @@ class JobInfo extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             InfoButton(
-                              title: 'Job titile',
-                              subTitle: 'Year typepos',
+                              title: 'Experience',
+                              subTitle: 'Minimum 2 years',
                             ),
                             InfoButton(
-                              title: 'Job titile',
-                              subTitle: 'Year typepos',
+                              title: 'Work level',
+                              subTitle: 'Junior level',
                             ),
                           ],
                         ),
@@ -135,12 +129,12 @@ class JobInfo extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             InfoButton(
-                              title: 'Job titile',
-                              subTitle: 'Year typepos',
+                              title: 'Employment type',
+                              subTitle: 'Full time job',
                             ),
                             InfoButton(
-                              title: 'Job titile',
-                              subTitle: 'Year typepos',
+                              title: 'Offer salary',
+                              subTitle: r'$250/Month',
                             ),
                           ],
                         ),
@@ -149,27 +143,77 @@ class JobInfo extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text('Description'),
-                  Text('Company'),
-                  Text('Review'),
-                ],
-              ),
-              const Text(
-                "Our company is looking to hire a Product Designer to focus on designing seamless product experiences. You will take the lead in creating user-centric products from strategy to execution."
-                "Our team of designers is looking for someone who is curious about human problems and needs. ",
-              ),
-              const Text('Preffered Qualifications'),
-              const Text(
-                  '2 years of products design experience (and the portfolio to back it up) as a key, hands on product designer '
-                  'Strong graphics design and user interaction skills and the ability to manifest out brand aesthetic through')
-            ],
-          ),
+            ),
+            // const SizedBox(height: 20),
+            SliverToBoxAdapter(
+              child: DownTown(),
+              key: key,
+            ),
+          ],
         ),
       ),
+    );
+  }
+}
+
+class DownTown extends StatefulWidget {
+  const DownTown({Key? key}) : super(key: key);
+
+  @override
+  _DownTownState createState() => _DownTownState();
+}
+
+class _DownTownState extends State<DownTown> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: PageView(
+        children: [
+          Text('comalobrtes'),
+          Column(
+            children: const [
+              Text(
+                "Our company is looking to hire a Product Designer to focus on designing seamless product experiences. You will take the lead in creating user-centric products from strategy to execution."
+                "Our team of designers is looking for someone who is curious about human problems and needs. ",
+                style: TextStyle(fontSize: 12),
+              ),
+              SizedBox(height: 10),
+              Text(
+                'Preffered Qualifications',
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
+              ),
+              SizedBox(height: 10),
+              Text(
+                '.   2 years of products design experience (and the portfolio to back it up) as a key, hands on product designer ',
+                style: TextStyle(fontSize: 12),
+              ),
+              Text(
+                '.   Strong graphics design and user interaction skills and the ability to manifest out brand aesthetic through',
+                style: TextStyle(fontSize: 12),
+              )
+            ],
+          ),
+        ],
+      ),
+      // body: CustomScrollView(
+      //   // crossAxisAlignment: CrossAxisAlignment.start,
+      //   slivers: [
+      //     SliverToBoxAdapter(
+
+      //       child:
+      //        Row(
+      //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //         children: const [
+      //           Text('Description'),
+      //           Text('Company'),
+      //           Text('Review'),
+      //         ],
+      //       ),
+
+      //     ),
+      //     SliverToBoxAdapter(child: )
+      //   ],
+      // ),
     );
   }
 }
