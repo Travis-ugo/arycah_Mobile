@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
 import 'package:mobile_hr/mobile_hr/Utils/company_data.dart';
 
 class FeaturedJobsCard extends StatelessWidget {

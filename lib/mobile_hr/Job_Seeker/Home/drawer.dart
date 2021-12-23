@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_hr/mobile_hr/Settings/setting.dart';
+
+import 'march_maker.dart';
 
 class WidgetDrawer extends StatelessWidget {
   const WidgetDrawer({Key? key}) : super(key: key);
@@ -28,13 +31,18 @@ class WidgetDrawer extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           drawer(context),
-          const SizedBox(height: 210),
-         const  Divider(color: Color(0xFFFCB04B),),
+          const Expanded(
+            child: SizedBox(),
+          ),
+          const Divider(
+            color: Color(0xFFFCB04B),
+          ),
           DrawItems(
             icon: Icons.door_front_door,
-            text: 'Sign Out',
+            text: 'Log out',
             onPressed: () {},
           ),
+          const SizedBox(height: 30),
         ],
       ),
     );
@@ -45,14 +53,29 @@ class WidgetDrawer extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DrawItems(
-          icon: Icons.home,
-          text: 'Home',
+          icon: IconlyBold.ticket,
+          text: 'Job Match',
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const MarchMaker()));
+          },
+        ),
+        DrawItems(
+          icon: IconlyBold.work,
+          text: ' Applications',
           onPressed: () {},
         ),
         DrawItems(
           icon: Icons.settings,
           text: 'Settings',
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const Setting(),
+              ),
+            );
+          },
         ),
         DrawItems(
           icon: Icons.person_add,
@@ -62,7 +85,10 @@ class WidgetDrawer extends StatelessWidget {
         DrawItems(
           icon: Icons.info_sharp,
           text: 'About',
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const About()));
+          },
         ),
       ],
     );

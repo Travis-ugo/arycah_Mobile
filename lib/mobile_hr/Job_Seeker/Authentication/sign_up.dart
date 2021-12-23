@@ -1,10 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:iconly/iconly.dart';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_hr/mobile_hr/Pages/Authentication/log_in.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/log_in.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/form_bar.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';

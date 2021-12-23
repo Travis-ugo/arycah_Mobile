@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Utils/company_data.dart';
-import 'package:test_subject/mobile_hr/Widgets/recommended.dart';
-import 'package:test_subject/mobile_hr/Widgets/search_filter.dart';
+import 'package:mobile_hr/mobile_hr/Utils/company_data.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/recommended.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/search_filter.dart';
 
 class Jobs extends StatelessWidget {
   const Jobs({Key? key}) : super(key: key);

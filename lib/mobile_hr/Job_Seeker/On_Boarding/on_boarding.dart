@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:mobile_hr/mobile_hr/Pages/Authentication/log_in.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/log_in.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/m_button.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/onboard.dart';
 // Mobile Hr onBoarding Pages
 
-class OnBoadding extends StatelessWidget {
-  const OnBoadding({Key? key}) : super(key: key);
+class OnBoarding extends StatelessWidget {
+  const OnBoarding({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +90,7 @@ class ChooseWidget extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             MButton(
-              text: 'Sign Up as Jobgiver',
+              text: 'Sign Up as Job Giver',
               onPressed: () {},
               bordercolor: Colors.transparent,
               textColor: Colors.white,
