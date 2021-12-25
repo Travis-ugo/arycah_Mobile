@@ -12,7 +12,6 @@ class Pages extends StatelessWidget {
     required this.secondText,
     required this.buttonText,
     required this.onPressed,
-    String assets,
   }) : super(key: key);
   final String firstText;
   final String secondText;

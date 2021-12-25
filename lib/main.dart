@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'mobile_hr/Pages/Authentication/verification.dart';
+
+import 'mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // textTheme: GoogleFonts.TextTheme(),
       ),
       debugShowCheckedModeBanner: false,
-      home: const Verification(),
+      home: const OnBoarding(),
     );
   }
 }
