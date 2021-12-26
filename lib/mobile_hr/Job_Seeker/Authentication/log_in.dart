@@ -1,54 +1,64 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/sign_up.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/form_bar.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
+import 'package:iconly/iconly.dart';
+import 'package:provider/provider.dart';
+import 'package:test_subject/FireBase_Repo/Authenticate/auth.dart';
+import 'package:test_subject/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
+import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
+import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 
 class LogIn extends StatelessWidget {
-  const LogIn({Key? key}) : super(key: key);
+  final Function()? toggleView;
+  const LogIn({
+    Key? key,
+    this.toggleView,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final _formKey = GlobalKey<FormState>(debugLabel: '_EmailFormState');
+    final _formKey = GlobalKey<FormState>(debugLabel: '_LogInState');
     final _emailController = TextEditingController();
     final _passwordController = TextEditingController();
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 80,
+        elevation: 0.0,
+        backgroundColor: Colors.transparent,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            IconlyBold.arrow_left,
+            color: Colors.black,
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Form(
             key: _formKey,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const SizedBox(height: 60),
-                IconButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(IconlyBold.arrow_left)),
-                const SizedBox(height: 25),
                 const Text(
-                  "Sign In",
+                  "Login",
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 18,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                const SizedBox(height: 30),
                 const Text(
-                  "Emaiil Address",
+                  "Login with us to get your dream jobs! .",
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                const SizedBox(height: 10),
-                FormBar(
+                const SizedBox(height: 20),
+                NewContainer(
+                  text: 'Email or Phone Number',
                   child: FormBlock(
                     controller: _emailController,
                     hintText: 'Example@mail.com',
@@ -58,22 +68,13 @@ class LogIn extends StatelessWidget {
                       }
                       return "null";
                     },
-                    prefixIcons: null,
                     suffixIcon: const Icon(
                       IconlyBold.message,
                     ),
                   ),
                 ),
-                const SizedBox(height: 30),
-                const Text(
-                  'Password',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                FormBar(
+                NewContainer(
+                  text: 'Password',
                   child: FormBlock(
                     controller: _passwordController,
                     hintText: 'Password',
@@ -86,80 +87,49 @@ class LogIn extends StatelessWidget {
                       }
                       return 'null';
                     },
-                    prefixIcons: null,
                     suffixIcon: const Icon(IconlyBold.password),
                   ),
                 ),
-                const SizedBox(height: 25),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    TextButton(
-                      onPressed: () {},
-                      child: const Text(
-                        'Forgot Password?',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400,
-                        ),
-                      ),
+                const SizedBox(height: 10),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Forgot Password?',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w400,
                     ),
-                  ],
+                  ),
                 ),
                 const SizedBox(height: 25),
                 MasterButton(
-                  onPressed: () {},
-                  text: 'Sign In',
+                  onPressed: () async {
+                    if (_formKey.currentState!.validate()) {
+                      final provider = Provider.of<GoogleSignInProvider>(
+                          context,
+                          listen: false);
+                      provider.verifyEmail(() {}, _emailController.text);
+                      await provider.signInWithEmailAndPassword(
+                        email: _emailController.text,
+                        password: _passwordController.text,
+                      );
+                    }
+                  },
+                  text: 'LOGIN',
                 ),
-                const SizedBox(height: 25),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(color: Colors.grey[400], width: 100, height: 1),
-                    const Text(
-                      'or',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                    Container(color: Colors.grey[400], width: 100, height: 1),
-                  ],
+                const Divider(),
+                const GoogleButton(
+                  buttonText: 'Login with Google',
                 ),
-                const SizedBox(height: 25),
-                const GoogleButton(),
                 const SizedBox(height: 25),
                 Center(
-                  child: RichText(
-                    text: TextSpan(
-                      text: 'Don\'t have an account?',
-                      style: GoogleFonts.montserrat(
-                        textStyle: const TextStyle(
-                          color: Colors.black,
-                          letterSpacing: .5,
-                          fontSize: 14,
-                        ),
+                  child: TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Don’t have an accout? Register',
+                      style: TextStyle(
+                        fontSize: 12,
                       ),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text: ' Sign up',
-                            style: GoogleFonts.montserrat(
-                              textStyle: const TextStyle(
-                                color: Colors.blue,
-                                letterSpacing: .5,
-                                fontSize: 14,
-                              ),
-                            ),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                                MaterialPageRoute(
-                                  builder: (context) => const SignUp(),
-                                );
-                                // navigate to desired screen
-                              })
-                      ],
                     ),
                   ),
                 ),
