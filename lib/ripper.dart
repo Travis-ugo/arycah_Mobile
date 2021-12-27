@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Home/home.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
 import 'mobile_hr/Job_Seeker/Authentication/log_in.dart';
 import 'mobile_hr/Job_Seeker/Authentication/sign_up.dart';
+import 'mobile_hr/Job_Seeker/Home/home.dart';
+import 'mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
 
 class Homie extends StatelessWidget {
   const Homie({Key? key}) : super(key: key);

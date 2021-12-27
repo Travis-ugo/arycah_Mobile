@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Settings/setting.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Settings/setting.dart';
 
 class Biometrics extends StatelessWidget {
   const Biometrics({Key? key}) : super(key: key);
@@ -18,7 +18,9 @@ class Biometrics extends StatelessWidget {
             IconlyBold.arrow_left,
             color: Colors.black,
           ),
-          onPressed: () {Navigator.pop(context);},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
         title: const Text(
           'Biometrics',

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Authentication/log_in.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Home/home.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 import 'package:flutter/cupertino.dart';
-
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/log_in.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/home.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class JobGiverSignIn extends StatelessWidget {
   const JobGiverSignIn({Key? key}) : super(key: key);
@@ -20,18 +19,17 @@ class JobGiverSignIn extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
-       crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 40),
-                const Text(
-                  "Sign In",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 40),
+            const Text(
+              "Sign In",
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.blue,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
             const Text(
               "Hello, welcome back to Mobile HR",
               style: TextStyle(
@@ -119,7 +117,7 @@ class JobGiverSignIn extends StatelessWidget {
               },
               text: 'Sign in',
             ),
-              const SizedBox(height: 15),
+            const SizedBox(height: 15),
             Center(
               child: RichText(
                 text: TextSpan(

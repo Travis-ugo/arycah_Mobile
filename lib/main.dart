@@ -1,9 +1,10 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile_hr/ripper.dart';
-
-import 'mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
+import 'package:provider/provider.dart';
+import 'FireBase_Repo/Authenticate/auth.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
