@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Home/home.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/home.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class SignUpState extends StatelessWidget {
   const SignUpState({Key? key}) : super(key: key);
@@ -14,7 +14,6 @@ class SignUpState extends StatelessWidget {
     final _lastNameController = TextEditingController();
     final _firstNameController = TextEditingController();
     return Scaffold(
-   
       body: SingleChildScrollView(
         child: Form(
           key: _formKey,
@@ -32,7 +31,6 @@ class SignUpState extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-              
                 NewContainer(
                   text: "Comapany’s Name",
                   child: FormBlock(
@@ -50,7 +48,6 @@ class SignUpState extends StatelessWidget {
                     suffixIcon: null,
                   ),
                 ),
-            
                 NewContainer(
                   text: 'RC Number',
                   child: FormBlock(
@@ -67,7 +64,6 @@ class SignUpState extends StatelessWidget {
                     ),
                   ),
                 ),
-           
                 NewContainer(
                   text: 'Emaiil Address',
                   child: FormBlock(

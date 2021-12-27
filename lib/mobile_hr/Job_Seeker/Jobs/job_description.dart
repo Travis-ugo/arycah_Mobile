@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Job%20Profile/job_profile5.dart';
-import 'package:test_subject/mobile_hr/Utils/company_data.dart';
-import 'package:test_subject/mobile_hr/Widgets/info_button.dart';
-import 'package:test_subject/mobile_hr/Widgets/recommended.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile5.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/info_button.dart';
 
 class JobDescription extends StatelessWidget {
   const JobDescription({Key? key}) : super(key: key);
@@ -47,7 +45,7 @@ class JobDescription extends StatelessWidget {
         ),
       ),
       body: const Padding(
-        padding:  EdgeInsets.symmetric(horizontal: 20),
+        padding: EdgeInsets.symmetric(horizontal: 20),
         child: CustomScrollView(
           slivers: [
             SliverToBoxAdapter(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
-import 'package:test_subject/mobile_hr/Widgets/v_block.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/v_block.dart';
 
 class RVerification extends StatelessWidget {
   const RVerification({Key? key}) : super(key: key);

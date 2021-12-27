@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
+import 'package:mobile_hr/FireBase_Repo/Authenticate/auth.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Settings/about.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Settings/setting.dart';
 import 'package:provider/provider.dart';
-import 'package:test_subject/FireBase_Repo/Authenticate/auth.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Settings/about.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Settings/setting.dart';
 import 'march_maker.dart';
 
 class WidgetDrawer extends StatelessWidget {
@@ -44,10 +44,9 @@ class WidgetDrawer extends StatelessWidget {
             icon: Icons.door_front_door,
             text: 'Log out',
             onPressed: () {
-               final provider =
+              final provider =
                   Provider.of<GoogleSignInProvider>(context, listen: false);
               provider.logOut();
-            
             },
           ),
           const SizedBox(height: 30),

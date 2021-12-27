@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_subject/mobile_hr/Job_Giver/Authenticate/job_giver_auth.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Home/home.dart';
-import 'package:test_subject/mobile_hr/Widgets/m_button.dart';
-import 'package:test_subject/mobile_hr/Widgets/onboard.dart';
-
-import '../../../ripper.dart';
+import 'package:mobile_hr/mobile_hr/Job_Giver/Authenticate/job_giver_auth.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/home.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/m_button.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/onboard.dart';
 
 // Mobile Hr onBoarding Pages
 

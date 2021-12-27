@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
-import 'package:syncfusion_flutter_sliders/sliders.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Authentication/sign_up.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/sign_up.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -112,7 +110,8 @@ class _SearchPageState extends State<SearchPage> {
             const SizedBox(height: 20),
             const Text('Salary'),
             RangeSlider(
-              labels: RangeLabels(_values.start.toString(), _values.end.toString()),
+              labels:
+                  RangeLabels(_values.start.toString(), _values.end.toString()),
               values: _values,
               activeColor: const Color(0xFFC4C4C4),
               inactiveColor: Colors.grey[200],

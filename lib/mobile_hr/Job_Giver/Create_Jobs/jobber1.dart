@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class Jobber1 extends StatelessWidget {
   final PageController controller;

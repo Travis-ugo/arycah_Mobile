@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
-
+import 'package:mobile_hr/mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
 import 'master_button.dart';
 
 // Represent an onboarding page widget
@@ -74,7 +73,11 @@ class Pages extends StatelessWidget {
 // function to jump to finish page.
 Widget skipButton(BuildContext context) => TextButton(
     onPressed: () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) =>  const ChooseWidget(),));
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ChooseWidget(),
+          ));
     },
     child: const Text(
       "Skip",

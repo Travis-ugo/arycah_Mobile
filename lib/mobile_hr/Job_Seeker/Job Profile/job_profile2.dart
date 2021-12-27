@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
-
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class JobProfile2 extends StatelessWidget {
   final PageController controller;
@@ -16,7 +14,6 @@ class JobProfile2 extends StatelessWidget {
   Widget build(BuildContext context) {
     final _nameTextController = TextEditingController();
     return Scaffold(
-
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),

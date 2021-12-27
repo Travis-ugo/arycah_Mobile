@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:test_subject/mobile_hr/Widgets/form_bar.dart';
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/form_bar.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class ResetPassWord extends StatelessWidget {
   const ResetPassWord({Key? key}) : super(key: key);
@@ -31,12 +31,15 @@ class ResetPassWord extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             const Align(
-                alignment: Alignment.topLeft,
-                child: Text(
-                    'Enter your email address below to reset your password'),),
+              alignment: Alignment.topLeft,
+              child:
+                  Text('Enter your email address below to reset your password'),
+            ),
             const SizedBox(height: 30),
             const Align(
-                alignment: Alignment.topLeft, child: Text("Emaiil Address"),),
+              alignment: Alignment.topLeft,
+              child: Text("Emaiil Address"),
+            ),
             const SizedBox(height: 10),
             FormBar(
               child: FormBlock(

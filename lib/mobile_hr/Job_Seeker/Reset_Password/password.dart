@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:test_subject/mobile_hr/Widgets/form_bar.dart';
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/form_bar.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class PassWord extends StatelessWidget {
   const PassWord({Key? key}) : super(key: key);
@@ -31,8 +31,9 @@ class PassWord extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 30),
-           const  Align(alignment: Alignment.topLeft,
-             child: Text('Enter your new password to continue')),
+            const Align(
+                alignment: Alignment.topLeft,
+                child: Text('Enter your new password to continue')),
             const SizedBox(height: 30),
             FormBar(
               child: FormBlock(

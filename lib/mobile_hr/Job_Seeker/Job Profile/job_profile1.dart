@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
-import 'job_profile2.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class JobProfile1 extends StatelessWidget {
   final PageController controller;
@@ -11,27 +10,6 @@ class JobProfile1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   toolbarHeight: 80,
-      //   elevation: 0.0,
-      //   backgroundColor: Colors.transparent,
-      //   automaticallyImplyLeading: false,
-      //   leading: IconButton(
-      //     icon: const Icon(
-      //       IconlyBold.arrow_left,
-      //       color: Colors.black,
-      //     ),
-      //     onPressed: () {},
-      //   ),
-      //   title: const Text(
-      //     'Notification',
-      //     style: TextStyle(
-      //       fontWeight: FontWeight.w100,
-      //       fontSize: 16,
-      //       color: Colors.black,
-      //     ),
-      //   ),
-      // ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(

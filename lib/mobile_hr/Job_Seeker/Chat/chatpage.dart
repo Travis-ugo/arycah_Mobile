@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Chat/chat.dart';
+
+import 'chat.dart';
 
 class ChatPage extends StatelessWidget {
   const ChatPage({Key? key}) : super(key: key);
@@ -20,11 +21,11 @@ class ChatPage extends StatelessWidget {
             color: Colors.black,
           ),
           onPressed: () {
-          controller.animateToPage(
-                2,
-                duration: const Duration(milliseconds: 300),
-                curve: Curves.linear,
-              );
+            controller.animateToPage(
+              2,
+              duration: const Duration(milliseconds: 300),
+              curve: Curves.linear,
+            );
           },
         ),
         actions: [

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class Password extends StatelessWidget {
   const Password({Key? key}) : super(key: key);
@@ -40,7 +40,7 @@ class Password extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text('Enter your new password to continue'),
-                const SizedBox(height: 20),
+              const SizedBox(height: 20),
               Cover(
                 child: FormBlock(
                   controller: _nameTextController,

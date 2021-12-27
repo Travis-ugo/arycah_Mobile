@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/User_Profile/profile_data.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/User_Profile/profile_data.dart';
 
 class UserProfile extends StatelessWidget {
   const UserProfile({Key? key}) : super(key: key);
@@ -46,8 +46,8 @@ class UserProfile extends StatelessWidget {
                         CircleAvatar(
                           radius: 50,
                           backgroundColor: Colors.grey.shade200,
-                          backgroundImage:  NetworkImage(user.photoURL ?? 'https://st.depositphotos.com/2101611/4338/v/600/depositphotos_43381243-stock-illustration-male-avatar-profile-picture.jpg'),
-                        
+                          backgroundImage: NetworkImage(user.photoURL ??
+                              'https://st.depositphotos.com/2101611/4338/v/600/depositphotos_43381243-stock-illustration-male-avatar-profile-picture.jpg'),
                         ),
                         const CircleAvatar(
                           radius: 13,

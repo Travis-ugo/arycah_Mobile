@@ -1,11 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Wish_List/notifications.dart';
-import 'package:test_subject/mobile_hr/Utils/company_data.dart';
-import 'package:test_subject/mobile_hr/Widgets/drawer_button.dart';
-import 'package:test_subject/mobile_hr/Widgets/recommended.dart';
-import 'package:test_subject/mobile_hr/Widgets/search_filter.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Wish_List/notifications.dart';
+import 'package:mobile_hr/mobile_hr/Utils/company_data.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/drawer_button.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/recommended.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/search_filter.dart';
 
 class JobberHome extends StatelessWidget {
   const JobberHome({Key? key}) : super(key: key);

@@ -1,15 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
+import 'package:mobile_hr/FireBase_Repo/Authenticate/auth.dart';
 import 'package:provider/provider.dart';
-
-import 'package:test_subject/FireBase_Repo/Authenticate/auth.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
-import 'package:test_subject/mobile_hr/Widgets/form_bar.dart';
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 import 'log_in.dart';
 
@@ -146,7 +143,6 @@ class _SignUpState extends State<SignUp> {
                 ),
                 MasterButton(
                   onPressed: () async {
-              
                     final provider = Provider.of<GoogleSignInProvider>(context,
                         listen: false);
                     provider.registerAccount(
@@ -231,7 +227,11 @@ class MarkRow extends StatefulWidget {
   final String? blueText;
   final Function()? onTap;
   const MarkRow(
-      {Key? key, required this.trailingText, this.blueText, this.onTap, this.fontSize})
+      {Key? key,
+      required this.trailingText,
+      this.blueText,
+      this.onTap,
+      this.fontSize})
       : super(key: key);
 
   @override
@@ -260,7 +260,7 @@ class _MarkRowState extends State<MarkRow> {
         RichText(
           text: TextSpan(
             text: widget.trailingText,
-            style:  TextStyle(
+            style: TextStyle(
               color: Colors.black,
               fontSize: widget.fontSize ?? 12,
               fontWeight: FontWeight.w400,

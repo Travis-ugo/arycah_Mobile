@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mobile_hr/FireBase_Repo/Authenticate/auth.dart';
 import 'package:provider/provider.dart';
-import 'package:test_subject/FireBase_Repo/Authenticate/auth.dart';
 
 // MaterButton as described in the UI design by the designer has a function
 // to push to next onboarding page.

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Authentication/log_in.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Home/home.dart';
-import 'package:test_subject/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
-import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/log_in.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/home.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
 class PassWordSec extends StatefulWidget {
   const PassWordSec({Key? key}) : super(key: key);
@@ -40,14 +40,6 @@ class _PassWordSecState extends State<PassWordSec> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            // const Text(
-            //   'Password',
-            //   style: TextStyle(
-            //     fontSize: 14,
-            //     fontWeight: FontWeight.w400,
-            //   ),
-            // ),
-            // const SizedBox(height: 10),
             NewContainer(
               text: 'Password',
               child: FormBlock(
@@ -69,7 +61,6 @@ class _PassWordSecState extends State<PassWordSec> {
                 ),
               ),
             ),
-         
             NewContainer(
               text: 'Confirm Password',
               child: FormBlock(

@@ -1,7 +1,7 @@
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 import 'package:flutter/material.dart';
-import 'package:test_subject/mobile_hr/Widgets/v_block.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
+import 'package:mobile_hr/mobile_hr/Widgets/v_block.dart';
 
 class Verification extends StatelessWidget {
   const Verification({Key? key}) : super(key: key);
@@ -19,9 +19,11 @@ class Verification extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-             IconButton(onPressed: () {
-                   Navigator.pop(context);
-                 }, icon: const Icon(IconlyBold.arrow_left)),
+            IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: const Icon(IconlyBold.arrow_left)),
             const SizedBox(height: 35),
             Text(
               "Verification",
