@@ -146,6 +146,7 @@ class _SignUpState extends State<SignUp> {
                 ),
                 MasterButton(
                   onPressed: () async {
+              
                     final provider = Provider.of<GoogleSignInProvider>(context,
                         listen: false);
                     provider.registerAccount(

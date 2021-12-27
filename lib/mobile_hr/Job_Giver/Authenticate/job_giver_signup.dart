@@ -91,7 +91,7 @@ class SignUpState extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const HomeMo()),
+                      MaterialPageRoute(builder: (context) => const HomePage()),
                     );
                   },
                   text: 'Next',

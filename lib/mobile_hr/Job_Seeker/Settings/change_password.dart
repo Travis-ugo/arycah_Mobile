@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Pages/Job%20Profile/job_profile2.dart';
-import 'package:test_subject/mobile_hr/Pages/Settings/setting.dart';
 import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
 import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
 

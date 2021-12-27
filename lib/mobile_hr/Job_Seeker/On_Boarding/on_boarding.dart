@@ -1,14 +1,15 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/log_in.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/m_button.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/onboard.dart';
+import 'package:test_subject/mobile_hr/Job_Giver/Authenticate/job_giver_auth.dart';
+import 'package:test_subject/mobile_hr/Job_Seeker/Home/home.dart';
+import 'package:test_subject/mobile_hr/Widgets/m_button.dart';
+import 'package:test_subject/mobile_hr/Widgets/onboard.dart';
+
+import '../../../ripper.dart';
+
 // Mobile Hr onBoarding Pages
 
-class OnBoarding extends StatelessWidget {
-  const OnBoarding({Key? key}) : super(key: key);
+class OnBoadding extends StatelessWidget {
+  const OnBoadding({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -82,16 +83,27 @@ class ChooseWidget extends StatelessWidget {
             MButton(
               text: "Sign Up as Jobseeker",
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const LogIn()));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomePage(),
+                  ),
+                );
               },
               bordercolor: Colors.white,
               textColor: Colors.blue,
             ),
             const SizedBox(height: 20),
             MButton(
-              text: 'Sign Up as Job Giver',
-              onPressed: () {},
+              text: 'Sign Up as Jobgiver',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const JobGiverSignIn(),
+                  ),
+                );
+              },
               bordercolor: Colors.transparent,
               textColor: Colors.white,
             ),

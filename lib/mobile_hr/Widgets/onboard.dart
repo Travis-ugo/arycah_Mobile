@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_subject/mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
 
 import 'master_button.dart';
 
@@ -12,8 +13,10 @@ class Pages extends StatelessWidget {
     required this.secondText,
     required this.buttonText,
     required this.onPressed,
+    required this.assets,
   }) : super(key: key);
   final String firstText;
+  final String assets;
   final String secondText;
   final String buttonText;
   final void Function() onPressed;
@@ -21,42 +24,47 @@ class Pages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // final controller = PageController(initialPage: 0);
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Align(
-            alignment: Alignment.topRight,
-            child: skipButton(context),
-          ),
-          Container(
-            color: Colors.blue,
-            height: 400,
-            width: 400,
-          ),
-          Text(
-            firstText,
-            style: const TextStyle(
-              fontSize: 16,
-              color: Colors.blue,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-          Text(
-            secondText,
-            style: const TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w100,
-            ),
-          ),
-          const Center(child: Text("page seperator")),
-          MasterButton(
-            text: buttonText,
-            onPressed: onPressed,
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+        actions: [
+          skipButton(context),
         ],
+      ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 300,
+              width: 300,
+              child: Image.asset(assets),
+            ),
+            Text(
+              firstText,
+              style: const TextStyle(
+                fontSize: 16,
+                color: Colors.blue,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            Text(
+              secondText,
+              style: const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w100,
+              ),
+            ),
+            const Center(child: Text("page seperator")),
+            MasterButton(
+              text: buttonText,
+              onPressed: onPressed,
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -65,7 +73,9 @@ class Pages extends StatelessWidget {
 // Skip Button located at the top of the page
 // function to jump to finish page.
 Widget skipButton(BuildContext context) => TextButton(
-    onPressed: () {},
+    onPressed: () {
+      Navigator.push(context, MaterialPageRoute(builder: (context) =>  const ChooseWidget(),));
+    },
     child: const Text(
       "Skip",
       style: TextStyle(fontSize: 14, color: Colors.black),

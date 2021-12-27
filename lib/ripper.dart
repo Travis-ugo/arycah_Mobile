@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:test_subject/mobile_hr/Job_Seeker/Home/home.dart';
+import 'package:test_subject/mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
 import 'mobile_hr/Job_Seeker/Authentication/log_in.dart';
 import 'mobile_hr/Job_Seeker/Authentication/sign_up.dart';
 
@@ -17,13 +18,13 @@ class Homie extends StatelessWidget {
             child: CircularProgressIndicator(),
           );
         } else if (snapshot.hasData) {
-          return const HomeMo();
+          return const HomePage();
         } else if (snapshot.hasError) {
           return const Center(
             child: Text('Something Went wrong'),
           );
         } else {
-          return const AuthenicationScreen();
+          return const OnBoadding();
         }
       },
     );

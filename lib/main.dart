@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mobile_hr/ripper.dart';
 
 import 'mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
 
-void main() {
-  runApp(const MyApp());
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -14,21 +19,22 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // Set landscape orientation
     SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
     ]);
-    return MaterialApp(
-      title: 'Mobile HR',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        primaryColor: Colors.blue,
-        textTheme: GoogleFonts.montserratTextTheme(),
-        // textTheme: GoogleFonts.TextTheme(),
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const OnBoarding(),
+    return ChangeNotifierProvider(
+      create: (context) => GoogleSignInProvider(),
+      builder: (context, _) {
+        return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Tahn',
+            theme: ThemeData(
+              primaryColor: const Color(0xFFf6f6f6),
+              textTheme: GoogleFonts.montserratTextTheme(),
+            ),
+            home: const Homie());
+      },
     );
   }
 }

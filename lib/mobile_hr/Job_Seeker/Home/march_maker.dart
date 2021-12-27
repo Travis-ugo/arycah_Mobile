@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
@@ -48,15 +46,13 @@ class MarchMaker extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
-                          height: 125,
-                          width: 130,
+                          height: 149,
+                          width: 151,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
                             color: Colors.white,
                           ),
-                          child: const Center(
-                            child: Text('PlumVie'),
-                          ),
+                          child: Image.asset('assets/plumville.png', fit: BoxFit.cover,),
                         ),
                         RichText(
                           textAlign: TextAlign.center,

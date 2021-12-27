@@ -45,7 +45,7 @@ class PlentyCircles extends StatelessWidget {
     return Container(
       child: child,
       height: 700,
-      width: 7100,
+      width: 700,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
         border: Border.all(

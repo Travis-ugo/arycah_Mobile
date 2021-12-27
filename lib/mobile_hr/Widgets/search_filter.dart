@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-
 import 'formfiel.dart';
 
 class SearchFilter extends StatefulWidget {
@@ -34,8 +32,8 @@ class _SearchFilterState extends State<SearchFilter> {
             prefixIcons: const Icon(
               IconlyBold.search,
               color: Colors.blueAccent,
-            ),
-            suffixIcon: null,
+            ), suffixIcon: null,
+         
           ),
         ),
         Container(

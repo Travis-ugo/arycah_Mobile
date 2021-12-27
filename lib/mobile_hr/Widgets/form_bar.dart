@@ -9,24 +9,26 @@ class FormBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(child: child),
-      height: 50,
-      width: 370,
-      decoration: BoxDecoration(
-        color: Colors.grey.shade50,
-        borderRadius: BorderRadius.circular(10),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.shade200,
-            spreadRadius: 7,
-            blurRadius: 9,
-            offset: Offset.fromDirection(
-              1,
-              9,
+    return Center(
+      child: Container(
+        child: Center(child: child),
+        height: 50,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          color: Colors.grey.shade50,
+          borderRadius: BorderRadius.circular(5),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade200,
+              spreadRadius: 7,
+              blurRadius: 9,
+              offset: Offset.fromDirection(
+                1,
+                9,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

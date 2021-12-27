@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_hr/mobile_hr/Utils/company_data.dart';
+import 'package:iconly/iconly.dart';
+import 'package:test_subject/mobile_hr/Utils/company_data.dart';
 
 class FeaturedJobsCard extends StatelessWidget {
   const FeaturedJobsCard({Key? key, required this.index}) : super(key: key);
@@ -8,7 +9,7 @@ class FeaturedJobsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.only(right: 20),
       child: Container(
         height: 143,
         width: 216,
@@ -16,7 +17,18 @@ class FeaturedJobsCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.grey.shade50,
           borderRadius: BorderRadius.circular(5),
-          border: Border.all(color: Colors.grey.shade300),
+          border: Border.all(color: Colors.grey.shade200),
+           boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade100,
+              spreadRadius: 3,
+              blurRadius: 7,
+              offset: Offset.fromDirection(
+                1,
+                9,
+              ),
+            ),
+          ],
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -28,6 +40,7 @@ class FeaturedJobsCard extends StatelessWidget {
                 Container(
                   height: 48,
                   width: 48,
+                  child: Image.asset(companyData[index].assest),
                   decoration: BoxDecoration(
                     color: Colors.grey.shade50,
                     borderRadius: BorderRadius.circular(5),

@@ -62,7 +62,6 @@ class _PassWordSecState extends State<PassWordSec> {
                   }
                   return 'null';
                 },
-                // prefixIcons: const Icon(CupertinoIcons.lock, size: 15),
                 suffixIcon: IconButton(
                   icon: const Icon(CupertinoIcons.eye_slash),
                   onPressed: () {},
@@ -70,15 +69,7 @@ class _PassWordSecState extends State<PassWordSec> {
                 ),
               ),
             ),
-            // const SizedBox(height: 25),
-            // const Text(
-            //   'Confirm Password',
-            //   style: TextStyle(
-            //     fontSize: 14,
-            //     fontWeight: FontWeight.w400,
-            //   ),
-            // ),
-            // const SizedBox(height: 10),
+         
             NewContainer(
               text: 'Confirm Password',
               child: FormBlock(
@@ -134,7 +125,7 @@ class _PassWordSecState extends State<PassWordSec> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomeMo(),
+                    builder: (context) => const HomePage(),
                   ),
                 );
               },

@@ -32,14 +32,14 @@ class WishList extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          
-          Container(),
+          Center(
+            child: SizedBox(height: 237,width: 237,child:  Image.asset('assets/wiishbox.png')),
+          ),
           FloatingActionButton(
             elevation: 0.0,
             onPressed: () {},
             child: const Icon(
               Icons.add,
-            
             ),
           )
         ],

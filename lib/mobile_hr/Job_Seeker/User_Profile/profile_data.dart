@@ -15,7 +15,7 @@ class UserData {
 }
 
 UserData profile = UserData(
-  profilePicture: 'assets/try.jpeg',
+  profilePicture: 'assets/1.jpg',
   count: '0',
   saved: '0',
   interView: '0',

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Pages/Settings/setting.dart';
-
+import 'package:test_subject/mobile_hr/Job_Seeker/Settings/setting.dart';
 import 'contact_us.dart';
 import 'faq.dart';
 

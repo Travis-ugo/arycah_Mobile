@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';
 import 'package:test_subject/FireBase_Repo/Authenticate/auth.dart';
+import 'package:test_subject/mobile_hr/Job_Seeker/Authentication/sign_up.dart';
 import 'package:test_subject/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
 import 'package:test_subject/mobile_hr/Widgets/formfiel.dart';
 import 'package:test_subject/mobile_hr/Widgets/master_button.dart';
@@ -116,15 +117,17 @@ class LogIn extends StatelessWidget {
                     }
                   },
                   text: 'LOGIN',
-                ),
-                const Divider(),
+                ), const SizedBox(height: 25),
                 const GoogleButton(
                   buttonText: 'Login with Google',
                 ),
+                // const Divider(),
                 const SizedBox(height: 25),
                 Center(
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const SignUp()));
+                    },
                     child: const Text(
                       'Don’t have an accout? Register',
                       style: TextStyle(

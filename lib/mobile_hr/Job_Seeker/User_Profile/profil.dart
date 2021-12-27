@@ -1,111 +1,114 @@
-import 'package:flutter/cupertino.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconly/iconly.dart';
-import 'package:test_subject/mobile_hr/Pages/User_Profile/profile_data.dart';
+import 'package:test_subject/mobile_hr/Job_Seeker/User_Profile/profile_data.dart';
 
 class UserProfile extends StatelessWidget {
   const UserProfile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser!;
+    ScrollController _profileController = ScrollController();
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 80,
+        elevation: 0.0,
+        foregroundColor: Colors.transparent,
+        backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon:
-              const Icon(IconlyBold.arrow_left, size: 20, color: Colors.black),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          icon: const Icon(
+            IconlyBold.arrow_left,
+            color: Colors.black,
+          ),
+          onPressed: () {},
         ),
-        centerTitle: false,
-        elevation: 0.0,
-        backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'Profile',
           style: TextStyle(
-            fontSize: 16,
             fontWeight: FontWeight.w100,
-            color: Colors.grey.shade600,
+            fontSize: 16,
+            color: Colors.black,
           ),
         ),
       ),
-      backgroundColor: Colors.white,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Center(
-                child: Stack(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: Center(
+                child: Column(
                   children: [
-                    CircleAvatar(
-                      radius: 50,
-                      backgroundColor: Colors.grey.shade200,
-                      backgroundImage: AssetImage(
-                        profile.profilePicture,
+                    Stack(
+                      children: [
+                        CircleAvatar(
+                          radius: 50,
+                          backgroundColor: Colors.grey.shade200,
+                          backgroundImage:  NetworkImage(user.photoURL ?? 'https://st.depositphotos.com/2101611/4338/v/600/depositphotos_43381243-stock-illustration-male-avatar-profile-picture.jpg'),
+                        
+                        ),
+                        const CircleAvatar(
+                          radius: 13,
+                          backgroundColor: Colors.black,
+                          child: Align(
+                            alignment: Alignment.topRight,
+                            child: Icon(
+                              IconlyLight.edit,
+                              color: Colors.white,
+                              size: 17,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 15),
+                    Text(
+                      'Hello, ${user.displayName}\n',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
-                    CircleAvatar(
-                      radius: 13,
-                      backgroundColor: Colors.grey.shade700,
-                      child: const Align(
-                        alignment: Alignment.topRight,
-                        child: Icon(
-                          IconlyBold.edit,
-                          color: Colors.white,
-                          size: 17,
+                    // const SizedBox(height: 25),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Profilcontainer(
+                          count: profile.count,
+                          title: 'Applied',
                         ),
-                      ),
+                        Profilcontainer(
+                          count: profile.saved,
+                          title: 'Saved',
+                        ),
+                        Profilcontainer(
+                          count: profile.interView,
+                          title: 'Interview',
+                        ),
+                      ],
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 15),
-              Text(
-                profile.userName,
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                ),
+            ),
+            SliverToBoxAdapter(
+              child: ListView.builder(
+                shrinkWrap: true,
+                controller: _profileController,
+                itemCount: cardData.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Center(
+                    child: ProfileCard(
+                      title: cardData[index].title,
+                      subTitle: cardData[index].subTitle,
+                    ),
+                  );
+                },
               ),
-              const SizedBox(height: 15),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Profilcontainer(
-                    count: profile.count,
-                    title: 'Applied',
-                  ),
-                  Profilcontainer(
-                    count: profile.saved,
-                    title: 'Saved',
-                  ),
-                  Profilcontainer(
-                    count: profile.interView,
-                    title: 'Interview',
-                  ),
-                ],
-              ),
-              const SizedBox(height: 15),
-              SizedBox(
-                height: 600,
-                child: ListView.builder(
-                  itemCount: cardData.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Center(
-                      child: ProfileCard(
-                        title: cardData[index].title,
-                        subTitle: cardData[index].subTitle,
-                      ),
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
@@ -178,41 +181,44 @@ class Profilcontainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 65,
-      width: 65,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(10),
-        boxShadow: <BoxShadow>[
-          BoxShadow(
-            offset: const Offset(0, 4),
-            blurRadius: 8,
-            spreadRadius: 4,
-            color: Colors.grey.shade200,
-          ),
-        ],
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            count,
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w400,
-              color: Colors.grey.shade800,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 13),
+      child: Container(
+        height: 60,
+        width: 60,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+              offset: const Offset(0, 4),
+              blurRadius: 7,
+              spreadRadius: 2,
+              color: Colors.grey.shade200,
             ),
-          ),
-          Text(
-            title,
-            style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.w100,
-              color: Colors.grey.shade800,
+          ],
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              count,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                color: Colors.grey.shade800,
+              ),
             ),
-          ),
-        ],
+            Text(
+              title,
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.w100,
+                color: Colors.grey.shade800,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

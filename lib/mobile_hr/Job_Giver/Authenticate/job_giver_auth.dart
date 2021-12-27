@@ -113,7 +113,7 @@ class JobGiverSignIn extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomeMo(),
+                    builder: (context) => const HomePage(),
                   ),
                 );
               },

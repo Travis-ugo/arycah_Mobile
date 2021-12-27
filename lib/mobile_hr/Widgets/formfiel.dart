@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 class FormBlock extends StatelessWidget {
   const FormBlock({
     Key? key,
-    required this.validator,
-    required this.prefixIcons,
-    required this.hintText,
+     this.validator,
+     this.prefixIcons,
+     this.hintText,
     required this.controller,
-    required this.suffixIcon,
+     this.suffixIcon,
   }) : super(key: key);
-  final String Function(String?) validator;
+  final String Function(String?)? validator;
   final Widget? prefixIcons;
-  final String hintText;
+  final String? hintText;
   final TextEditingController controller;
   final Widget? suffixIcon;
 
