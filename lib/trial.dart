@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:page_view_indicators/linear_progress_page_indicator.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
-import 'mobile_hr/Job_Seeker/Job Profile/job_profile1.dart';
-import 'mobile_hr/Job_Seeker/Job Profile/job_profile2.dart';
-import 'mobile_hr/Job_Seeker/Job Profile/job_profile3.dart';
-import 'mobile_hr/Job_Seeker/Job Profile/job_profile4.dart';
 
 class TrialWid extends StatefulWidget {
   const TrialWid({Key? key}) : super(key: key);
@@ -48,8 +42,6 @@ class _TrialWidState extends State<TrialWid>
   }
 }
 
-
-
 class Clevr extends StatefulWidget {
   const Clevr({Key? key}) : super(key: key);
 
@@ -58,37 +50,42 @@ class Clevr extends StatefulWidget {
 }
 
 class _MySliderAppState extends State<Clevr> {
-  RangeValues _currentRangeValues = const RangeValues(20, 60);
+  // RangeValues _currentRangeValues = const RangeValues(20, 60);
   double lawson = 10;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Range Slider Demo'),
-        ),
-        body: Padding(
-          padding: EdgeInsets.all(15.0),
-          child: Center(
-              child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                const Icon(
-                  Icons.volume_up,
-                  size: 40,
-                ),
-                Slider(
-                  min: 10,
-                  max: 100,
-                  onChanged: (double values) {
-                    setState(() {
+      appBar: AppBar(
+        title: const Text('Flutter Range Slider Demo'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              const Icon(
+                Icons.volume_up,
+                size: 40,
+              ),
+              Slider(
+                min: 10,
+                max: 100,
+                onChanged: (double values) {
+                  setState(
+                    () {
                       lawson = values;
-                    });
-                  },
-                  value: lawson,
-                ),
-              ])),
-        ));
+                    },
+                  );
+                },
+                value: lawson,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -144,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       drawer: SafeArea(
-        child: Container(
+        child: SizedBox(
           child: ListTileTheme(
             textColor: Colors.white,
             iconColor: Colors.white,
@@ -159,7 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     bottom: 64.0,
                   ),
                   clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.black26,
                     shape: BoxShape.circle,
                   ),
@@ -169,27 +166,27 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: Icon(Icons.home),
-                  title: Text('Home'),
+                  leading: const Icon(Icons.home),
+                  title: const Text('Home'),
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: Icon(Icons.account_circle_rounded),
-                  title: Text('Profile'),
+                  leading: const Icon(Icons.account_circle_rounded),
+                  title: const Text('Profile'),
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: Icon(Icons.favorite),
-                  title: Text('Favourites'),
+                  leading: const Icon(Icons.favorite),
+                  title: const Text('Favourites'),
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: Icon(Icons.settings),
-                  title: Text('Settings'),
+                  leading: const Icon(Icons.settings),
+                  title: const Text('Settings'),
                 ),
-                Spacer(),
+                const Spacer(),
                 DefaultTextStyle(
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 12,
                     color: Colors.white54,
                   ),
@@ -197,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     margin: const EdgeInsets.symmetric(
                       vertical: 16.0,
                     ),
-                    child: Text('Terms of Service | Privacy Policy'),
+                    child: const Text('Terms of Service | Privacy Policy'),
                   ),
                 ),
               ],

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/FireBase_Repo/Authenticate/auth.dart';
+import 'package:mobile_hr/FireBase_Service/Authenticate/fireBaseAuth.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/sign_up.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/JobApplicationForm/application_profile2.dart';
 import 'package:provider/provider.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
-class LogIn extends StatelessWidget {
+class AricahLogInPage extends StatelessWidget {
   final Function()? toggleView;
-  const LogIn({
+  const AricahLogInPage({
     Key? key,
     this.toggleView,
   }) : super(key: key);
@@ -106,7 +106,7 @@ class LogIn extends StatelessWidget {
                 MasterButton(
                   onPressed: () async {
                     if (_formKey.currentState!.validate()) {
-                      final provider = Provider.of<GoogleSignInProvider>(
+                      final provider = Provider.of<FireBaseAuthentication>(
                           context,
                           listen: false);
                       provider.verifyEmail(() {}, _emailController.text);
@@ -130,7 +130,7 @@ class LogIn extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SignUp()));
+                              builder: (context) => const AricahSignInPage()));
                     },
                     child: const Text(
                       'Don’t have an accout? Register',

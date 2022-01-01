@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/log_in.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/home.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/logIn_page.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/JobApplicationForm/application_profile2.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
+
+import '../../../general_page_marker.dart';
 
 class JobGiverSignIn extends StatelessWidget {
   const JobGiverSignIn({Key? key}) : super(key: key);
@@ -52,7 +53,6 @@ class JobGiverSignIn extends StatelessWidget {
                   }
                   return 'null';
                 },
-                // prefixIcons: const Icon(CupertinoIcons.lock, size: 15),
                 suffixIcon: IconButton(
                   icon: const Icon(CupertinoIcons.eye_slash),
                   onPressed: () {},
@@ -74,7 +74,6 @@ class JobGiverSignIn extends StatelessWidget {
                   }
                   return 'null';
                 },
-                // prefixIcons: const Icon(CupertinoIcons.lock, size: 15),
                 suffixIcon: IconButton(
                   icon: const Icon(CupertinoIcons.eye_slash),
                   onPressed: () {},
@@ -111,7 +110,7 @@ class JobGiverSignIn extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomePage(),
+                    builder: (context) => const GeneralMarker(),
                   ),
                 );
               },
@@ -145,7 +144,7 @@ class JobGiverSignIn extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const LogIn(),
+                              builder: (context) => const AricahLogInPage(),
                             ),
                           );
                         },

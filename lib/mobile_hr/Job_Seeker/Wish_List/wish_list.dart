@@ -33,7 +33,10 @@ class WishList extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
-            child: SizedBox(height: 237,width: 237,child:  Image.asset('assets/wiishbox.png')),
+            child: SizedBox(
+                height: 237,
+                width: 237,
+                child: Image.asset('assets/wiishbox.png')),
           ),
           FloatingActionButton(
             elevation: 0.0,

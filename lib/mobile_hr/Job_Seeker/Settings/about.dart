@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Settings/setting.dart';
+import 'settings_widget.dart';
 import 'contact_us.dart';
 import 'faq.dart';
 
@@ -37,7 +37,7 @@ class About extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            RustCopper(
+            SettingOptions(
               onTap: () {
                 Navigator.push(
                   context,
@@ -49,12 +49,12 @@ class About extends StatelessWidget {
               text: 'Contact Us',
               icon: IconlyBold.call,
             ),
-            RustCopper(
+            SettingOptions(
               onTap: () {},
               text: 'Terms and Conditions',
               icon: IconlyBold.document,
             ),
-            RustCopper(
+            SettingOptions(
               onTap: () {
                 Navigator.push(
                   context,
@@ -66,7 +66,7 @@ class About extends StatelessWidget {
               text: 'FAQ',
               icon: IconlyBold.more_circle,
             ),
-            RustCopper(
+            SettingOptions(
               onTap: () {},
               text: 'Visit Our Website',
               icon: IconlyBold.call,

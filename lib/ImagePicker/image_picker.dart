@@ -5,14 +5,14 @@ import 'package:file_picker/file_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class PickerExample extends StatefulWidget {
+  const PickerExample({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<PickerExample> createState() => _PickerExampleState();
 }
 
-class _HomeState extends State<Home> {
+class _PickerExampleState extends State<PickerExample> {
   CollectionReference users = FirebaseFirestore.instance.collection('users');
   Stream<QuerySnapshot> items =
       FirebaseFirestore.instance.collection('users').snapshots();

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:page_view_indicators/page_view_indicators.dart';
-import 'job_profile1.dart';
-import 'job_profile2.dart';
-import 'job_profile3.dart';
-import 'job_profile4.dart';
+import 'application_profile1.dart';
+import 'application_profile2.dart';
+import 'application_profile3.dart';
+import 'application_profile4.dart';
 
 class JobPageWrap extends StatefulWidget {
   const JobPageWrap({Key? key}) : super(key: key);

@@ -3,6 +3,8 @@ import 'package:iconly/iconly.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
+import 'settings_widget.dart';
+
 class Password extends StatelessWidget {
   const Password({Key? key}) : super(key: key);
 
@@ -67,29 +69,6 @@ class Password extends StatelessWidget {
                 borderColor: const Color(0xFF949EB0),
               ),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class Cover extends StatelessWidget {
-  final Widget child;
-  const Cover({Key? key, required this.child}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10),
-        child: Container(
-          width: MediaQuery.of(context).size.width,
-          height: 54,
-          child: child,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            border: Border.all(width: 0.5),
           ),
         ),
       ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DrawerButton extends StatelessWidget {
-  const DrawerButton({Key? key, required this.icon,required this.onPressed}) : super(key: key);
+  const DrawerButton({Key? key, required this.icon, required this.onPressed})
+      : super(key: key);
   final IconData icon;
   final void Function()? onPressed;
 
@@ -10,7 +11,7 @@ class DrawerButton extends StatelessWidget {
     return Container(
       height: 48,
       width: 48,
-      child:Center(
+      child: Center(
         child: IconButton(
           onPressed: onPressed,
           icon: Icon(
@@ -23,7 +24,6 @@ class DrawerButton extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(5),
-        // border: Border.all(color: Colors.grey.shade100),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.shade200,

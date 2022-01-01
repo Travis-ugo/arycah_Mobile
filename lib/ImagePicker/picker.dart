@@ -4,14 +4,14 @@ import 'package:file_picker/file_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class PickkerPage extends StatefulWidget {
+  const PickkerPage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<PickkerPage> createState() => _PickkerPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _PickkerPageState extends State<PickkerPage> {
   Future uploadFile() async {
     if (file == null) return;
 
@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(color: Colors.white),
                   ),
             // const SizedBox(height: 300),
-          
+
             Center(
               child: Container(
                 height: 50,

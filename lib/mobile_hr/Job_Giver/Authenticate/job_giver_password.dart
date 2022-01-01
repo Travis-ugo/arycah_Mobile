@@ -3,11 +3,13 @@ import 'package:flutter/gestures.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/log_in.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Authentication/logIn_page.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/home.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/JobApplicationForm/application_profile2.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
+
+import '../../../general_page_marker.dart';
 
 class PassWordSec extends StatefulWidget {
   const PassWordSec({Key? key}) : super(key: key);
@@ -116,7 +118,7 @@ class _PassWordSecState extends State<PassWordSec> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomePage(),
+                    builder: (context) => const GeneralMarker(),
                   ),
                 );
               },
@@ -149,7 +151,7 @@ class _PassWordSecState extends State<PassWordSec> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const LogIn(),
+                              builder: (context) => const AricahLogInPage(),
                             ),
                           );
                         },

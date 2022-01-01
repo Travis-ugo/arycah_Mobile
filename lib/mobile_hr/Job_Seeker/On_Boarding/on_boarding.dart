@@ -4,6 +4,8 @@ import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/home.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/m_button.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/onboard.dart';
 
+import '../../../general_page_marker.dart';
+
 // Mobile Hr onBoarding Pages
 
 class OnBoadding extends StatelessWidget {
@@ -84,7 +86,7 @@ class ChooseWidget extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomePage(),
+                    builder: (context) => const GeneralMarker(),
                   ),
                 );
               },

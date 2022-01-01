@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/home.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
+import '../../../general_page_marker.dart';
+
 class Jobber3 extends StatelessWidget {
   const Jobber3({Key? key}) : super(key: key);
 
@@ -29,7 +31,7 @@ class Jobber3 extends StatelessWidget {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const HomePage(),
+                      builder: (context) => const GeneralMarker(),
                     ),
                   );
                 },
@@ -43,7 +45,7 @@ class Jobber3 extends StatelessWidget {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomePage(),
+                    builder: (context) => const GeneralMarker(),
                   ),
                 );
               },

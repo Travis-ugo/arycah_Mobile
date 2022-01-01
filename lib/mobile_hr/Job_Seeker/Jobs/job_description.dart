@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile5.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/JobApplicationForm/application_profile5.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/info_button.dart';
 
 class JobDescription extends StatelessWidget {

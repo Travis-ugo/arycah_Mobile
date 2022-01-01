@@ -2,9 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mobile_hr/ripper.dart';
+import 'package:mobile_hr/general_page_marker.dart';
 import 'package:provider/provider.dart';
-import 'FireBase_Repo/Authenticate/auth.dart';
+
+import 'FireBase_Service/Authenticate/fireBaseAuth.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return ChangeNotifierProvider(
-      create: (context) => GoogleSignInProvider(),
+      create: (context) => FireBaseAuthentication(),
       builder: (context, _) {
         return MaterialApp(
             debugShowCheckedModeBanner: false,

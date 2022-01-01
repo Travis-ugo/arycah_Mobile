@@ -2,33 +2,31 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/FireBase_Repo/Authenticate/auth.dart';
+import 'package:mobile_hr/FireBase_Service/Authenticate/fireBaseAuth.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/JobApplicationForm/application_profile2.dart';
 import 'package:provider/provider.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Job%20Profile/job_profile2.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/formfiel.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/master_button.dart';
 
-import 'log_in.dart';
+import 'logIn_page.dart';
 
-class SignUp extends StatefulWidget {
+class AricahSignInPage extends StatefulWidget {
   final Function()? toggleView;
-  const SignUp({
+  const AricahSignInPage({
     Key? key,
     this.toggleView,
   }) : super(key: key);
 
   @override
-  State<SignUp> createState() => _SignUpState();
+  State<AricahSignInPage> createState() => _AricahSignInPageState();
 }
 
-class _SignUpState extends State<SignUp> {
+class _AricahSignInPageState extends State<AricahSignInPage> {
   @override
   Widget build(BuildContext context) {
-    bool check = false;
     final _formKey = GlobalKey<FormState>(debugLabel: '_EmailFormState');
     final _emailController = TextEditingController();
     final _passwordController = TextEditingController();
-
     final _fullNameController = TextEditingController();
     final _phoneNumberController = TextEditingController();
     return Scaffold(
@@ -37,13 +35,14 @@ class _SignUpState extends State<SignUp> {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(
-              IconlyBold.arrow_left,
-              color: Colors.black,
-            )),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            IconlyBold.arrow_left,
+            color: Colors.black,
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Form(
@@ -133,17 +132,17 @@ class _SignUpState extends State<SignUp> {
                   text: 'How Did You Hear About Us? (Optional)',
                   child: Text('Click Here To Select'),
                 ),
-                // Terms and Conditions.
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 15),
-                  child: MarkRow(
+                  child: RichTextWiget(
                     blueText: ' terms and condition',
                     trailingText: 'I have read the',
                   ),
                 ),
                 MasterButton(
                   onPressed: () async {
-                    final provider = Provider.of<GoogleSignInProvider>(context,
+                    final provider = Provider.of<FireBaseAuthentication>(
+                        context,
                         listen: false);
                     provider.registerAccount(
                       displayName: _fullNameController.text,
@@ -163,7 +162,7 @@ class _SignUpState extends State<SignUp> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const LogIn(),
+                        builder: (context) => const AricahLogInPage(),
                       ),
                     );
                   },
@@ -185,60 +184,24 @@ class _SignUpState extends State<SignUp> {
   }
 }
 
-class Divider extends StatelessWidget {
-  const Divider({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 25),
-      child: Center(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              color: Colors.grey[400],
-              width: 100,
-              height: 1.5,
-            ),
-            const Text(
-              'OR',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            Container(
-              color: Colors.grey[400],
-              width: 100,
-              height: 1.5,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class MarkRow extends StatefulWidget {
+class RichTextWiget extends StatefulWidget {
   final double? fontSize;
   final String trailingText;
   final String? blueText;
   final Function()? onTap;
-  const MarkRow(
-      {Key? key,
-      required this.trailingText,
-      this.blueText,
-      this.onTap,
-      this.fontSize})
-      : super(key: key);
+  const RichTextWiget({
+    Key? key,
+    required this.trailingText,
+    this.blueText,
+    this.onTap,
+    this.fontSize,
+  }) : super(key: key);
 
   @override
-  _MarkRowState createState() => _MarkRowState();
+  _RichTextWigetState createState() => _RichTextWigetState();
 }
 
-class _MarkRowState extends State<MarkRow> {
+class _RichTextWigetState extends State<RichTextWiget> {
   bool checkBox = false;
   @override
   Widget build(BuildContext context) {

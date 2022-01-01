@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Settings/setting.dart';
+import 'settings_widget.dart';
 
 class FAQ extends StatelessWidget {
   const FAQ({Key? key}) : super(key: key);
@@ -35,26 +35,11 @@ class FAQ extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            RustCopper(
-              onTap: () {},
-              text: 'About us',
-            ),
-            RustCopper(
-              onTap: () {},
-              text: 'About us',
-            ),
-            RustCopper(
-              onTap: () {},
-              text: 'About us',
-            ),
-            RustCopper(
-              onTap: () {},
-              text: 'About us',
-            ),
-            RustCopper(
-              onTap: () {},
-              text: 'About us',
-            ),
+            for (var i = 0; i < 5; i++)
+              SettingOptions(
+                onTap: () {},
+                text: 'About us',
+              ),
           ],
         ),
       ),

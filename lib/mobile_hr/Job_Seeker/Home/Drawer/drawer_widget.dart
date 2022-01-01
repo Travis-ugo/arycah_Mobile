@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/FireBase_Repo/Authenticate/auth.dart';
+import 'package:mobile_hr/FireBase_Service/Authenticate/fireBaseAuth.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/Settings/about.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/Settings/setting.dart';
 import 'package:provider/provider.dart';
-import 'march_maker.dart';
+import '../../MatchMaker/match_maker.dart';
+import 'drawer_items.dart';
 
 class WidgetDrawer extends StatelessWidget {
   const WidgetDrawer({Key? key}) : super(key: key);
@@ -40,12 +41,12 @@ class WidgetDrawer extends StatelessWidget {
           const Divider(
             color: Color(0xFFFCB04B),
           ),
-          DrawItems(
+          DrawerItmes(
             icon: Icons.door_front_door,
             text: 'Log out',
             onPressed: () {
               final provider =
-                  Provider.of<GoogleSignInProvider>(context, listen: false);
+                  Provider.of<FireBaseAuthentication>(context, listen: false);
               provider.logOut();
             },
           ),
@@ -59,7 +60,7 @@ class WidgetDrawer extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        DrawItems(
+        DrawerItmes(
           icon: IconlyBold.ticket,
           text: 'Job Match',
           onPressed: () {
@@ -67,12 +68,12 @@ class WidgetDrawer extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const MarchMaker()));
           },
         ),
-        DrawItems(
+        DrawerItmes(
           icon: IconlyBold.work,
           text: ' Applications',
           onPressed: () {},
         ),
-        DrawItems(
+        DrawerItmes(
           icon: Icons.settings,
           text: 'Settings',
           onPressed: () {
@@ -84,12 +85,12 @@ class WidgetDrawer extends StatelessWidget {
             );
           },
         ),
-        DrawItems(
+        DrawerItmes(
           icon: Icons.person_add,
           text: 'Invite Friends',
           onPressed: () {},
         ),
-        DrawItems(
+        DrawerItmes(
           icon: Icons.info_sharp,
           text: 'About',
           onPressed: () {
@@ -98,49 +99,6 @@ class WidgetDrawer extends StatelessWidget {
           },
         ),
       ],
-    );
-  }
-}
-
-class DrawItems extends StatelessWidget {
-  const DrawItems({
-    Key? key,
-    required this.icon,
-    required this.text,
-    required this.onPressed,
-  }) : super(key: key);
-  final IconData icon;
-  final String text;
-
-  final void Function() onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: GestureDetector(
-        onTap: () {},
-        child: Row(
-          children: [
-            Icon(
-              icon,
-              color: const Color(0xFF0B0D0F),
-            ),
-            const SizedBox(width: 5),
-            TextButton(
-              onPressed: onPressed,
-              child: Text(
-                text,
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w100,
-                  color: Color(0xFF0B0D0F),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
 }

@@ -2,95 +2,20 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/Chat/chatpage.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/Widgets/banner_widget.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/Jobs/jobs.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/User_Profile/profil.dart';
-import 'package:mobile_hr/mobile_hr/Job_Seeker/Wish_List/notifications.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Notifications/notifications.dart';
 import 'package:mobile_hr/mobile_hr/Job_Seeker/Wish_List/wish_list.dart';
 import 'package:mobile_hr/mobile_hr/Utils/company_data.dart';
-import 'package:mobile_hr/mobile_hr/Widgets/drawer_button.dart';
+import 'package:mobile_hr/mobile_hr/Job_Seeker/Home/Drawer/drawer_button.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/featured_jobs_card.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/recommended.dart';
 import 'package:mobile_hr/mobile_hr/Widgets/search_filter.dart';
+import 'Drawer/drawer_widget.dart';
 
-import 'drawer.dart';
-
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  PageController _pageController = PageController();
-  int _pageIndex = 0;
-
-  @override
-  void initState() {
-    super.initState();
-    _pageController = PageController(initialPage: _pageIndex);
-  }
-
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
-  }
-
-  void onPageChanged(int page) {
-    setState(() {
-      _pageIndex = page;
-    });
-  }
-
-  void onTabTapped(int index) {
-    _pageController.animateToPage(index,
-        duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: Container(
-        color: Colors.white,
-        height: 80,
-        child: BottomNavigationBar(
-          currentIndex: _pageIndex,
-          onTap: onTabTapped,
-          backgroundColor: Colors.white,
-          elevation: 0.0,
-          // onTap: (int index) {},
-          type: BottomNavigationBarType.fixed,
-          items: const [
-            BottomNavigationBarItem(icon: Icon(IconlyBold.home), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(IconlyBold.work), label: "Jobs"),
-            BottomNavigationBarItem(
-                icon: Icon(IconlyBold.bookmark), label: "Wishlist"),
-            BottomNavigationBarItem(icon: Icon(IconlyBold.chat), label: "Chat"),
-            BottomNavigationBarItem(
-                icon: Icon(IconlyBold.profile), label: "Profile"),
-          ],
-        ),
-      ),
-      // appBar:
-      drawer: const WidgetDrawer(),
-      body: PageView(
-        onPageChanged: onPageChanged,
-        controller: _pageController,
-        children: const [
-          Delute(),
-          Jobs(),
-          WishList(),
-          ChatPage(),
-          UserProfile(),
-        ],
-      ),
-    );
-  }
-}
-
-class Delute extends StatelessWidget {
-  const Delute({Key? key}) : super(key: key);
+class HomePageWidget extends StatelessWidget {
+  const HomePageWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -156,17 +81,16 @@ class Delute extends StatelessWidget {
                 const SizedBox(height: 10),
                 const SearchFilter(),
                 const SizedBox(height: 15),
-                // add banner
                 SizedBox(
                   height: mediaQuery.height * 0.2 + 20,
                   child: PageView(
                     children: [
-                      AddBanner(
+                      BannerWidget(
                         image: 'assets/name.png',
                         onTap: () {},
                         text: 'Do you need a CV\nreview for your next job?',
                       ),
-                      AddBanner(
+                      BannerWidget(
                         image: 'assets/image3.png',
                         onTap: () {},
                         text: ' Need a mentor?\nWe are here for you!',
@@ -253,71 +177,6 @@ class Delute extends StatelessWidget {
                   },
                 ),
               ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class AddBanner extends StatelessWidget {
-  final String text;
-  final Function() onTap;
-  final String image;
-  const AddBanner({
-    Key? key,
-    required this.text,
-    required this.onTap,
-    required this.image,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final mediaQuery = MediaQuery.of(context).size;
-    return Container(
-      width: double.infinity,
-      height: mediaQuery.height * 0.2 + 20,
-      decoration: BoxDecoration(
-        color: const Color(0xFF0075FF),
-        borderRadius: BorderRadius.circular(5),
-      ),
-      child: Stack(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(25.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  text,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w100,
-                    fontSize: 14,
-                  ),
-                ),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFFFF9000),
-                    elevation: 0.0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                  ),
-                  onPressed: onTap,
-                  child: const Text('Learn More'),
-                ),
-              ],
-            ),
-          ),
-          Positioned(
-            right: 0.0,
-            bottom: 0.0,
-            child: Image.asset(
-              image,
-              fit: BoxFit.fill,
             ),
           ),
         ],

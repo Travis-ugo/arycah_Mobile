@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:mobile_hr/FireBase_Repo/Authenticate/auth.dart';
+import 'package:mobile_hr/FireBase_Service/Authenticate/fireBaseAuth.dart';
 import 'package:provider/provider.dart';
 
 // MaterButton as described in the UI design by the designer has a function
@@ -75,7 +75,7 @@ class GoogleButton extends StatelessWidget {
         ),
         onPressed: () {
           final provider =
-              Provider.of<GoogleSignInProvider>(context, listen: false);
+              Provider.of<FireBaseAuthentication>(context, listen: false);
           provider.googleLogin();
         },
         icon: ShaderMask(
