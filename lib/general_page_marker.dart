@@ -1,15 +1,15 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'mobile_hr/Job_Seeker/Authentication/logIn_page.dart';
-import 'mobile_hr/Job_Seeker/Authentication/sign_up.dart';
-import 'mobile_hr/Job_Seeker/Chat/chatpage.dart';
+import 'package:mobile_hr/Aricah/Job_Seeker/On_Boarding/on_boarding.dart';
+import 'Aricah/Job_Seeker/Authentication/logIn_page.dart';
+import 'Aricah/Job_Seeker/Authentication/sign_up.dart';
+import 'Aricah/Job_Seeker/Chat/chatpage.dart';
+import 'Aricah/Job_Seeker/Home/home.dart';
+import 'Aricah/Job_Seeker/Jobs/jobs.dart';
+import 'Aricah/Job_Seeker/User_Profile/profil.dart';
+import 'Aricah/Job_Seeker/Wish_List/wish_list.dart';
 import 'mobile_hr/Job_Seeker/Home/Drawer/Drawer_widget.dart';
-import 'mobile_hr/Job_Seeker/Home/home.dart';
-import 'mobile_hr/Job_Seeker/Jobs/jobs.dart';
-import 'mobile_hr/Job_Seeker/On_Boarding/on_boarding.dart';
-import 'mobile_hr/Job_Seeker/User_Profile/profil.dart';
-import 'mobile_hr/Job_Seeker/Wish_List/wish_list.dart';
 
 class Homie extends StatelessWidget {
   const Homie({Key? key}) : super(key: key);
