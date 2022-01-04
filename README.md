@@ -20,19 +20,17 @@
 ![](https://img.shields.io/badge/Editor-Visual_Studio_Code-informational?style=flat&logo=visual%20studio%20code&logoColor=cyan&color=0078D4)
 ![](https://img.shields.io/badge/Editor-Xcode-informational?style=flat&logo=Xcode&logoColor=cyan&color=0078D4)
 ![](https://img.shields.io/badge/Editor-Android_Studio-informational?style=flat&logo=android-studio&logoColor=cyan&color=3DDC84)
-![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=Green&color=2bbc8a)
 ![](https://img.shields.io/badge/Code-Dart-informational?style=flat&logo=Dart&logoColor=aqua&color=87ceeb)
-![](https://img.shields.io/badge/Code-Swift-informational?style=flat&logo=swift&logoColor=Orange&color=E5682D)
 ![](https://img.shields.io/badge/Framework-Flutter-informational?style=flat&logo=flutter&logoColor=cyan&color=00FFFF)
 ![](https://img.shields.io/badge/Tools-firebase-informational?style=flat&logo=firebase&logoColor=Yellow&color=ffca28)
-![](https://img.shields.io/badge/Tools-Amazon_AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=232F3E)
 
 ## &#x1f4c8; GitHub Stats
 
 ![Travis-ugo's GitHub stats](https://github-readme-stats.vercel.app/api?username=Travis-ugo&show_icons=true&theme=dark)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Travis-ugo&hide=python,Ruby,PowerShell&layout=compact&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Travis-ugo&hide=python,Ruby,PowerShell&layout=compact&theme=dark)](https://github.com/Travis-ugo/Mobile_HR)
 
 
+<!-- (https://github.com/anuraghazra/github-readme-stats) -->
 
 
 
