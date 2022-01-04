@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Settings/about.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Settings/setting.dart';
-import 'package:mobile_hr/FireBase_Service/Authenticate/fireBaseAuth.dart';
-import 'package:provider/provider.dart';
-import '../../MatchMaker/match_maker.dart';
-import 'drawer_items.dart';
+import '../../../library_imports.dart';
 
 class WidgetDrawer extends StatelessWidget {
   const WidgetDrawer({Key? key}) : super(key: key);
@@ -64,8 +57,12 @@ class WidgetDrawer extends StatelessWidget {
           icon: IconlyBold.ticket,
           text: 'Job Match',
           onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const MarchMaker()));
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const MarchMaker(),
+              ),
+            );
           },
         ),
         DrawerItmes(

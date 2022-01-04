@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'settings_widget.dart';
+import '../../library_imports.dart';
 
 class FAQ extends StatelessWidget {
   const FAQ({Key? key}) : super(key: key);

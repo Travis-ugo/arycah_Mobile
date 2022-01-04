@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Utils/company_data.dart';
-import 'package:mobile_hr/Aricah/Widgets/recommended.dart';
-import 'package:mobile_hr/Aricah/Widgets/search_filter.dart';
+import '../../library_imports.dart';
 
 class Jobs extends StatelessWidget {
   const Jobs({Key? key}) : super(key: key);

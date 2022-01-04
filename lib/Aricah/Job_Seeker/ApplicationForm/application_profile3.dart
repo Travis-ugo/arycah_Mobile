@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
+import 'package:mobile_hr/Aricah/Widgets/form_block.dart';
+import 'package:mobile_hr/Aricah/Widgets/form_container.dart';
 import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
 import 'application_profile2.dart';
 
@@ -21,7 +22,7 @@ class JobProfile3 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              NewContainer(
+              FormContainer(
                 text: 'Highest level of education?*',
                 child: FormBlock(
                   controller: _nameTextController,
@@ -35,7 +36,7 @@ class JobProfile3 extends StatelessWidget {
                   suffixIcon: const Icon(IconlyBold.password),
                 ),
               ),
-              NewContainer(
+              FormContainer(
                 text: 'How many years of work expirence do\nyou have?*',
                 child: FormBlock(
                   controller: _nameTextController,

@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Utils/company_data.dart';
+import '../../../library_imports.dart';
 
 class FeaturedJobsCard extends StatelessWidget {
   const FeaturedJobsCard({Key? key, required this.index}) : super(key: key);

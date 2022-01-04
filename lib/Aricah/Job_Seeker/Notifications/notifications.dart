@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
+import '../../library_imports.dart';
 
 class Notifications extends StatelessWidget {
   const Notifications({Key? key}) : super(key: key);
@@ -35,10 +34,12 @@ class Notifications extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
-            child: SizedBox(height: 172,width: 172,
-              child: Image.asset('assets/notification.png')),
+            child: SizedBox(
+                height: 172,
+                width: 172,
+                child: Image.asset('assets/notification.png')),
           ),
-        const Text('no notifications yet') 
+          const Text('no notifications yet')
         ],
       ),
     );

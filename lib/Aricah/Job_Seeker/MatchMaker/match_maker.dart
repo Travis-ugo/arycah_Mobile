@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:iconly/iconly.dart';
+import '../../library_imports.dart';
 
 class MarchMaker extends StatelessWidget {
   const MarchMaker({Key? key}) : super(key: key);
@@ -21,7 +19,7 @@ class MarchMaker extends StatelessWidget {
           'Discover',
         ),
         leading: const Icon(
-         IconlyBold.arrow_left,
+          IconlyBold.arrow_left,
           color: Colors.black,
           size: 18,
         ),
@@ -52,7 +50,10 @@ class MarchMaker extends StatelessWidget {
                             borderRadius: BorderRadius.circular(5),
                             color: Colors.white,
                           ),
-                          child: Image.asset('assets/plumville.png', fit: BoxFit.cover,),
+                          child: Image.asset(
+                            'assets/plumville.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                         RichText(
                           textAlign: TextAlign.center,
@@ -146,41 +147,4 @@ class MarchMaker extends StatelessWidget {
       ),
     );
   }
-}
-
-Widget iconButton({
-  required double size,
-  required BuildContext context,
-  required IconData icon,
-  required Color bodyColor,
-  required Color iconColor,
-  required void Function()? onTap,
-}) {
-  return Container(
-    height: size,
-    width: size,
-    decoration: BoxDecoration(
-      color: bodyColor,
-      borderRadius: BorderRadius.circular(40),
-      boxShadow: [
-        BoxShadow(
-          color: Colors.grey.shade300,
-          spreadRadius: 1,
-          blurRadius: 7,
-          offset: Offset.fromDirection(
-            1.5,
-            7,
-          ),
-        ),
-      ],
-    ),
-    child: IconButton(
-      onPressed: () {},
-      icon: Icon(
-        icon,
-        color: iconColor,
-        size: size / 1.7,
-      ),
-    ),
-  );
 }

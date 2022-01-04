@@ -1,13 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/JobApplicationForm/application_profile2.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
-import 'package:mobile_hr/FireBase_Service/Authenticate/fireBaseAuth.dart';
-import 'package:provider/provider.dart';
-import 'logIn_page.dart';
+import 'package:mobile_hr/Aricah/Widgets/gogle_button.dart';
+import '../../library_imports.dart';
 
 class AricahSignInPage extends StatefulWidget {
   final Function()? toggleView;
@@ -66,7 +59,7 @@ class _AricahSignInPageState extends State<AricahSignInPage> {
                   ),
                 ),
                 const SizedBox(height: 30),
-                NewContainer(
+                FormContainer(
                   text: 'Full Name',
                   child: FormBlock(
                     controller: _fullNameController,
@@ -79,7 +72,7 @@ class _AricahSignInPageState extends State<AricahSignInPage> {
                     },
                   ),
                 ),
-                NewContainer(
+                FormContainer(
                   text: 'Email Address',
                   child: FormBlock(
                     controller: _emailController,
@@ -92,7 +85,7 @@ class _AricahSignInPageState extends State<AricahSignInPage> {
                     },
                   ),
                 ),
-                NewContainer(
+                FormContainer(
                   text: 'Phone Number',
                   child: FormBlock(
                     controller: _phoneNumberController,
@@ -105,7 +98,7 @@ class _AricahSignInPageState extends State<AricahSignInPage> {
                     },
                   ),
                 ),
-                NewContainer(
+                FormContainer(
                   text: 'Password',
                   child: FormBlock(
                     controller: _passwordController,
@@ -127,7 +120,7 @@ class _AricahSignInPageState extends State<AricahSignInPage> {
                     ),
                   ),
                 ),
-                const NewContainer(
+                const FormContainer(
                   text: 'How Did You Hear About Us? (Optional)',
                   child: Text('Click Here To Select'),
                 ),
@@ -179,68 +172,6 @@ class _AricahSignInPageState extends State<AricahSignInPage> {
           ),
         ),
       ),
-    );
-  }
-}
-
-class RichTextWiget extends StatefulWidget {
-  final double? fontSize;
-  final String trailingText;
-  final String? blueText;
-  final Function()? onTap;
-  const RichTextWiget({
-    Key? key,
-    required this.trailingText,
-    this.blueText,
-    this.onTap,
-    this.fontSize,
-  }) : super(key: key);
-
-  @override
-  _RichTextWigetState createState() => _RichTextWigetState();
-}
-
-class _RichTextWigetState extends State<RichTextWiget> {
-  bool checkBox = false;
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Checkbox(
-          checkColor: Colors.white,
-          value: checkBox,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(5),
-          ),
-          onChanged: (bool? value) {
-            setState(() {
-              checkBox = !checkBox;
-            });
-          },
-        ),
-        RichText(
-          text: TextSpan(
-            text: widget.trailingText,
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: widget.fontSize ?? 12,
-              fontWeight: FontWeight.w400,
-            ),
-            children: <TextSpan>[
-              TextSpan(
-                text: widget.blueText,
-                style: const TextStyle(
-                  color: Colors.blueAccent,
-                  fontSize: 12,
-                  fontWeight: FontWeight.w400,
-                ),
-                recognizer: TapGestureRecognizer()..onTap = widget.onTap,
-              )
-            ],
-          ),
-        ),
-      ],
     );
   }
 }

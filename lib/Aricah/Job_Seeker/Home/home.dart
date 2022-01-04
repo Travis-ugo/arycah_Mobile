@@ -1,13 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Notifications/notifications.dart';
-import 'package:mobile_hr/Aricah/Utils/company_data.dart';
-import 'package:mobile_hr/Aricah/Widgets/featured_jobs_card.dart';
-import 'package:mobile_hr/Aricah/Widgets/recommended.dart';
-import 'package:mobile_hr/Aricah/Widgets/search_filter.dart';
-import 'Drawer/drawer_button.dart';
-import 'Widgets/banner_widget.dart';
+import '../../library_imports.dart';
 
 class HomePageWidget extends StatelessWidget {
   const HomePageWidget({Key? key}) : super(key: key);

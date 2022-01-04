@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
-import 'package:mobile_hr/Aricah/Widgets/v_block.dart';
+import 'package:mobile_hr/Aricah/Job_Seeker/Reset_Password/Widgets/v_block.dart';
 
 class RVerification extends StatelessWidget {
   const RVerification({Key? key}) : super(key: key);

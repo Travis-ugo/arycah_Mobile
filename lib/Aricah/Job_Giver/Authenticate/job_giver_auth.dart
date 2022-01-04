@@ -1,12 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Authentication/logIn_page.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/JobApplicationForm/application_profile2.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
-import '../../../general_page_marker.dart';
+
+import '../../library_imports.dart';
 
 class JobGiverSignIn extends StatelessWidget {
   const JobGiverSignIn({Key? key}) : super(key: key);
@@ -38,7 +32,7 @@ class JobGiverSignIn extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
-            NewContainer(
+            FormContainer(
               text: 'RC Number',
               child: FormBlock(
                 controller: _passwordController,
@@ -59,7 +53,7 @@ class JobGiverSignIn extends StatelessWidget {
                 ),
               ),
             ),
-            NewContainer(
+            FormContainer(
               text: 'Password',
               child: FormBlock(
                 controller: _confirmPasswordController,

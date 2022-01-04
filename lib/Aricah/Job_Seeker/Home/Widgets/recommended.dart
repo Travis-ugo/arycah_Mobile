@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Jobs/job_description.dart';
-import 'package:mobile_hr/Aricah/Utils/company_data.dart';
+import '../../../library_imports.dart';
 
 class Recommended extends StatelessWidget {
   const Recommended({Key? key, required this.index}) : super(key: key);

@@ -1,13 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:iconly/iconly.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Authentication/logIn_page.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/JobApplicationForm/application_profile2.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
-import '../../../general_page_marker.dart';
+import 'package:mobile_hr/Aricah/library_imports.dart';
 
 class PassWordSec extends StatefulWidget {
   const PassWordSec({Key? key}) : super(key: key);
@@ -40,7 +32,7 @@ class _PassWordSecState extends State<PassWordSec> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            NewContainer(
+            FormContainer(
               text: 'Password',
               child: FormBlock(
                 controller: _passwordController,
@@ -61,7 +53,7 @@ class _PassWordSecState extends State<PassWordSec> {
                 ),
               ),
             ),
-            NewContainer(
+            FormContainer(
               text: 'Confirm Password',
               child: FormBlock(
                 controller: _confirmPasswordController,

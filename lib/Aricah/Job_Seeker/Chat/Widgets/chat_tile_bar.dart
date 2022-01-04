@@ -1,75 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
 
-import 'chat.dart';
+import '../message_room.dart';
 
-class ChatPage extends StatelessWidget {
-  const ChatPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final controller = PageController();
-    return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 80,
-        elevation: 0.0,
-        backgroundColor: Colors.transparent,
-        automaticallyImplyLeading: false,
-        leading: IconButton(
-          icon: const Icon(
-            IconlyBold.arrow_left,
-            color: Colors.black,
-          ),
-          onPressed: () {
-            controller.animateToPage(
-              2,
-              duration: const Duration(milliseconds: 300),
-              curve: Curves.linear,
-            );
-          },
-        ),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                IconlyBold.edit,
-                color: Colors.black,
-              ))
-        ],
-        title: const Text(
-          'Message',
-          style: TextStyle(
-            fontWeight: FontWeight.w100,
-            fontSize: 16,
-            color: Colors.black,
-          ),
-        ),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          children: const [
-            SizedBox(
-              height: 20,
-            ),
-            TileBar(),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class TileBar extends StatelessWidget {
-  const TileBar({Key? key}) : super(key: key);
+class ChatTileBar extends StatelessWidget {
+  const ChatTileBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => const Chat()));
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const MessageRoom()));
       },
       child: Container(
         decoration: BoxDecoration(

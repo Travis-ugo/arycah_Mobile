@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
-import 'settings_widget.dart';
+import '../../library_imports.dart';
 
 class Password extends StatelessWidget {
   const Password({Key? key}) : super(key: key);
@@ -42,19 +38,19 @@ class Password extends StatelessWidget {
             children: [
               const Text('Enter your new password to continue'),
               const SizedBox(height: 20),
-              Cover(
+              BoxCover(
                 child: FormBlock(
                   controller: _nameTextController,
                   hintText: 'Old Password',
                 ),
               ),
-              Cover(
+              BoxCover(
                 child: FormBlock(
                   controller: _nameTextController,
                   hintText: 'New Password',
                 ),
               ),
-              Cover(
+              BoxCover(
                 child: FormBlock(
                   controller: _nameTextController,
                   hintText: 'Confirm Password',

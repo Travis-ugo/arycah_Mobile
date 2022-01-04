@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
+import 'package:mobile_hr/Aricah/Widgets/form_block.dart';
+import 'package:mobile_hr/Aricah/Widgets/form_container.dart';
 import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
 
 class JobProfile2 extends StatelessWidget {
@@ -20,7 +21,7 @@ class JobProfile2 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              NewContainer(
+              FormContainer(
                 text: 'Name*',
                 child: FormBlock(
                   controller: _nameTextController,
@@ -33,7 +34,7 @@ class JobProfile2 extends StatelessWidget {
                   },
                 ),
               ),
-              NewContainer(
+              FormContainer(
                 text: 'Phone number*',
                 child: FormBlock(
                   controller: _nameTextController,
@@ -46,7 +47,7 @@ class JobProfile2 extends StatelessWidget {
                   },
                 ),
               ),
-              NewContainer(
+              FormContainer(
                 text: 'Email*',
                 child: FormBlock(
                   controller: _nameTextController,
@@ -60,7 +61,7 @@ class JobProfile2 extends StatelessWidget {
                   suffixIcon: const Icon(IconlyBold.password),
                 ),
               ),
-              NewContainer(
+              FormContainer(
                 height: MediaQuery.of(context).size.height / 3.5,
                 text: 'Little info about you',
                 child: FormBlock(
@@ -86,43 +87,6 @@ class JobProfile2 extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class NewContainer extends StatelessWidget {
-  final Widget child;
-  final String text;
-  final double? height;
-  const NewContainer({
-    Key? key,
-    required this.child,
-    required this.text,
-    this.height,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 15),
-          child: Text(
-            text,
-            style: const TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-        ),
-        Container(
-          height: height ?? 55,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(5), color: Colors.grey[200]),
-          child: Center(child: child),
-        )
-      ],
     );
   }
 }

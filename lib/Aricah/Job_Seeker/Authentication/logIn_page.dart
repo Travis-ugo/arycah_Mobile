@@ -1,11 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Authentication/sign_up.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/JobApplicationForm/application_profile2.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
-import 'package:mobile_hr/FireBase_Service/Authenticate/fireBaseAuth.dart';
-import 'package:provider/provider.dart';
+import 'package:mobile_hr/Aricah/Widgets/gogle_button.dart';
+
+import '../../library_imports.dart';
 
 class AricahLogInPage extends StatelessWidget {
   final Function()? toggleView;
@@ -58,7 +53,7 @@ class AricahLogInPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                NewContainer(
+                FormContainer(
                   text: 'Email or Phone Number',
                   child: FormBlock(
                     controller: _emailController,
@@ -74,7 +69,7 @@ class AricahLogInPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                NewContainer(
+                FormContainer(
                   text: 'Password',
                   child: FormBlock(
                     controller: _passwordController,

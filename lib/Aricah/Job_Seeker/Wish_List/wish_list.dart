@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
+import '../../library_imports.dart';
 
 class WishList extends StatelessWidget {
   const WishList({Key? key}) : super(key: key);

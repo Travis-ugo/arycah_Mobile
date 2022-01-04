@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
+import '../../library_imports.dart';
 
 class ContactUs extends StatelessWidget {
   const ContactUs({Key? key}) : super(key: key);

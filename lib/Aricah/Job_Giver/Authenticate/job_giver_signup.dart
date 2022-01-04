@@ -1,10 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/JobApplicationForm/application_profile2.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
 
-import '../../../general_page_marker.dart';
+import '../../library_imports.dart';
 
 class SignUpState extends StatelessWidget {
   const SignUpState({Key? key}) : super(key: key);
@@ -32,7 +28,7 @@ class SignUpState extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                NewContainer(
+                FormContainer(
                   text: "Comapany’s Name",
                   child: FormBlock(
                     controller: _firstNameController,
@@ -49,7 +45,7 @@ class SignUpState extends StatelessWidget {
                     suffixIcon: null,
                   ),
                 ),
-                NewContainer(
+                FormContainer(
                   text: 'RC Number',
                   child: FormBlock(
                     controller: _lastNameController,
@@ -65,7 +61,7 @@ class SignUpState extends StatelessWidget {
                     ),
                   ),
                 ),
-                NewContainer(
+                FormContainer(
                   text: 'Emaiil Address',
                   child: FormBlock(
                     controller: _emailController,

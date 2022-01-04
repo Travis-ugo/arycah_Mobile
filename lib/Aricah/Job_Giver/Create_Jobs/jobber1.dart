@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/JobApplicationForm/application_profile2.dart';
-import 'package:mobile_hr/Aricah/Widgets/formfiel.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
+import '../../library_imports.dart';
 
 class Jobber1 extends StatelessWidget {
   final PageController controller;
@@ -21,7 +17,7 @@ class Jobber1 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              NewContainer(
+              FormContainer(
                 text: 'Postion*',
                 child: FormBlock(
                   controller: _nameTextController,
@@ -34,7 +30,7 @@ class Jobber1 extends StatelessWidget {
                   },
                 ),
               ),
-              NewContainer(
+              FormContainer(
                 text: 'Salary*',
                 child: FormBlock(
                   controller: _nameTextController,
@@ -47,7 +43,7 @@ class Jobber1 extends StatelessWidget {
                   },
                 ),
               ),
-              NewContainer(
+              FormContainer(
                 text: 'Location*',
                 child: FormBlock(
                   controller: _nameTextController,

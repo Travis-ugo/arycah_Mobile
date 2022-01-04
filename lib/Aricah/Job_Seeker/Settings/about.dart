@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'settings_widget.dart';
-import 'contact_us.dart';
-import 'faq.dart';
+import '../../library_imports.dart';
 
 class About extends StatelessWidget {
   const About({Key? key}) : super(key: key);
@@ -59,7 +55,7 @@ class About extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => FAQ(),
+                    builder: (context) => const FAQ(),
                   ),
                 );
               },

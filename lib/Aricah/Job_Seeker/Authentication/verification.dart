@@ -1,7 +1,4 @@
-import 'package:iconly/iconly.dart';
-import 'package:flutter/material.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
-import 'package:mobile_hr/Aricah/Widgets/v_block.dart';
+import '../../library_imports.dart';
 
 class Verification extends StatelessWidget {
   const Verification({Key? key}) : super(key: key);

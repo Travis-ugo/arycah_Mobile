@@ -1,10 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mobile_hr/Aricah/Job_Giver/Authenticate/job_giver_auth.dart';
-import 'package:mobile_hr/Aricah/Widgets/m_button.dart';
-import 'package:mobile_hr/Aricah/Widgets/onboard.dart';
-import '../../../general_page_marker.dart';
-
-// Mobile Hr onBoarding Pages
+import '../../library_imports.dart';
 
 class OnBoadding extends StatelessWidget {
   const OnBoadding({Key? key}) : super(key: key);
@@ -61,52 +55,6 @@ class OnBoadding extends StatelessWidget {
           ),
           const ChooseWidget(),
         ],
-      ),
-    );
-  }
-}
-
-class ChooseWidget extends StatelessWidget {
-  const ChooseWidget({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.blue,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 70, horizontal: 30),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            MButton(
-              text: "Sign Up as Jobseeker",
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const GeneralMarker(),
-                  ),
-                );
-              },
-              bordercolor: Colors.white,
-              textColor: Colors.blue,
-            ),
-            const SizedBox(height: 20),
-            MButton(
-              text: 'Sign Up as Jobgiver',
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const JobGiverSignIn(),
-                  ),
-                );
-              },
-              bordercolor: Colors.transparent,
-              textColor: Colors.white,
-            ),
-          ],
-        ),
       ),
     );
   }

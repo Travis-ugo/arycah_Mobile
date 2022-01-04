@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
+import '../library_imports.dart';
 
 class FormBlock extends StatelessWidget {
   const FormBlock({
     Key? key,
-     this.validator,
-     this.prefixIcons,
-     this.hintText,
+    this.validator,
+    this.prefixIcons,
+    this.hintText,
     required this.controller,
-     this.suffixIcon,
+    this.suffixIcon,
   }) : super(key: key);
   final String Function(String?)? validator;
   final Widget? prefixIcons;

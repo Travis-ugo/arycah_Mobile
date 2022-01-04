@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import '../../../library_imports.dart';
 
 class InfoButton extends StatelessWidget {
   const InfoButton({Key? key, required this.title, required this.subTitle})
@@ -17,7 +17,6 @@ class InfoButton extends StatelessWidget {
           color: Colors.grey.shade50,
           borderRadius: BorderRadius.circular(5),
           border: Border.all(color: Colors.grey.shade300),
-        
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

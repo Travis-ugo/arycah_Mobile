@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import '../../../library_imports.dart';
 
 class Divider extends StatelessWidget {
   const Divider({Key? key}) : super(key: key);

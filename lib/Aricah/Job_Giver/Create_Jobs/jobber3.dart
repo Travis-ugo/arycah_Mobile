@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
-
-import '../../../general_page_marker.dart';
+import '../../library_imports.dart';
 
 class Jobber3 extends StatelessWidget {
   const Jobber3({Key? key}) : super(key: key);

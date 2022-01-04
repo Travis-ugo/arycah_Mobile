@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Authentication/sign_up.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Search/search_widgets.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
+import '../../library_imports.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);

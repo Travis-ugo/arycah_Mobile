@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/On_Boarding/on_boarding.dart';
-import 'master_button.dart';
+import 'package:mobile_hr/Aricah/Job_Seeker/On_Boarding/Widgets/skip_button.dart';
+import '../../../Widgets/master_button.dart';
 
 // Represent an onboarding page widget
 // to be easily resused when nessesary.
@@ -68,20 +68,3 @@ class Pages extends StatelessWidget {
     );
   }
 }
-
-// Skip Button located at the top of the page
-// function to jump to finish page.
-Widget skipButton(BuildContext context) => TextButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const ChooseWidget(),
-          ),
-        );
-      },
-      child: const Text(
-        "Skip",
-        style: TextStyle(fontSize: 14, color: Colors.black),
-      ),
-    );

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import '../../../library_imports.dart';
 
 class ProfileCard extends StatelessWidget {
   const ProfileCard({Key? key, required this.title, required this.subTitle})

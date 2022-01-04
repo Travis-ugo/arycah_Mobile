@@ -1,10 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:page_view_indicators/page_view_indicators.dart';
-
-import 'jobber1.dart';
-import 'jobber2.dart';
-import 'jobber3.dart';
+import '../../library_imports.dart';
 
 class JobPageWrap extends StatefulWidget {
   const JobPageWrap({Key? key}) : super(key: key);

@@ -1,9 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/User_Profile/profile_data.dart';
-
-import 'profile_widget.dart';
+import '../../library_imports.dart';
 
 class UserProfile extends StatelessWidget {
   const UserProfile({Key? key}) : super(key: key);
