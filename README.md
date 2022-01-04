@@ -30,7 +30,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Travis-ugo&hide=python,Ruby,PowerShell&layout=compact&theme=dark)](https://github.com/Travis-ugo/Mobile_HR)
 
 
-<!-- (https://github.com/anuraghazra/github-readme-stats) -->
+(https://github.com/anuraghazra/github-readme-stats)
 
 
 
