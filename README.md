@@ -5,10 +5,12 @@
 
 # Hello, there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 ## Welcome to The Aricah Cross Platform Mobile Applicaition
-- The Arica Cross platform Mobile Application which will soon be hosted on google play store and apple app store is built with for the purpose of simplifying job search and recruitment within local areas, and international. 
+- The Arica Cross platform Mobile Application which will soon be hosted on google play store and apple app store is built for the purpose of simplifying job search and recruitment process locally and international areas. 
 - the Application is built with various technologies including Googles Flutter, Dart lang, Googles Firebase as it main back end support in the applications beta mood, changes will be made and proper documentations will be made as the the release of the mobile applicarion with a proper API written in PHP lang and Laravel Framework.
-- I'm Travis Okonicha and i'm a Mobile Application Developer and a User Interface designer.
-- i design and build mobile and desktop user friendy applications with love.
+- Simplified code base with the use of flutter native stateless and stateful widget. however code is still under refactor.
+- Built with fultter 2.8, however flutter 2.5 or lower will not be run this program, if so, use "pub upgrade" to get the latest version of flutter.
+- For proper code documentation, check out the readme file in the "LIB" folder.
+
 
 <!-- (https://medium.com/@martin.heinz) and [DEV.to](https://dev.to/martinheinz). -->
 
@@ -36,23 +38,4 @@
 
 
 
-<!-- links to social media icons          -->
-
-<!-- icons with padding -->
-
-[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
-[2.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
-
-<!-- icons without padding -->
-
-[1.2]: http://i.imgur.com/wWzX9uB.png (dribbble icon without padding)
-[2.2]: http://i.imgur.com/9I6NRUm.png (github icon without padding)
-[3.2]: https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/linkedin-3-16.png (LinkedIn icon without padding)
-
-
-<!-- links to your social media accounts -->
-
-[1]: https://twitter.com/
-[2]: https://github.com/Travis-ugo
-[3]: https://www.linkedin.com/in/travis-okonicha-66a15b1b8/
 
