@@ -4,6 +4,9 @@
 [![Header](https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/readme_header.png "Header")](https://trvis-ugo.web.app/) -->
 
 # Hello, there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
+## Welcome to The Aricah Cross Platform Mobile Applicaition
+- The Arica Cross platform Mobile Application which will soon be hosted on google play store and apple app store is built with for the purpose of simplifying job search and recruitment within local areas, and international. 
+- the Application is built with various technologies including Googles Flutter, Dart lang, Googles Firebase as it main back end support in the applications beta mood, changes will be made and proper documentations will be made as the the release of the mobile applicarion with a proper API written in PHP lang and Laravel Framework.
 - I'm Travis Okonicha and i'm a Mobile Application Developer and a User Interface designer.
 - i design and build mobile and desktop user friendy applications with love.
 
