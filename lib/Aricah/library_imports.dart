@@ -40,7 +40,7 @@ export 'package:mobile_hr/Aricah/Job_Seeker/Settings/setting.dart';
 export 'package:mobile_hr/FireBase_Service/Authenticate/fireBaseAuth.dart';
 export 'package:provider/provider.dart';
 export 'package:mobile_hr/Aricah/Job_Seeker/Jobs/job_description.dart';
-export 'package:mobile_hr/Aricah/Job_Seeker/Jobs/Widgets/info_button.dart';
+export 'package:mobile_hr/Aricah/Job_Seeker/Jobs/Widgets/information_box.dart';
 export 'package:mobile_hr/Aricah/Job_Seeker/Jobs/Widgets/apply_button.dart';
 export 'package:mobile_hr/Aricah/Job_Seeker/Jobs/Widgets/comment_button.dart';
 export 'package:mobile_hr/Aricah/Job_Seeker/Jobs/Widgets/descriptive.dart';

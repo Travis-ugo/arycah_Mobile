@@ -72,11 +72,11 @@ class Requirement extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  InfoButton(
+                  InformationBox(
                     title: 'Experience',
                     subTitle: 'Minimum 2 years',
                   ),
-                  InfoButton(
+                  InformationBox(
                     title: 'Work level',
                     subTitle: 'Junior level',
                   ),
@@ -86,11 +86,11 @@ class Requirement extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  InfoButton(
+                  InformationBox(
                     title: 'Employment type',
                     subTitle: 'Full time job',
                   ),
-                  InfoButton(
+                  InformationBox(
                     title: 'Offer salary',
                     subTitle: r'$250/Month',
                   ),

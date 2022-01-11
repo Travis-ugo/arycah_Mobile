@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
             blurRadius: 0.0,
           ),
         ],
-        borderRadius: const BorderRadius.all(Radius.circular(16)),
+        borderRadius: BorderRadius.all(Radius.circular(16)),
       ),
       child: Scaffold(
         body: Container(
@@ -129,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
               valueListenable: _advancedDrawerController,
               builder: (_, value, __) {
                 return AnimatedSwitcher(
-                  duration: Duration(milliseconds: 250),
+                  duration: const Duration(milliseconds: 250),
                   child: Icon(
                     value.visible ? Icons.clear : Icons.menu,
                     key: ValueKey<bool>(value.visible),

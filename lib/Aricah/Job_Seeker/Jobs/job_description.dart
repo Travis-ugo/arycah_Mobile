@@ -5,7 +5,6 @@ class JobDescription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ScrollController _featuredJobs = ScrollController();
     return Scaffold(
       bottomNavigationBar: SizedBox(
         height: 80,
@@ -15,6 +14,7 @@ class JobDescription extends StatelessWidget {
         ),
       ),
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         toolbarHeight: 80,
         centerTitle: false,
         elevation: 0.0,

@@ -1,7 +1,7 @@
 import '../../../library_imports.dart';
 
-class InfoButton extends StatelessWidget {
-  const InfoButton({Key? key, required this.title, required this.subTitle})
+class InformationBox extends StatelessWidget {
+  const InformationBox({Key? key, required this.title, required this.subTitle})
       : super(key: key);
   final String title;
   final String subTitle;
@@ -12,7 +12,7 @@ class InfoButton extends StatelessWidget {
       padding: const EdgeInsets.all(5.0),
       child: Container(
         height: 65,
-        width: 165,
+        width: MediaQuery.of(context).size.width / 3.5,
         decoration: BoxDecoration(
           color: Colors.grey.shade50,
           borderRadius: BorderRadius.circular(5),
