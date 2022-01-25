@@ -5,27 +5,14 @@ class WidgetDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      elevation: 0.0,
+    return Container(
+      color: Colors.grey[50],
+      height: double.infinity,
+      width: double.infinity,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            height: 200,
-            width: 310,
-            color: Colors.blue,
-            child: const Center(
-              child: Text(
-                'Logo',
-                style: TextStyle(
-                  fontSize: 46,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ),
-          ),
           const SizedBox(height: 30),
           drawer(context),
           const Expanded(

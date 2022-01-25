@@ -1,5 +1,7 @@
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:mobile_hr/Aricah/Job_Seeker/Home/home.dart';
 import '../../../library_imports.dart';
+import 'drawer_widget.dart';
 
 class Example extends HookWidget {
   const Example({Key? key}) : super(key: key);
@@ -53,9 +55,6 @@ class Example extends HookWidget {
           : animationController.reverse();
     }
 
-    var myDawer = Container(
-      color: Colors.orangeAccent,
-    );
     return Scaffold(
       body: GestureDetector(
         onHorizontalDragStart: _onDragStart,
@@ -69,7 +68,7 @@ class Example extends HookWidget {
             double scale = 1 - (animationController.value * 0.3);
             return Stack(
               children: [
-                myDawer,
+                const WidgetDrawer(),
                 Transform(
                   transform: Matrix4.identity()
                     ..translate(slide)
@@ -94,6 +93,7 @@ class Example extends HookWidget {
                         50 * animationController.value,
                       ),
                     ),
+                    child: const HomePageWidget(),
                   ),
                 ),
               ],
