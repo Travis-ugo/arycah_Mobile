@@ -101,24 +101,27 @@ class _AricahSignInPageState extends State<AricahSignInPage> {
                 FormContainer(
                   text: 'Password',
                   child: FormBlock(
-                    controller: _passwordController,
-                    hintText: 'Password',
-                    validator: (values) {
-                      if (values!.length < 4) {
-                        return ' password too short';
-                      }
-                      if (values.isEmpty) {
-                        return 'Enter a valid password to continue';
-                      }
-                      return 'null';
-                    },
-                    prefixIcons: const Icon(CupertinoIcons.lock, size: 15),
-                    suffixIcon: IconButton(
-                      icon: const Icon(CupertinoIcons.eye_slash),
-                      onPressed: () {},
-                      iconSize: 15,
-                    ),
-                  ),
+                      controller: _passwordController,
+                      hintText: 'Password',
+                      validator: (values) {
+                        if (values!.length < 4) {
+                          return ' password too short';
+                        }
+                        if (values.isEmpty) {
+                          return 'Enter a valid password to continue';
+                        }
+                        return 'null';
+                      },
+                      prefixIcons: const Icon(CupertinoIcons.lock, size: 15),
+                      suffixIcon: GestureDetector(
+                        child: const Icon(
+                          CupertinoIcons.eye_slash,
+                          size: 15,
+                        ),
+                        onTap: () => setState(
+                          () {},
+                        ),
+                      )),
                 ),
                 const FormContainer(
                   text: 'How Did You Hear About Us? (Optional)',
