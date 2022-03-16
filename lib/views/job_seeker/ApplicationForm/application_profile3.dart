@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Widgets/form_block.dart';
-import 'package:mobile_hr/Aricah/Widgets/form_container.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
+import 'package:mobile_hr/views/Widgets/form_block.dart';
+import 'package:mobile_hr/views/Widgets/form_container.dart';
+import 'package:mobile_hr/views/Widgets/master_button.dart';
 import 'application_profile2.dart';
 
 class JobProfile3 extends StatelessWidget {

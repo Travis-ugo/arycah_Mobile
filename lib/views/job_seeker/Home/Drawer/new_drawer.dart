@@ -1,5 +1,5 @@
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/Home/home.dart';
+import 'package:mobile_hr/views/Job_Seeker/Home/home.dart';
 import '../../../library_imports.dart';
 import 'drawer_widget.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
+import 'package:mobile_hr/views/Widgets/master_button.dart';
 
 class JobProfile1 extends StatelessWidget {
   final PageController controller;

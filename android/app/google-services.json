@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "912904874345",
+    "project_id": "aricah-509db",
+    "storage_bucket": "aricah-509db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912904874345:android:96eb7040141e0c37a575f8",
+        "android_client_info": {
+          "package_name": "com.example.mobile_hr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912904874345-sj8ag7et3m06sum15aejvh0470ad8omq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobile_hr",
+            "certificate_hash": "abd8a9eef229c88105e22c5de8c221221dc372e1"
+          }
+        },
+        {
+          "client_id": "912904874345-s0mgfe41f3mdk0j36pul1u3ra6t64lue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJv38dRfbANGlEmNvTQXlBWKdzSNiBsfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912904874345-s0mgfe41f3mdk0j36pul1u3ra6t64lue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

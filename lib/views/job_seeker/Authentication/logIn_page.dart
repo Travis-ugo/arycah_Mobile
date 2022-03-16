@@ -1,10 +1,11 @@
-import 'package:mobile_hr/Aricah/Widgets/gogle_button.dart';
+import 'package:mobile_hr/service/authenticate/fireBaseAuth.dart';
+import 'package:mobile_hr/views/Widgets/gogle_button.dart';
 
 import '../../library_imports.dart';
 
-class AricahLogInPage extends StatelessWidget {
+class viewsLogInPage extends StatelessWidget {
   final Function()? toggleView;
-  const AricahLogInPage({
+  const viewsLogInPage({
     Key? key,
     this.toggleView,
   }) : super(key: key);
@@ -125,7 +126,7 @@ class AricahLogInPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const AricahSignInPage(),
+                          builder: (context) => const viewsSignInPage(),
                         ),
                       );
                     },

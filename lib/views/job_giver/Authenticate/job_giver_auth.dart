@@ -137,7 +137,7 @@ class JobGiverSignIn extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const AricahLogInPage(),
+                              builder: (context) => const viewsLogInPage(),
                             ),
                           );
                         },

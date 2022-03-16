@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_hr/Aricah/Widgets/master_button.dart';
+import 'package:mobile_hr/views/Widgets/master_button.dart';
 import '../../../general_page_marker.dart';
 
 class JobProfile4 extends StatelessWidget {

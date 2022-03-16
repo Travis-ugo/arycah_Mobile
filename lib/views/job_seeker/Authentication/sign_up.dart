@@ -1,19 +1,20 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_hr/Aricah/Widgets/gogle_button.dart';
+import 'package:mobile_hr/service/authenticate/fireBaseAuth.dart';
+import 'package:mobile_hr/views/Widgets/gogle_button.dart';
 import '../../library_imports.dart';
 
-class AricahSignInPage extends StatefulWidget {
+class viewsSignInPage extends StatefulWidget {
   final Function()? toggleView;
-  const AricahSignInPage({
+  const viewsSignInPage({
     Key? key,
     this.toggleView,
   }) : super(key: key);
 
   @override
-  State<AricahSignInPage> createState() => _AricahSignInPageState();
+  State<viewsSignInPage> createState() => _viewsSignInPageState();
 }
 
-class _AricahSignInPageState extends State<AricahSignInPage> {
+class _viewsSignInPageState extends State<viewsSignInPage> {
   @override
   Widget build(BuildContext context) {
     final _formKey = GlobalKey<FormState>(debugLabel: '_EmailFormState');
@@ -157,7 +158,7 @@ class _AricahSignInPageState extends State<AricahSignInPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const AricahLogInPage(),
+                        builder: (context) => const viewsLogInPage(),
                       ),
                     );
                   },

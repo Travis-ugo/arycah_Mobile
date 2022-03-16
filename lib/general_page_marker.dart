@@ -1,22 +1,22 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/On_Boarding/on_boarding.dart';
-import 'Aricah/Job_Seeker/Authentication/logIn_page.dart';
-import 'Aricah/Job_Seeker/Authentication/sign_up.dart';
-import 'Aricah/Job_Seeker/Chat/message_tile.dart';
-import 'Aricah/Job_Seeker/Home/Drawer/drawer_widget.dart';
-import 'Aricah/Job_Seeker/Home/home.dart';
-import 'Aricah/Job_Seeker/Jobs/jobs.dart';
-import 'Aricah/Job_Seeker/User_Profile/profil.dart';
-import 'Aricah/Job_Seeker/Wish_List/wish_list.dart';
+import 'package:mobile_hr/views/Job_Seeker/On_Boarding/on_boarding.dart';
+import 'views/Job_Seeker/Authentication/logIn_page.dart';
+import 'views/Job_Seeker/Authentication/sign_up.dart';
+import 'views/Job_Seeker/Chat/message_tile.dart';
+import 'views/Job_Seeker/Home/Drawer/drawer_widget.dart';
+import 'views/Job_Seeker/Home/home.dart';
+import 'views/Job_Seeker/Jobs/jobs.dart';
+import 'views/Job_Seeker/User_Profile/profil.dart';
+import 'views/Job_Seeker/Wish_List/wish_list.dart';
 
 class Homie extends StatelessWidget {
   const Homie({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder(
+    return StreamBuilder<User?>(
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
@@ -37,14 +37,14 @@ class Homie extends StatelessWidget {
   }
 }
 
-class AuthenicationScreen extends StatefulWidget {
-  const AuthenicationScreen({Key? key}) : super(key: key);
+class AuthScreen extends StatefulWidget {
+  const AuthScreen({Key? key}) : super(key: key);
 
   @override
-  _AuthenicationScreenState createState() => _AuthenicationScreenState();
+  _AuthScreenState createState() => _AuthScreenState();
 }
 
-class _AuthenicationScreenState extends State<AuthenicationScreen> {
+class _AuthScreenState extends State<AuthScreen> {
   bool showSignIn = true;
   void toggleView() {
     setState(() => showSignIn = !showSignIn);
@@ -53,9 +53,9 @@ class _AuthenicationScreenState extends State<AuthenicationScreen> {
   @override
   Widget build(BuildContext context) {
     if (showSignIn) {
-      return AricahLogInPage(toggleView: toggleView);
+      return viewsLogInPage(toggleView: toggleView);
     } else {
-      return AricahSignInPage(
+      return viewsSignInPage(
         toggleView: toggleView,
       );
     }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_hr/Aricah/Job_Seeker/On_Boarding/Widgets/skip_button.dart';
+import 'package:mobile_hr/views/Job_Seeker/On_Boarding/Widgets/skip_button.dart';
 import '../../../Widgets/master_button.dart';
 
 // Represent an onboarding page widget
