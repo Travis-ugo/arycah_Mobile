@@ -1,0 +1,3 @@
+class AhColors {
+  // static const
+}
