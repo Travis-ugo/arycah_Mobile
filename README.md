@@ -27,11 +27,11 @@
 <img src = "https://user-images.githubusercontent.com/68594765/159682975-b3aed05b-77b1-42f5-80b6-891f2fa45824.jpg" width = "490px"> ..
 <img src = "https://user-images.githubusercontent.com/68594765/159684434-2bb5fbab-857c-4d03-a766-825aa1b339e8.jpg" width = "490px">
 
-<img src = "https://user-images.githubusercontent.com/68594765/159685682-2b90c618-d0da-4f3d-87db-532c112956e6.jpg" width = "150px">.
-<img src = "https://user-images.githubusercontent.com/68594765/159685699-f7eb2e0c-4793-40ff-96e6-c94d5a2f8298.jpg" width = "150px">.
-<img src = "https://user-images.githubusercontent.com/68594765/159685711-fd8ca624-cf4d-40c6-b867-0dc0f7782ef9.jpg" width = "150px">.
-<img src = "https://user-images.githubusercontent.com/68594765/159685706-693092d8-22fc-4a81-a203-e34dba2dbe59.jpg" width = "150px">.
-<img src = "https://user-images.githubusercontent.com/68594765/159685717-87dd28dd-bc14-42f1-a2e0-de09c4bca7ea.jpg" width = "150px">.
+<img src = "https://user-images.githubusercontent.com/68594765/159685682-2b90c618-d0da-4f3d-87db-532c112956e6.jpg" width = "160px">.
+<img src = "https://user-images.githubusercontent.com/68594765/159685699-f7eb2e0c-4793-40ff-96e6-c94d5a2f8298.jpg" width = "160px">.
+<img src = "https://user-images.githubusercontent.com/68594765/159685711-fd8ca624-cf4d-40c6-b867-0dc0f7782ef9.jpg" width = "160px">.
+<img src = "https://user-images.githubusercontent.com/68594765/159685706-693092d8-22fc-4a81-a203-e34dba2dbe59.jpg" width = "160px">.
+<img src = "https://user-images.githubusercontent.com/68594765/159685717-87dd28dd-bc14-42f1-a2e0-de09c4bca7ea.jpg" width = "160px">.
 
 
 
