@@ -24,10 +24,10 @@
 <!-- ![Travis-ugo's GitHub stats](https://github-readme-stats.vercel.app/api?username=Travis-ugo&show_icons=true&theme=dark)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Travis-ugo&hide=python,Ruby,PowerShell&layout=compact&theme=dark)](https://github.com/Travis-ugo/Mobile_HR) -->
 
-![aricah](https://user-images.githubusercontent.com/68594765/159682582-5b1c4b72-9b7c-4206-a5fe-93aa211bb78b.jpg)
-
-
+![aricah](https://user-images.githubusercontent.com/68594765/159682582-5b1c4b72-9b7c-4206-a5fe-93aa211bb78b.jpg), 
 ![IMG-20210924-WA0045](https://user-images.githubusercontent.com/68594765/159682975-b3aed05b-77b1-42f5-80b6-891f2fa45824.jpg)
+<img src = "https://user-images.githubusercontent.com/68594765/159682975-b3aed05b-77b1-42f5-80b6-891f2fa45824.jpg" width = "30px">
+
 
 
 
