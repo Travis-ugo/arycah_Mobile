@@ -25,7 +25,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Travis-ugo&hide=python,Ruby,PowerShell&layout=compact&theme=dark)](https://github.com/Travis-ugo/Mobile_HR) -->
 
 <img src = "https://user-images.githubusercontent.com/68594765/159682975-b3aed05b-77b1-42f5-80b6-891f2fa45824.jpg" width = "650px">
-<imag src = "https://user-images.githubusercontent.com/68594765/159684434-2bb5fbab-857c-4d03-a766-825aa1b339e8.jpg" width = "650px">
+<img src = "https://user-images.githubusercontent.com/68594765/159684434-2bb5fbab-857c-4d03-a766-825aa1b339e8.jpg" width = "650px">
 
 
 
