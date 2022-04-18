@@ -12,7 +12,7 @@ various packages
 
 ## 🔧 Technologies & Tools
 <!-- Laravel -->
-![](https://img.shields.io/badge/OS-macOS-informational?style=flat&logo=apple&logoColor=Grey&color=808080)\n
+![](https://img.shields.io/badge/OS-macOS-informational?style=flat&logo=apple&logoColor=Grey&color=808080)
 ![](https://img.shields.io/badge/Editor-IntelliJIDEA-informational?style=flat&logo=intellij-idea&logoColor=cyan&color=000000)
 ![](https://img.shields.io/badge/Editor-Visual_Studio_Code-informational?style=flat&logo=visual%20studio%20code&logoColor=cyan&color=0078D4)
 ![](https://img.shields.io/badge/Editor-Xcode-informational?style=flat&logo=Xcode&logoColor=cyan&color=0078D4)
@@ -23,6 +23,8 @@ various packages
 
 
 # Packages
+<a href="large.php">See all Red Products available in Large!</a>
+
 
 <!-- - The Aricah Cross platform Mobile Application which will soon be hosted on google play store and apple app store is built for the purpose of simplifying job search and recruitment process locally and international areas. 
 - the Application is built with various technologies including Googles Flutter, Dart lang, Googles Firebase as it main back end support in the applications beta mood, changes will be made and proper documentations will be made as the the release of the mobile applicarion with a proper API written in PHP lang and Laravel Framework.
