@@ -4,13 +4,6 @@
 ## Welcome to The Arycah Cross Platform Mobile Applicaition
 <img src = "https://user-images.githubusercontent.com/68594765/163808937-26b089ec-59f9-4e2a-8983-fbe157649c2c.png" width = "1000px"> 
 
-- The Aricah Cross platform Mobile Application which will soon be hosted on google play store and apple app store is built for the purpose of simplifying job search and recruitment process locally and international areas. 
-- the Application is built with various technologies including Googles Flutter, Dart lang, Googles Firebase as it main back end support in the applications beta mood, changes will be made and proper documentations will be made as the the release of the mobile applicarion with a proper API written in PHP lang and Laravel Framework.
-- Simplified code base with the use of flutter native stateless and stateful widget. however code is still under refactor.
-- Built with fultter 2.8, however flutter 2.5 or lower will not run this code. use "pub upgrade" to get the latest version of flutter.
-- For proper code documentation, check out the readme file in the "LIB" folder.
-
-
 ## 🔧 Technologies & Tools
 ![](https://img.shields.io/badge/OS-macOS-informational?style=flat&logo=apple&logoColor=Grey&color=808080)
 ![](https://img.shields.io/badge/Editor-IntelliJIDEA-informational?style=flat&logo=intellij-idea&logoColor=cyan&color=000000)
@@ -20,6 +13,15 @@
 ![](https://img.shields.io/badge/Code-Dart-informational?style=flat&logo=Dart&logoColor=aqua&color=87ceeb)
 ![](https://img.shields.io/badge/Framework-Flutter-informational?style=flat&logo=flutter&logoColor=cyan&color=00FFFF)
 ![](https://img.shields.io/badge/Tools-firebase-informational?style=flat&logo=firebase&logoColor=Yellow&color=ffca28)
+
+
+
+- The Aricah Cross platform Mobile Application which will soon be hosted on google play store and apple app store is built for the purpose of simplifying job search and recruitment process locally and international areas. 
+- the Application is built with various technologies including Googles Flutter, Dart lang, Googles Firebase as it main back end support in the applications beta mood, changes will be made and proper documentations will be made as the the release of the mobile applicarion with a proper API written in PHP lang and Laravel Framework.
+- Simplified code base with the use of flutter native stateless and stateful widget. however code is still under refactor.
+- Built with fultter 2.8, however flutter 2.5 or lower will not run this code. use "pub upgrade" to get the latest version of flutter.
+- For proper code documentation, check out the readme file in the "LIB" folder.
+
 
 <!-- ## &#x1f4c8; GitHub Stats -->
 
