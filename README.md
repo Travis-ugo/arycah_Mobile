@@ -15,13 +15,15 @@
 ![](https://img.shields.io/badge/Tools-firebase-informational?style=flat&logo=firebase&logoColor=Yellow&color=ffca28)
 
 
+Arycah cross platform application is built with googes flutter framwork for developing cross platform mobile application, with a third party API, the Arcycah mobile application t=fectes data from the backend REST API written in PHP lang and Laravel Framework.
+various packages 
 
-- The Aricah Cross platform Mobile Application which will soon be hosted on google play store and apple app store is built for the purpose of simplifying job search and recruitment process locally and international areas. 
+<!-- - The Aricah Cross platform Mobile Application which will soon be hosted on google play store and apple app store is built for the purpose of simplifying job search and recruitment process locally and international areas. 
 - the Application is built with various technologies including Googles Flutter, Dart lang, Googles Firebase as it main back end support in the applications beta mood, changes will be made and proper documentations will be made as the the release of the mobile applicarion with a proper API written in PHP lang and Laravel Framework.
 - Simplified code base with the use of flutter native stateless and stateful widget. however code is still under refactor.
 - Built with fultter 2.8, however flutter 2.5 or lower will not run this code. use "pub upgrade" to get the latest version of flutter.
 - For proper code documentation, check out the readme file in the "LIB" folder.
-
+ -->
 
 <!-- ## &#x1f4c8; GitHub Stats -->
 
