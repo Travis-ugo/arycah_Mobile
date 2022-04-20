@@ -37,9 +37,9 @@ various packages
 
 <!-- ![Travis-ugo's GitHub stats](https://github-readme-stats.vercel.app/api?username=Travis-ugo&show_icons=true&theme=dark)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Travis-ugo&hide=python,Ruby,PowerShell&layout=compact&theme=dark)](https://github.com/Travis-ugo/Mobile_HR) -->
-
+<!-- 
 <img src = "https://user-images.githubusercontent.com/68594765/159682975-b3aed05b-77b1-42f5-80b6-891f2fa45824.jpg" width = "485px"> ..
-<img src = "https://user-images.githubusercontent.com/68594765/159684434-2bb5fbab-857c-4d03-a766-825aa1b339e8.jpg" width = "485px">
+<img src = "https://user-images.githubusercontent.com/68594765/159684434-2bb5fbab-857c-4d03-a766-825aa1b339e8.jpg" width = "485px"> -->
 
 <img src = "https://user-images.githubusercontent.com/68594765/159685682-2b90c618-d0da-4f3d-87db-532c112956e6.jpg" width = "190px">.
 <img src = "https://user-images.githubusercontent.com/68594765/159685699-f7eb2e0c-4793-40ff-96e6-c94d5a2f8298.jpg" width = "190px">.
