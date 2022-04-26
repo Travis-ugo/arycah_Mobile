@@ -38,16 +38,16 @@ This project relies on flutter_localizations and follows the official internatio
 
 #### Adding Strings
 To add a new localizable string, open the app_en.arb file at lib/l10n/arb/app_en.arb.
-{
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
-}
-#### Then add a new key/value and description
 
-    ... 
+		{
+		    "@@locale": "en",
+		    "counterAppBarTitle": "Counter",
+		    "@counterAppBarTitle": {
+			"description": "Text shown in the AppBar of the Counter Page"
+		    }
+		}
+		
+#### Then add a new key/value and description
  		
 	{ 	
 	   "@locale": "en",
@@ -60,9 +60,9 @@ To add a new localizable string, open the app_en.arb file at lib/l10n/arb/app_en
 	   "description": "Hello World Text"
 	         },
 	}
-    ...
+ 
 #### Use the new string
-	... 
+	
 		import 'package:worddle/l10n/l10n.dart';
 
 		@override
@@ -70,11 +70,11 @@ To add a new localizable string, open the app_en.arb file at lib/l10n/arb/app_en
 		  final l10n = context.l10n;
 		  return Text(l10n.helloWorld);
 		}
-	...
+	
 #### Adding Supported Locales
 Update the CFBundleLocalizations array in the Info.plist at ios/Runner/Info.plist to include the new locale.
 
-    ...
+   
 
     <key>CFBundleLocalizations</key>
 	<array>
@@ -82,7 +82,7 @@ Update the CFBundleLocalizations array in the Info.plist at ios/Runner/Info.plis
 		<string>es</string>
 	</array>
 
-    ...
+    
 #### Adding Translations
 	For each supported locale, add a new ARB file in lib/l10n/arb.
 	├── l10n
