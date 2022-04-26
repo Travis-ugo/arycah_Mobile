@@ -31,7 +31,7 @@ various packages
 used to fecth api endpoint.
 
 	run "flutter pub add http"
-
+#### import
 	import 'package:http/http.dart' as http;
 
 	var url = Uri.parse('https://example.com/whatsit/create');
@@ -85,7 +85,7 @@ visit <a href="https://firebase.flutter.dev/docs/firestore/usage">firebase.flutt
 
 ## Install & use dependencies <a href="https://pub.dev/packages/firebase_storage">firebase_storage:</a>🔥📦
 	run "flutter pub add cloud_firestore"
-
+#### import
 	import 'package:cloud_firestore/cloud_firestore.dart';
 
 To create a new Firestore instance, call the instance getter on FirebaseFirestore:
@@ -110,7 +110,7 @@ To create a new Firestore instance, call the instance getter on FirebaseFirestor
 	</array>
 	<!-- End of the Google Sign-in Section -->
 	
-import
+#### import
 
 	import 'package:google_sign_in/google_sign_in.dart'; 
 	
@@ -132,7 +132,7 @@ import
 ## Install & use dependencies <a href="https://pub.dev/packages/flutter_riverpod">flutter_riverpod:</a>🌊
 
 	flutter pub add flutter_riverpod
-
+#### import
 	import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 Declare your providers as global variables:
@@ -161,12 +161,12 @@ Use them inside your widgets in a compile time safe way. No runtime exceptions!
 ## Install & use dependencies <a href="https://pub.dev/packages/open_file">open_file:</a>
  run "flutter pub add open_file"
  
- ##### import 
+ #### import
  import 'package:open_file/open_file.dart';
 
 ## Install & use dependencies <a href="https://pub.dev/packages/font_awesome_flutter">font_awesome_flutter:</a> 
 	flutter pub add font_awesome_flutter
-##### import 
+#### import 
 	import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 ##### usage
 	class MyWidget extends StatelessWidget {
@@ -182,7 +182,7 @@ Use them inside your widgets in a compile time safe way. No runtime exceptions!
 ## Install & use dependencies <a href="https://pub.dev/packages/google_fonts">google_fonts:</a>
 
 	run "flutter pub add google_fonts"
-##### import 
+#### import
 
 	import 'package:google_fonts/google_fonts.dart';
 
@@ -194,7 +194,7 @@ Use them inside your widgets in a compile time safe way. No runtime exceptions!
 	    ),
 ## Install & use dependencies <a href="https://pub.dev/packages/iconly">iconly:</a>🚀
 	run "flutter pub add iconly"
-##### import
+#### import
 
 	import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 	
@@ -216,7 +216,7 @@ Use them inside your widgets in a compile time safe way. No runtime exceptions!
 
 	flutter pub add localization
 	
-import it 
+#### import 
 
 	 import 'package:localization/localization.dart';
 
