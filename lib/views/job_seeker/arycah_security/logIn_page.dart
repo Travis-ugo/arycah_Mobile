@@ -1,3 +1,4 @@
+import '../../../library_imports.dart';
 import '../../library_imports.dart';
 
 class ArycahSignIn extends StatelessWidget {
@@ -123,7 +124,7 @@ class ArycahSignIn extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const viewsSignInPage(),
+                          builder: (context) => const ArycahSignup(),
                         ),
                       );
                     },

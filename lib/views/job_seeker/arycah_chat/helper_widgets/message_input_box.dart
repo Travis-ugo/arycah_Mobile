@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
+import 'package:mobile_hr/library_imports.dart';
 
 class MessageInputBox extends StatelessWidget {
   final TextEditingController passwordController;
@@ -21,7 +22,7 @@ class MessageInputBox extends StatelessWidget {
         child: Row(
           children: [
             IconButton(
-              icon: const Icon(CupertinoIcons.add),
+              icon: ArycahIcons.add,
               onPressed: () {},
             ),
             Expanded(
@@ -38,10 +39,7 @@ class MessageInputBox extends StatelessWidget {
                   controller: passwordController,
                   decoration: InputDecoration(
                       suffixIcon: IconButton(
-                        icon: const Icon(
-                          IconlyLight.bookmark,
-                          color: Colors.black38,
-                        ),
+                        icon: ArycahIcons.bookmark,
                         onPressed: () {},
                       ),
                       focusedBorder: InputBorder.none,
@@ -55,7 +53,7 @@ class MessageInputBox extends StatelessWidget {
             ),
             const SizedBox(width: 8),
             IconButton(
-              icon: const Icon(IconlyLight.send),
+              icon: ArycahIcons.send,
               onPressed: addMessage,
             ),
           ],

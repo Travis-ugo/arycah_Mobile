@@ -1,7 +1,4 @@
-import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:mobile_hr/views/Job_Seeker/Home/home.dart';
-import '../../../library_imports.dart';
-import 'drawer_widget.dart';
+import '../../../../library_imports.dart';
 
 class Example extends HookWidget {
   const Example({Key? key}) : super(key: key);

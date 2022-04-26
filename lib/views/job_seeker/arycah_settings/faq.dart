@@ -1,4 +1,4 @@
-import '../../library_imports.dart';
+import '../../../library_imports.dart';
 
 class FAQ extends StatelessWidget {
   const FAQ({Key? key}) : super(key: key);

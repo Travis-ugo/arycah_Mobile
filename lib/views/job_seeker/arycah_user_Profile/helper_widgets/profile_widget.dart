@@ -55,8 +55,8 @@ class ProfileCard extends StatelessWidget {
   }
 }
 
-class Profilcontainer extends StatelessWidget {
-  const Profilcontainer({
+class ProfileContainer extends StatelessWidget {
+  const ProfileContainer({
     Key? key,
     required this.title,
     required this.count,

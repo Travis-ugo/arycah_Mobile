@@ -1,13 +1,7 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:mobile_hr/general_page_marker.dart';
-import 'package:mobile_hr/service/api/arycah_api.dart';
-import 'views/Job_Seeker/On_Boarding/select_page.dart';
-
 import 'package:http/http.dart' as http;
+import 'library_imports.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,6 +24,21 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      localeResolutionCallback:
+          (Locale? locale, Iterable<Locale> supportedLocales) {
+        if (supportedLocales.contains(locale)) {
+          return locale;
+        }
+        return const Locale('en');
+      },
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate
+      ],
+      supportedLocales: const [
+        Locale('en'),
+      ],
       title: 'Tahn',
       theme: ThemeData(
         primaryColor: const Color(0xFFf6f6f6),
@@ -51,9 +60,6 @@ class _CallState extends State<Call> {
   @override
   void initState() {
     super.initState();
-
-    // fetch Data from API
-    // apiCalls();
   }
 
   @override

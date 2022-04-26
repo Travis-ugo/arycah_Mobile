@@ -1,7 +1,7 @@
-import '../../library_imports.dart';
+import '../../../library_imports.dart';
 
-class OnBoadding extends StatelessWidget {
-  const OnBoadding({Key? key}) : super(key: key);
+class OnBoarding extends StatelessWidget {
+  const OnBoarding({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class OnBoadding extends StatelessWidget {
                 curve: Curves.linear,
               );
             },
-            assets: 'assets/Saly-22.png',
+            assets: ArycahImage.sally,
           ),
           Pages(
             firstText: "Personalized job matching with lucrative jobs nearby",
@@ -51,7 +51,7 @@ class OnBoadding extends StatelessWidget {
                 curve: Curves.linear,
               );
             },
-            assets: 'assets/Saly-32.png',
+            assets: ArycahImage.sally,
           ),
           const ChooseWidget(),
         ],

@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mobile_hr/views/Job_Seeker/On_Boarding/Widgets/skip_button.dart';
-import '../../../Widgets/master_button.dart';
+import '../../../../library_imports.dart';
 
 // Represent an onboarding page widget
 // to be easily resused when nessesary.

@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
+import 'package:mobile_hr/library_imports.dart';
 
 class AppBarTitleReference extends StatelessWidget {
   const AppBarTitleReference({Key? key}) : super(key: key);
@@ -9,16 +8,13 @@ class AppBarTitleReference extends StatelessWidget {
     return Row(
       children: [
         IconButton(
-          icon: const Icon(
-            IconlyBold.arrow_left,
-            color: Colors.black,
-          ),
+          icon: ArycahIcons.arrowLeft,
           onPressed: () {
             Navigator.pop(context);
           },
         ),
         const CircleAvatar(
-          backgroundImage: AssetImage('assets/plum.png'),
+          backgroundImage: AssetImage(ArycahImage.dummyProfile),
           radius: 33,
         ),
         const SizedBox(width: 10),
@@ -36,11 +32,7 @@ class AppBarTitleReference extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
-                Icon(
-                  IconlyBold.tick_square,
-                  color: Colors.blue,
-                  size: 16,
-                ),
+                ArycahIcons.tickSquare,
               ],
             ),
             const Text(

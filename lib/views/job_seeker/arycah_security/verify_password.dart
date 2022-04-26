@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mobile_hr/views/Widgets/master_button.dart';
-import 'package:mobile_hr/views/Job_Seeker/Reset_Password/Widgets/v_block.dart';
+import '../../../library_imports.dart';
 
 class PasswordVerification extends StatelessWidget {
   const PasswordVerification({Key? key}) : super(key: key);

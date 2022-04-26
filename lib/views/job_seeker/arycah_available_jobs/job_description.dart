@@ -10,7 +10,7 @@ class JobDescription extends StatelessWidget {
         height: 80,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: const [Comentbutton(), ApplyButton()],
+          children: const [CommentButton(), ApplyButton()],
         ),
       ),
       appBar: AppBar(
@@ -26,17 +26,11 @@ class JobDescription extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: const Icon(
-                IconlyBold.arrow_left,
-                color: Colors.black,
-              ),
+              icon: ArycahIcons.arrowLeft,
             ),
             IconButton(
               onPressed: () {},
-              icon: const Icon(
-                IconlyBold.send,
-                color: Colors.black,
-              ),
+              icon: ArycahIcons.send,
             ),
           ],
         ),

@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/views/Widgets/master_button.dart';
+import '../../../library_imports.dart';
 
 class JobProfile1 extends StatelessWidget {
   final PageController controller;
@@ -46,7 +43,7 @@ class JobProfile1 extends StatelessWidget {
                 leading: Container(
                   height: 55,
                   width: 55,
-                  child: Image.asset('assets/uba.png'),
+                  child: Image.asset(ArycahImage.uba),
                   decoration: BoxDecoration(
                     color: Colors.grey.shade50,
                     borderRadius: BorderRadius.circular(5),
@@ -77,7 +74,7 @@ class JobProfile1 extends StatelessWidget {
                   SizedBox(
                     height: 40,
                     width: 40,
-                    child: Image.asset('assets/attachment.png'),
+                    child: Image.asset(ArycahImage.attachment),
                   ),
                   const SizedBox(width: 10),
                   Center(

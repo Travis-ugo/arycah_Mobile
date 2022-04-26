@@ -1,3 +1,5 @@
+import 'package:mobile_hr/utils/arycah_icons.dart';
+
 import '../../../library_imports.dart';
 
 class FeaturedJobsCard extends StatelessWidget {
@@ -47,7 +49,7 @@ class FeaturedJobsCard extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(IconlyBold.bookmark),
+                  icon: ArycahIcons.bookmark,
                 ),
               ],
             ),

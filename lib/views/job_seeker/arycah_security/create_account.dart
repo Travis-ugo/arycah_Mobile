@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-
+import '../../../library_imports.dart';
 import '../../library_imports.dart';
 
 class ArycahSignup extends StatefulWidget {
@@ -157,7 +157,7 @@ class _ArycahSignupState extends State<ArycahSignup> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const viewsLogInPage(),
+                        builder: (context) => const ArycahSignIn(),
                       ),
                     );
                   },

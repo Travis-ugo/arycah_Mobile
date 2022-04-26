@@ -1,7 +1,7 @@
-import '../../../library_imports.dart';
+import '../../../../library_imports.dart';
 
-class Comentbutton extends StatelessWidget {
-  const Comentbutton({Key? key}) : super(key: key);
+class CommentButton extends StatelessWidget {
+  const CommentButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Comentbutton extends StatelessWidget {
         width: 58,
         child: IconButton(
           onPressed: () {},
-          icon: const Icon(IconlyLight.chat, color: Colors.blueAccent),
+          icon: ArycahIcons.chat,
         ),
       ),
     );

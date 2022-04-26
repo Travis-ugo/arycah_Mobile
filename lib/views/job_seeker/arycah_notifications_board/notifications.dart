@@ -1,4 +1,4 @@
-import '../../library_imports.dart';
+import '../../../library_imports.dart';
 
 class Notifications extends StatelessWidget {
   const Notifications({Key? key}) : super(key: key);
@@ -12,10 +12,7 @@ class Notifications extends StatelessWidget {
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: const Icon(
-            IconlyBold.arrow_left,
-            color: Colors.black,
-          ),
+          icon: ArycahIcons.arrowLeft,
           onPressed: () {
             Navigator.pop(context);
           },
@@ -35,9 +32,10 @@ class Notifications extends StatelessWidget {
         children: [
           Center(
             child: SizedBox(
-                height: 172,
-                width: 172,
-                child: Image.asset('assets/notification.png')),
+              height: 172,
+              width: 172,
+              child: Image.asset(ArycahImage.notification),
+            ),
           ),
           const Text('no notifications yet')
         ],

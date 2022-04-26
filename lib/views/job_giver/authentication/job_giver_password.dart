@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_hr/views/library_imports.dart';
+import 'package:mobile_hr/views/job_giver/authentication/job_giver_signup.dart';
+
+import '../../../library_imports.dart';
 
 class PassWordSec extends StatefulWidget {
   const PassWordSec({Key? key}) : super(key: key);
@@ -141,7 +143,7 @@ class _PassWordSecState extends State<PassWordSec> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const viewsLogInPage(),
+                              builder: (context) => const SignUpState(),
                             ),
                           );
                         },

@@ -1,7 +1,7 @@
-import '../../library_imports.dart';
+import 'package:mobile_hr/library_imports.dart';
 
-class MarchMaker extends StatelessWidget {
-  const MarchMaker({Key? key}) : super(key: key);
+class MatchMaker extends StatelessWidget {
+  const MatchMaker({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +18,7 @@ class MarchMaker extends StatelessWidget {
         title: const Text(
           'Discover',
         ),
-        leading: const Icon(
-          IconlyBold.arrow_left,
-          color: Colors.black,
-          size: 18,
-        ),
+        leading: ArycahIcons.arrowLeft,
       ),
       body: Column(
         children: [
@@ -51,7 +47,7 @@ class MarchMaker extends StatelessWidget {
                             color: Colors.white,
                           ),
                           child: Image.asset(
-                            'assets/plumville.png',
+                            ArycahImage.dummyProfile,
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -113,7 +109,7 @@ class MarchMaker extends StatelessWidget {
                         children: [
                           iconButton(
                             context: context,
-                            icon: IconlyBold.swap,
+                            icon: ArycahIcons.swap,
                             iconColor: Colors.black,
                             size: 45,
                             onTap: () {},
@@ -122,7 +118,7 @@ class MarchMaker extends StatelessWidget {
                           iconButton(
                             size: 75,
                             context: context,
-                            icon: IconlyBold.heart,
+                            icon: ArycahIcons.heart,
                             iconColor: Colors.white,
                             bodyColor: Colors.lightBlueAccent,
                             onTap: () {},
@@ -130,7 +126,7 @@ class MarchMaker extends StatelessWidget {
                           iconButton(
                             bodyColor: Colors.white,
                             context: context,
-                            icon: IconlyBold.bookmark,
+                            icon: ArycahIcons.bookmarkSingle,
                             iconColor: Colors.black,
                             onTap: () {},
                             size: 45,

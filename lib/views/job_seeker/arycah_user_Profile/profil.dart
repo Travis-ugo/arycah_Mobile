@@ -1,4 +1,4 @@
-import '../../library_imports.dart';
+import '../../../library_imports.dart';
 
 class UserProfile extends StatelessWidget {
   const UserProfile({Key? key}) : super(key: key);
@@ -71,15 +71,15 @@ class UserProfile extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Profilcontainer(
+                        ProfileContainer(
                           count: profile.count,
                           title: 'Applied',
                         ),
-                        Profilcontainer(
+                        ProfileContainer(
                           count: profile.saved,
                           title: 'Saved',
                         ),
-                        Profilcontainer(
+                        ProfileContainer(
                           count: profile.interView,
                           title: 'Interview',
                         ),

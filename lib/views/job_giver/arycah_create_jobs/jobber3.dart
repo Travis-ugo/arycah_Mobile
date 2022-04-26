@@ -1,4 +1,4 @@
-import '../../library_imports.dart';
+import '../../../library_imports.dart';
 
 class Jobber3 extends StatelessWidget {
   const Jobber3({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class Jobber3 extends StatelessWidget {
           children: [
             SizedBox(
               height: 117,
-              child: Image.asset('assets/Group.png'),
+              child: Image.asset(ArycahImage.group),
             ),
             const SizedBox(height: 40),
             const Text('Congratulations!\n'),

@@ -1,4 +1,4 @@
-import '../../../library_imports.dart';
+import '../../../../library_imports.dart';
 
 class Requirement extends StatelessWidget {
   const Requirement({Key? key}) : super(key: key);
@@ -44,10 +44,7 @@ class Requirement extends StatelessWidget {
                       border: Border.all(color: const Color(0xFFE9E7E7))),
                   child: IconButton(
                     onPressed: () {},
-                    icon: const Icon(
-                      IconlyBold.bookmark,
-                      color: Color(0xFF8A8B8F),
-                    ),
+                    icon: ArycahIcons.bookmark,
                   ),
                 ),
               ),

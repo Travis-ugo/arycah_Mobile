@@ -1,4 +1,4 @@
-import '../../library_imports.dart';
+import '../../../library_imports.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);

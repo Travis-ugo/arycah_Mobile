@@ -1,4 +1,6 @@
-import '../../library_imports.dart';
+import 'package:mobile_hr/utils/arycah_icons.dart';
+
+import '../../../library_imports.dart';
 
 class HomePageWidget extends StatelessWidget {
   const HomePageWidget({Key? key}) : super(key: key);
@@ -23,14 +25,14 @@ class HomePageWidget extends StatelessWidget {
                   children: [
                     Builder(
                       builder: (context) => DrawerButton(
-                        icon: Icons.menu,
+                        icon: ArycahIcons.menu,
                         onPressed: () {
                           Scaffold.of(context).openDrawer();
                         },
                       ),
                     ),
                     DrawerButton(
-                      icon: IconlyBold.notification,
+                      icon: ArycahIcons.notification,
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -54,7 +56,9 @@ class HomePageWidget extends StatelessWidget {
                 Text(
                   'Hello, ${FirebaseAuth.instance.currentUser!.displayName}\n',
                   style: const TextStyle(
-                      fontSize: 18, fontWeight: FontWeight.w500),
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
                 const Text(
                   'Find your perfect job',
@@ -72,12 +76,12 @@ class HomePageWidget extends StatelessWidget {
                   child: PageView(
                     children: [
                       BannerWidget(
-                        image: 'assets/name.png',
+                        image: ArycahImage.name,
                         onTap: () {},
                         text: 'Do you need a CV\nreview for your next job?',
                       ),
                       BannerWidget(
-                        image: 'assets/image3.png',
+                        image: ArycahImage.image3,
                         onTap: () {},
                         text: ' Need a mentor?\nWe are here for you!',
                       ),
@@ -104,7 +108,7 @@ class HomePageWidget extends StatelessWidget {
                     ),
                     TextButton.icon(
                       onPressed: () {},
-                      icon: const Icon(Icons.play_circle, size: 15),
+                      icon: ArycahIcons.playCircle,
                       label: const Text(
                         'See all',
                         style: TextStyle(fontSize: 12),
@@ -145,8 +149,7 @@ class HomePageWidget extends StatelessWidget {
                     ),
                     TextButton.icon(
                       onPressed: () {},
-                      icon:
-                          const Icon(Icons.arrow_forward_ios_rounded, size: 15),
+                      icon: ArycahIcons.arrowForward,
                       label: const Text(
                         'See all',
                         style: TextStyle(fontSize: 12),

@@ -1,4 +1,4 @@
-import '../../../library_imports.dart';
+import '../../../../library_imports.dart';
 
 class SearchFilter extends StatefulWidget {
   const SearchFilter({Key? key}) : super(key: key);
@@ -27,11 +27,7 @@ class _SearchFilterState extends State<SearchFilter> {
             validator: (value) {
               return 'speack';
             },
-            prefixIcons: const Icon(
-              IconlyBold.search,
-              color: Colors.blueAccent,
-            ),
-            suffixIcon: null,
+            prefixIcons: ArycahIcons.search,
           ),
         ),
         Container(
@@ -43,10 +39,7 @@ class _SearchFilterState extends State<SearchFilter> {
           ),
           child: IconButton(
             onPressed: () {},
-            icon: const Icon(
-              IconlyBold.filter,
-              color: Colors.blue,
-            ),
+            icon: ArycahIcons.filter,
           ),
         ),
       ],

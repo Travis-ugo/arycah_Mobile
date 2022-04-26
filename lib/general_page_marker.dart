@@ -1,15 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
-import 'package:mobile_hr/views/Job_Seeker/On_Boarding/on_boarding.dart';
-import 'views/Job_Seeker/Authentication/logIn_page.dart';
-import 'views/Job_Seeker/Authentication/sign_up.dart';
-import 'views/Job_Seeker/Chat/message_tile.dart';
-import 'views/Job_Seeker/Home/Drawer/drawer_widget.dart';
-import 'views/Job_Seeker/Home/home.dart';
-import 'views/Job_Seeker/Jobs/jobs.dart';
-import 'views/Job_Seeker/User_Profile/profil.dart';
-import 'views/Job_Seeker/Wish_List/wish_list.dart';
+import 'library_imports.dart';
 
 class Homie extends StatelessWidget {
   const Homie({Key? key}) : super(key: key);
@@ -30,7 +19,7 @@ class Homie extends StatelessWidget {
             child: Text('Something Went wrong'),
           );
         } else {
-          return const OnBoadding();
+          return const OnBoarding();
         }
       },
     );
@@ -53,9 +42,9 @@ class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     if (showSignIn) {
-      return viewsLogInPage(toggleView: toggleView);
+      return ArycahSignup(toggleView: toggleView);
     } else {
-      return viewsSignInPage(
+      return ArycahSignIn(
         toggleView: toggleView,
       );
     }

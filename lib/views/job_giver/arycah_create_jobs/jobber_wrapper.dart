@@ -1,4 +1,4 @@
-import '../../library_imports.dart';
+import '../../../library_imports.dart';
 
 class JobPageWrap extends StatefulWidget {
   const JobPageWrap({Key? key}) : super(key: key);
@@ -23,10 +23,7 @@ class _JobPageWrapState extends State<JobPageWrap> {
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: const Icon(
-            IconlyBold.arrow_left,
-            color: Colors.black,
-          ),
+          icon: ArycahIcons.arrowLeft,
           onPressed: () {
             _pageController.previousPage(
               duration: const Duration(milliseconds: 100),

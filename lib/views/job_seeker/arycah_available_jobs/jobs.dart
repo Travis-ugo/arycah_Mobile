@@ -23,10 +23,7 @@ class Jobs extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Icon(
-            IconlyBold.arrow_left,
-            color: Colors.black,
-          ),
+          icon: ArycahIcons.arrowLeft,
         ),
       ),
       body: Padding(

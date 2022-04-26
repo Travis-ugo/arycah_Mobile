@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mobile_hr/views/Widgets/master_button.dart';
-import '../../../general_page_marker.dart';
+import 'package:mobile_hr/library_imports.dart';
 
 class JobProfile4 extends StatelessWidget {
   const JobProfile4({Key? key}) : super(key: key);
@@ -14,7 +12,7 @@ class JobProfile4 extends StatelessWidget {
           children: [
             SizedBox(
               height: 117,
-              child: Image.asset('assets/congratulations.png'),
+              child: Image.asset(ArycahImage.congratulation),
             ),
             const SizedBox(height: 40),
             const Text('Congratulations!\n'),

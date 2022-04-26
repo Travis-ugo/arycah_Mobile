@@ -1,8 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:mobile_hr/views/Job_Seeker/Reset_Password/Widgets/form_bar.dart';
-import 'package:mobile_hr/views/Widgets/form_block.dart';
-import 'package:mobile_hr/views/Widgets/master_button.dart';
+import '../../../library_imports.dart';
 
 class ResetPassWord extends StatelessWidget {
   const ResetPassWord({Key? key}) : super(key: key);

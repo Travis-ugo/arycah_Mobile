@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:mobile_hr/views/job_giver/authentication/job_giver_signup.dart';
 
-import '../../library_imports.dart';
+import '../../../library_imports.dart';
 
 class JobGiverSignIn extends StatelessWidget {
   const JobGiverSignIn({Key? key}) : super(key: key);
@@ -137,7 +138,7 @@ class JobGiverSignIn extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const viewsLogInPage(),
+                              builder: (context) => const SignUpState(),
                             ),
                           );
                         },

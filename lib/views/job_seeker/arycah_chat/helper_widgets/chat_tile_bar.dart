@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_hr/library_imports.dart';
 
-import '../message_room.dart';
+import '../message_room_view.dart';
 
 class ChatTileBar extends StatelessWidget {
   const ChatTileBar({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class ChatTileBar extends StatelessWidget {
             Container(
               height: 85,
               width: 80,
-              child: Image.asset('assets/plum.png'),
+              child: Image.asset(ArycahImage.dummyProfile),
               decoration: BoxDecoration(
                 color: Colors.lightBlueAccent,
                 borderRadius: BorderRadius.circular(5),
@@ -65,11 +66,7 @@ class ChatTileBar extends StatelessWidget {
                     'Just Now',
                     style: TextStyle(fontSize: 10, color: Color(0xFFB8B8B8)),
                   ),
-                  Icon(
-                    Icons.circle_sharp,
-                    color: Colors.blue,
-                    size: 15,
-                  ),
+                  ArycahIcons.circleSharp,
                 ],
               ),
             ),

@@ -1,4 +1,4 @@
-import '../../../library_imports.dart';
+import '../../../../library_imports.dart';
 
 class Recommended extends StatelessWidget {
   const Recommended({Key? key, required this.index}) : super(key: key);
@@ -46,7 +46,7 @@ class Recommended extends StatelessWidget {
               border: Border.all(color: Colors.blueAccent),
             ),
           ),
-          trailing: const Icon(IconlyBold.bookmark),
+          trailing: ArycahIcons.bookmark,
           title: Text(
             companyData[index].companyName,
           ),
