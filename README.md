@@ -22,7 +22,7 @@ various packages
 
 
 ### Packages
-##### <a href="https://flutter.dev">Flutter</a>
+<!-- ##### <a href="https://flutter.dev">Flutter</a> -->
 ##### <a href="https://pub.dev/packages/flutter_hooks">flutter_hooks:</a>
 ##### <a href="https://pub.dev/packages/firebase_core">firebase_core:</a> 
 ##### <a href="https://pub.dev/packages/cloud_firestore">cloud_firestore:</a>
