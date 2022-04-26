@@ -1,18 +1,20 @@
-
-
-<!-- # Hey, there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> -->
-<!-- ## Welcome to The Arycah Cross Platform Mobile Applicaition -->
 <img src = "https://user-images.githubusercontent.com/68594765/163808937-26b089ec-59f9-4e2a-8983-fbe157649c2c.png" width = "1000px"> 
 
 ## About
-Arycah cross platform application is built with googes flutter framwork for developing cross platform mobile application, 
-with a third party API, the Arcycah mobile application t=fectes data from the backend REST API written in PHP lang and Laravel Framework.
-various packages 
+the Arrycah mobile applications built with google Flutter framework is an ✅✅Easy job search mobile application, that brings tech employees and employers together 😎😎, to aid fast, safe, secure jobs and quality service as well to the job seekers and job givers.🚀 🚀 ⚡️⚡️ 
+with the help of a third party Rest API(written and built with PHP lang and Laravel), data is sent and recieved with information of the employee and the emppoyers. 
+for proper state management, Arycah has adopted the famous and wildly used state managementt solution *Riverpod* to properly manage and maintain its code and application state. 
+the code structure consists of various folders/components which perform various task
+
+welcome to the arycah code.
+#### the code is regularly edited/refactor
+enjoy, do have a good time🔥✌🏽.
+
 <div>
-<img src = "https://user-images.githubusercontent.com/68594765/159685682-2b90c618-d0da-4f3d-87db-532c112956e6.jpg" width = "24%">.
-<img src = "https://user-images.githubusercontent.com/68594765/159685699-f7eb2e0c-4793-40ff-96e6-c94d5a2f8298.jpg" width = "24%">.
-<img src = "https://user-images.githubusercontent.com/68594765/159685711-fd8ca624-cf4d-40c6-b867-0dc0f7782ef9.jpg" width = "24%">.
-<img src = "https://user-images.githubusercontent.com/68594765/159685706-693092d8-22fc-4a81-a203-e34dba2dbe59.jpg" width = "24%">.
+<img src = "https://user-images.githubusercontent.com/68594765/159685682-2b90c618-d0da-4f3d-87db-532c112956e6.jpg" width = "24%">
+<img src = "https://user-images.githubusercontent.com/68594765/159685699-f7eb2e0c-4793-40ff-96e6-c94d5a2f8298.jpg" width = "24%">
+<img src = "https://user-images.githubusercontent.com/68594765/159685711-fd8ca624-cf4d-40c6-b867-0dc0f7782ef9.jpg" width = "24%">
+<img src = "https://user-images.githubusercontent.com/68594765/159685706-693092d8-22fc-4a81-a203-e34dba2dbe59.jpg" width = "24%">
 </div>
 
 
