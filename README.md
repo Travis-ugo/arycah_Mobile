@@ -45,7 +45,6 @@ various packages
 <img src = "https://user-images.githubusercontent.com/68594765/159685699-f7eb2e0c-4793-40ff-96e6-c94d5a2f8298.jpg" width = "190px">.
 <img src = "https://user-images.githubusercontent.com/68594765/159685711-fd8ca624-cf4d-40c6-b867-0dc0f7782ef9.jpg" width = "190px">.
 <img src = "https://user-images.githubusercontent.com/68594765/159685706-693092d8-22fc-4a81-a203-e34dba2dbe59.jpg" width = "190px">.
-<img src = "https://user-images.githubusercontent.com/68594765/159685717-87dd28dd-bc14-42f1-a2e0-de09c4bca7ea.jpg" width = "190px">.
 
 
 
