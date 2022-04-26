@@ -23,6 +23,33 @@ various packages
 
 ### Packages
 <!-- ##### <a href="https://flutter.dev">Flutter</a> -->
+##### <a href="https://pub.dev/packages/http">http:</a> 
+## Install & use dependencies 
+	flutter pub add http
+
+	import 'package:http/http.dart' as http;
+
+	var url = Uri.parse('https://example.com/whatsit/create');
+	var response = await http.post(url, body: {'name': 'doodle', 'color': 'blue'});
+	print('Response status: ${response.statusCode}');
+	print('Response body: ${response.body}');
+
+	print(await http.read(Uri.parse('https://example.com/foobar.txt')));
+## Install & use dependencies 
+	flutter pub add flutter_hooks
+	class Example extends HookWidget {
+	  const Example({Key key, required this.duration})
+	      : super(key: key);
+
+	  final Duration duration;
+
+	  @override
+	  Widget build(BuildContext context) {
+	    final controller = useAnimationController(duration: duration);
+	    return Container();
+	  }
+	}
+
 ##### <a href="https://pub.dev/packages/flutter_hooks">flutter_hooks:</a>
 ##### <a href="https://pub.dev/packages/firebase_core">firebase_core:</a> 
 ##### <a href="https://pub.dev/packages/cloud_firestore">cloud_firestore:</a>
@@ -36,7 +63,6 @@ various packages
 ##### <a href="https://pub.dev/packages/iconly">iconly:</a>
 ##### <a href="https://pub.dev/packages/google_sign_in">google_sign_in:</a>
 ##### <a href="https://pub.dev/packages/flutter_riverpod">flutter_riverpod:</a> 
-##### <a href="https://pub.dev/packages/http">http:</a> 
 ##### <a href="https://pub.dev/packages/intl">intl:</a> 
 ##### <a href="https://pub.dev/packages/localization">flutter_localizations:</a>
 
