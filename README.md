@@ -21,10 +21,13 @@ various packages
 
 
 
-### Packages
+### Packages✅
 <!-- ##### <a href="https://flutter.dev">Flutter</a> -->
 
-## Install & use dependencies <a href="https://pub.dev/packages/http">http:</a> 
+## Install & use dependencies <a href="https://pub.dev/packages/http">http:</a>📡
+
+used to fecth api endpoint.
+
 	run "flutter pub add http"
 
 	import 'package:http/http.dart' as http;
@@ -36,7 +39,7 @@ various packages
 
 	print(await http.read(Uri.parse('https://example.com/foobar.txt')));
 	
-## Install & use dependencies <a href="https://pub.dev/packages/flutter_hooks">flutter_hooks:</a>
+## Install & use dependencies <a href="https://pub.dev/packages/flutter_hooks">flutter_hooks:</a>🪝
 	run "flutter pub add flutter_hooks"
 	
 	class Example extends HookWidget {
@@ -52,7 +55,7 @@ various packages
 	  }
 	}
 
-## Install & use dependencies <a href="https://pub.dev/packages/firebase_core">firebase_core:</a> 
+## Install & use dependencies <a href="https://pub.dev/packages/firebase_core">firebase_core:</a>🔥☄️
 	run "flutter pub add firebase_core"
 
 Next, within the main function, ensure WidgetsFlutterBinding is initialized and then initialize Firebase:
@@ -64,21 +67,21 @@ Next, within the main function, ensure WidgetsFlutterBinding is initialized and 
 	  );
 	  runApp(MyApp());
 	}
-## Install & use dependencies <a href="https://pub.dev/packages/cloud_firestore">cloud_firestore:</a>
+## Install & use dependencies <a href="https://pub.dev/packages/cloud_firestore">cloud_firestore:</a>🔥⛅️
 	run "flutter pub add cloud_firestore"
 
 	FirebaseFirestore firestore = FirebaseFirestore.instance;
 
 visit <a href="https://firebase.flutter.dev/docs/firestore/usage">firebase.flutter.dev</a> for better usage instruction
 
-## Install & use dependencies <a href="https://pub.dev/packages/firebase_auth">firebase_auth:</a> 
+## Install & use dependencies <a href="https://pub.dev/packages/firebase_auth">firebase_auth:</a>🔥🔐
 	flutter pub add firebase_auth
 	
 	import 'package:firebase_auth/firebase_auth.dart';
 	
 visit <a href="https://firebase.flutter.dev/docs/firestore/usage">firebase.flutter.dev</a> for better usage instruction
 
-## Install & use dependencies <a href="https://pub.dev/packages/firebase_storage">firebase_storage:</a> 
+## Install & use dependencies <a href="https://pub.dev/packages/firebase_storage">firebase_storage:</a>🔥📦
 	run "flutter pub add cloud_firestore"
 
 	import 'package:cloud_firestore/cloud_firestore.dart';
@@ -87,7 +90,7 @@ To create a new Firestore instance, call the instance getter on FirebaseFirestor
 
 	FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-## Install & use dependencies <a href="https://pub.dev/packages/google_sign_in">google_sign_in:</a>
+## Install & use dependencies <a href="https://pub.dev/packages/google_sign_in">google_sign_in:</a>🔏
 	<!-- Put me in the [my_project]/ios/Runner/Info.plist file -->
 	<!-- Google Sign-in Section -->
 	<key>CFBundleURLTypes</key>
@@ -124,7 +127,7 @@ import
 	  }
 	}
 	
-## Install & use dependencies <a href="https://pub.dev/packages/flutter_riverpod">flutter_riverpod:</a> 
+## Install & use dependencies <a href="https://pub.dev/packages/flutter_riverpod">flutter_riverpod:</a>🌊
 
 	flutter pub add flutter_riverpod
 
@@ -152,14 +155,14 @@ Use them inside your widgets in a compile time safe way. No runtime exceptions!
 	  }
 	}	
 
-##### <a href="https://pub.dev/packages/file_picker">file_picker:</a> 
-##### <a href="https://pub.dev/packages/open_file">open_file:</a> 
+##### <a href="https://pub.dev/packages/file_picker">file_picker:</a>🪄
+##### <a href="https://pub.dev/packages/open_file">open_file:</a>
 ##### <a href="https://pub.dev/packages/font_awesome_flutter">font_awesome_flutter:</a> 
 ##### <a href="https://pub.dev/packages/line_icons">line_icons:</a> 
 ##### <a href="https://pub.dev/packages/google_fonts">google_fonts:</a>
 ##### <a href="https://pub.dev/packages/iconly">iconly:</a>
-##### <a href="https://pub.dev/packages/intl">intl:</a> 
-##### <a href="https://pub.dev/packages/localization">flutter_localizations:</a>
+##### <a href="https://pub.dev/packages/intl">intl:</a>
+##### <a href="https://pub.dev/packages/localization">flutter_localizations:</a>🇳🇬🇬🇧🇰🇷
 
 
 
