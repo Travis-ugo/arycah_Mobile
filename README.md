@@ -162,10 +162,47 @@ Use them inside your widgets in a compile time safe way. No runtime exceptions!
 ##### <a href="https://pub.dev/packages/google_fonts">google_fonts:</a>
 ##### <a href="https://pub.dev/packages/iconly">iconly:</a>
 ##### <a href="https://pub.dev/packages/intl">intl:</a>
-##### <a href="https://pub.dev/packages/localization">flutter_localizations:</a>🇳🇬🇬🇧🇰🇷
 
+## Install & use dependencies <a href="https://pub.dev/packages/localization">flutter_localizations:</a>🇳🇬🇬🇧🇰🇷
 
+	flutter pub add localization
+	
+import it 
 
+	 import 'package:localization/localization.dart';
+
+Now, add the delegate in MaterialApp or CupertinoApp and define a path where the translation json files will be:
+
+	 @override
+	  Widget build(BuildContext context) {
+	    // set json file directory
+	    // default value is ['lib/i18n']
+	    LocalJsonLocalization.delegate.directories = ['lib/i18n'];
+
+	    return MaterialApp(
+	      localizationsDelegates: [
+		// delegate from flutter_localization
+		GlobalMaterialLocalizations.delegate,
+		GlobalWidgetsLocalizations.delegate,
+		GlobalCupertinoLocalizations.delegate,
+		// delegate from localization package.
+		LocalJsonLocalization.delegate,
+	      ],
+	      home: HomePage(),
+	    );
+	  }
+	  
+Add supported languages
+This setting is important to tell Flutter which languages your app is prepared to work with. We can do this by simply adding the Locale in the supportedLocales property:
+
+	return MaterialApp(
+	  supportedLocales: [
+	    Locale('en', 'US'),
+	    Locale('es', 'ES'),
+	    Locale('pt', 'BR'),
+	  ],
+	  ...
+	);	  
 ### Working with Translations 🌐
 This project relies on flutter_localizations and follows the official internationalization guide for Flutter.
 
