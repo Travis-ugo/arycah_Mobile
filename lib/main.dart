@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile_hr/general_page_marker.dart';
-import 'package:mobile_hr/service/api/api_call.dart';
+import 'package:mobile_hr/service/api/arycah_api.dart';
 import 'views/Job_Seeker/On_Boarding/select_page.dart';
 
 import 'package:http/http.dart' as http;
@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 class Call extends StatefulWidget {
   const Call({Key? key}) : super(key: key);
 
