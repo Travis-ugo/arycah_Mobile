@@ -155,13 +155,60 @@ Use them inside your widgets in a compile time safe way. No runtime exceptions!
 	  }
 	}	
 
-##### <a href="https://pub.dev/packages/file_picker">file_picker:</a>🪄
-##### <a href="https://pub.dev/packages/open_file">open_file:</a>
-##### <a href="https://pub.dev/packages/font_awesome_flutter">font_awesome_flutter:</a> 
-##### <a href="https://pub.dev/packages/line_icons">line_icons:</a> 
-##### <a href="https://pub.dev/packages/google_fonts">google_fonts:</a>
-##### <a href="https://pub.dev/packages/iconly">iconly:</a>
-##### <a href="https://pub.dev/packages/intl">intl:</a>
+## Install & use dependencies <a href="https://pub.dev/packages/file_picker">file_picker:</a>🪄
+## Install & use dependencies <a href="https://pub.dev/packages/open_file">open_file:</a>
+ run "flutter pub add open_file"
+ 
+ ##### import 
+ import 'package:open_file/open_file.dart';
+
+## Install & use dependencies <a href="https://pub.dev/packages/font_awesome_flutter">font_awesome_flutter:</a> 
+	flutter pub add font_awesome_flutter
+##### import 
+	import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+##### usage
+	class MyWidget extends StatelessWidget {
+	  Widget build(BuildContext context) {
+	    return IconButton(
+	      // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+	      icon: FaIcon(FontAwesomeIcons.gamepad), 
+	      onPressed: () { print("Pressed"); }
+	     );
+	  }
+	}
+
+## Install & use dependencies <a href="https://pub.dev/packages/google_fonts">google_fonts:</a>
+
+	run "flutter pub add google_fonts"
+##### import 
+
+	import 'package:google_fonts/google_fonts.dart';
+
+##### example
+
+	Text(
+	      'You have pushed the button this many times:',
+	      style: GoogleFonts.oswald(textStyle: headline4),
+	    ),
+## Install & use dependencies <a href="https://pub.dev/packages/iconly">iconly:</a>🚀
+	run "flutter pub add iconly"
+##### import
+
+	import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+	
+##### example
+
+	class IconlyWidget extends StatelessWidget {
+
+	  Widget build(BuildContext context) {
+	    return IconButton(
+	      icon: Icon(IconlyLight.search), 
+	      onPressed: () { print("Pressed"); }
+	     );
+	  }
+	}
+	
+## Install & use dependencies <a href="https://pub.dev/packages/intl">intl:</a>
 
 ## Install & use dependencies <a href="https://pub.dev/packages/localization">flutter_localizations:</a>🇳🇬🇬🇧🇰🇷
 
