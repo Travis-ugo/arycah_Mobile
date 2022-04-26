@@ -105,6 +105,8 @@ To create a new Firestore instance, call the instance getter on FirebaseFirestor
 	</array>
 	<!-- End of the Google Sign-in Section -->
 	
+import
+
 	import 'package:google_sign_in/google_sign_in.dart'; 
 	
 	GoogleSignIn _googleSignIn = GoogleSignIn(
@@ -121,13 +123,41 @@ To create a new Firestore instance, call the instance getter on FirebaseFirestor
 	    print(error);
 	  }
 	}
+	
+## Install & use dependencies <a href="https://pub.dev/packages/flutter_riverpod">flutter_riverpod:</a> 
+
+	flutter pub add flutter_riverpod
+
+	import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+Declare your providers as global variables:
+
+	final counterProvider = StateNotifierProvider((ref) {
+	  return Counter();
+	});
+
+	class Counter extends StateNotifier<int> {
+	  Counter(): super(0);
+
+	  void increment() => state++;
+	}
+	
+Use them inside your widgets in a compile time safe way. No runtime exceptions!
+
+	class Example extends ConsumerWidget {
+	  @override
+	  Widget build(BuildContext context, WidgetRef ref) {
+	    final count = ref.watch(counterProvider);
+	    return Text(count.toString());
+	  }
+	}	
+
 ##### <a href="https://pub.dev/packages/file_picker">file_picker:</a> 
 ##### <a href="https://pub.dev/packages/open_file">open_file:</a> 
 ##### <a href="https://pub.dev/packages/font_awesome_flutter">font_awesome_flutter:</a> 
 ##### <a href="https://pub.dev/packages/line_icons">line_icons:</a> 
 ##### <a href="https://pub.dev/packages/google_fonts">google_fonts:</a>
 ##### <a href="https://pub.dev/packages/iconly">iconly:</a>
-##### <a href="https://pub.dev/packages/flutter_riverpod">flutter_riverpod:</a> 
 ##### <a href="https://pub.dev/packages/intl">intl:</a> 
 ##### <a href="https://pub.dev/packages/localization">flutter_localizations:</a>
 
