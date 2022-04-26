@@ -1,10 +1,10 @@
 
 
-# Hey, there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
-## Welcome to The Arycah Cross Platform Mobile Applicaition
-<img src = "https://user-images.githubusercontent.com/68594765/163808937-26b089ec-59f9-4e2a-8983-fbe157649c2c.png" width = "1000px"> 
+<!-- # Hey, there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> -->
+<!-- ## Welcome to The Arycah Cross Platform Mobile Applicaition -->
+<!-- <img src = "https://user-images.githubusercontent.com/68594765/163808937-26b089ec-59f9-4e2a-8983-fbe157649c2c.png" width = "1000px">  -->
 
-## About this project
+## About
 Arycah cross platform application is built with googes flutter framwork for developing cross platform mobile application, 
 with a third party API, the Arcycah mobile application t=fectes data from the backend REST API written in PHP lang and Laravel Framework.
 various packages 
@@ -15,12 +15,6 @@ various packages
 <img src = "https://user-images.githubusercontent.com/68594765/159685706-693092d8-22fc-4a81-a203-e34dba2dbe59.jpg" width = "190px">.
 
 ### 🔧 Technologies & Tools
-<!-- Laravel -->
-<!-- ![](https://img.shields.io/badge/OS-macOS-informational?style=flat&logo=apple&logoColor=Grey&color=808080)
-![](https://img.shields.io/badge/Editor-IntelliJIDEA-informational?style=flat&logo=intellij-idea&logoColor=cyan&color=000000)
-![](https://img.shields.io/badge/Editor-Visual_Studio_Code-informational?style=flat&logo=visual%20studio%20code&logoColor=cyan&color=0078D4)
-![](https://img.shields.io/badge/Editor-Xcode-informational?style=flat&logo=Xcode&logoColor=cyan&color=0078D4)
-![](https://img.shields.io/badge/Editor-Android_Studio-informational?style=flat&logo=android-studio&logoColor=cyan&color=3DDC84) -->
 ![](https://img.shields.io/badge/Code-Dart-informational?style=flat&logo=Dart&logoColor=aqua&color=87ceeb)
 ![](https://img.shields.io/badge/Framework-Flutter-informational?style=flat&logo=flutter&logoColor=cyan&color=00FFFF)
 ![](https://img.shields.io/badge/Tools-firebase-informational?style=flat&logo=firebase&logoColor=Yellow&color=ffca28)
@@ -28,8 +22,27 @@ various packages
 
 
 ### Packages
-## <a href="https://flutter.dev">Flutter</a>
-## <a href="https://pub.dev/packages/localization">localization</a>
+### <a href="https://flutter.dev">Flutter</a>
+### <a href="https://pub.dev/packages/localization">localization</a>
+  flutter_hooks: ^0.18.2
+  cloud_firestore: ^3.1.5
+  firebase_core: ^1.10.6
+  firebase_auth: ^3.3.4
+  firebase_storage: ^10.0.5
+  file_picker: ^4.3.0
+  open_file: ^3.2.1
+  font_awesome_flutter: ^9.2.0
+  line_icons: ^2.0.1
+  google_fonts: ^2.1.1
+  iconly: ^1.0.1
+  intl: ^0.17.0
+  provider: ^6.0.1
+  google_sign_in: ^5.1.1 
+  page_view_indicators: ^2.0.0
+  syncfusion_flutter_sliders: ^19.4.38
+  flutter_riverpod: ^1.0.3
+  http: ^0.13.4
+  flutter_localizations: 
 
 
 ### Working with Translations 🌐
