@@ -22,27 +22,24 @@ various packages
 
 
 ### Packages
-### <a href="https://flutter.dev">Flutter</a>
-### <a href="https://pub.dev/packages/localization">localization</a>
-  flutter_hooks: ^0.18.2
-  cloud_firestore: ^3.1.5
-  firebase_core: ^1.10.6
-  firebase_auth: ^3.3.4
-  firebase_storage: ^10.0.5
-  file_picker: ^4.3.0
-  open_file: ^3.2.1
-  font_awesome_flutter: ^9.2.0
-  line_icons: ^2.0.1
-  google_fonts: ^2.1.1
-  iconly: ^1.0.1
-  intl: ^0.17.0
-  provider: ^6.0.1
-  google_sign_in: ^5.1.1 
-  page_view_indicators: ^2.0.0
-  syncfusion_flutter_sliders: ^19.4.38
-  flutter_riverpod: ^1.0.3
-  http: ^0.13.4
-  flutter_localizations: 
+#### <a href="https://flutter.dev">Flutter</a>
+#### <a href="https://pub.dev/packages/flutter_hooks">flutter_hooks:</a>
+#### <a href="https://pub.dev/packages/firebase_core">firebase_core:</a> 
+#### <a href="https://pub.dev/packages/cloud_firestore">cloud_firestore:</a>
+#### <a href="https://pub.dev/packages/firebase_auth">firebase_auth:</a> 
+#### <a href="https://pub.dev/packages/firebase_storage">firebase_storage:</a> 
+#### <a href="https://pub.dev/packages/file_picker">file_picker:</a> 
+#### <a href="https://pub.dev/packages/open_file">open_file:</a> 
+#### <a href="https://pub.dev/packages/font_awesome_flutter">font_awesome_flutter:</a> 
+#### <a href="https://pub.dev/packages/line_icons">line_icons:</a> 
+#### <a href="https://pub.dev/packages/google_fonts">google_fonts:</a>
+#### <a href="https://pub.dev/packages/iconly">iconly:</a>
+#### <a href="https://pub.dev/packages/google_sign_in">google_sign_in:</a>
+#### <a href="https://pub.dev/packages/flutter_riverpod">flutter_riverpod:</a> 
+#### <a href="https://pub.dev/packages/http">http:</a> 
+#### <a href="https://pub.dev/packages/intl">intl:</a> 
+#### <a href="https://pub.dev/packages/localization">flutter_localizations:</a>
+
 
 
 ### Working with Translations 🌐
