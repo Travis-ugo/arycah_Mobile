@@ -35,6 +35,7 @@ various packages
 	print('Response body: ${response.body}');
 
 	print(await http.read(Uri.parse('https://example.com/foobar.txt')));
+	
 ## Install & use dependencies <a href="https://pub.dev/packages/flutter_hooks">flutter_hooks:</a>
 	run "flutter pub add flutter_hooks"
 	
@@ -54,7 +55,7 @@ various packages
 ## Install & use dependencies <a href="https://pub.dev/packages/firebase_core">firebase_core:</a> 
 	run "flutter pub add firebase_core"
 
-	Next, within the main function, ensure WidgetsFlutterBinding is initialized and then initialize Firebase:
+Next, within the main function, ensure WidgetsFlutterBinding is initialized and then initialize Firebase:
 
 	void main() async {
 	  WidgetsFlutterBinding.ensureInitialized();
@@ -68,14 +69,14 @@ various packages
 
 	FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-	visit https://firebase.flutter.dev/docs/firestore/usage for better usage instruction
+visit <a href="https://firebase.flutter.dev/docs/firestore/usage">firebase.flutter.dev</a> for better usage instruction
 
 ## Install & use dependencies <a href="https://pub.dev/packages/firebase_auth">firebase_auth:</a> 
 	flutter pub add firebase_auth
 	
 	import 'package:firebase_auth/firebase_auth.dart';
 	
-	visit https://firebase.flutter.dev/docs/firestore/usage for better usage instruction
+visit <a href="https://firebase.flutter.dev/docs/firestore/usage">firebase.flutter.dev</a> for better usage instruction
 
 ## Install & use dependencies <a href="https://pub.dev/packages/firebase_storage">firebase_storage:</a> 
 	run "flutter pub add cloud_firestore"
