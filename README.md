@@ -27,8 +27,10 @@ various packages
 
 
 
-# Packages
-<a href="https://flutter.dev">Flutter</a>
+### Packages
+## <a href="https://flutter.dev">Flutter</a>
+## <a href="https://pub.dev/packages/localization">localization</a>
+
 
 ### Working with Translations 🌐
 This project relies on flutter_localizations and follows the official internationalization guide for Flutter.
