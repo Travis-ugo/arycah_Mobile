@@ -2,7 +2,7 @@
 
 <!-- # Hey, there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> -->
 <!-- ## Welcome to The Arycah Cross Platform Mobile Applicaition -->
-<!-- <img src = "https://user-images.githubusercontent.com/68594765/163808937-26b089ec-59f9-4e2a-8983-fbe157649c2c.png" width = "1000px">  -->
+<img src = "https://user-images.githubusercontent.com/68594765/163808937-26b089ec-59f9-4e2a-8983-fbe157649c2c.png" width = "800px"> 
 
 ## About
 Arycah cross platform application is built with googes flutter framwork for developing cross platform mobile application, 
