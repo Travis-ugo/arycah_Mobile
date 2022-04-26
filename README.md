@@ -68,17 +68,58 @@ various packages
 
 	FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-	visit  <a href="https://firebase.flutter.dev/docs/firestore/usage">Firebase.flutter</a> for better usage instruction
+	visit https://firebase.flutter.dev/docs/firestore/usage for better usage instruction
 
 ## Install & use dependencies <a href="https://pub.dev/packages/firebase_auth">firebase_auth:</a> 
 	flutter pub add firebase_auth
 	
 	import 'package:firebase_auth/firebase_auth.dart';
 	
-	visit  <a href="https://firebase.flutter.dev/docs/firestore/usage">Firebase.flutter</a> for better usage instruction
+	visit https://firebase.flutter.dev/docs/firestore/usage for better usage instruction
 
-##### <a href="https://pub.dev/packages/google_sign_in">google_sign_in:</a>
-##### <a href="https://pub.dev/packages/firebase_storage">firebase_storage:</a> 
+## Install & use dependencies <a href="https://pub.dev/packages/firebase_storage">firebase_storage:</a> 
+	run "flutter pub add cloud_firestore"
+
+	import 'package:cloud_firestore/cloud_firestore.dart';
+
+To create a new Firestore instance, call the instance getter on FirebaseFirestore:
+
+	FirebaseFirestore firestore = FirebaseFirestore.instance;
+
+## Install & use dependencies <a href="https://pub.dev/packages/google_sign_in">google_sign_in:</a>
+	<!-- Put me in the [my_project]/ios/Runner/Info.plist file -->
+	<!-- Google Sign-in Section -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<!-- TODO Replace this value: -->
+				<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
+				<string>com.googleusercontent.apps.861823949799-vc35cprkp249096uujjn0vvnmcvjppkn</string>
+			</array>
+		</dict>
+	</array>
+	<!-- End of the Google Sign-in Section -->
+	
+	import 'package:google_sign_in/google_sign_in.dart'; 
+	
+	GoogleSignIn _googleSignIn = GoogleSignIn(
+	  scopes: [
+	    'email',
+	    'https://www.googleapis.com/auth/contacts.readonly',
+	  ],
+	);
+###### Example	
+	Future<void> _handleSignIn() async {
+	  try {
+	    await _googleSignIn.signIn();
+	  } catch (error) {
+	    print(error);
+	  }
+	}
 ##### <a href="https://pub.dev/packages/file_picker">file_picker:</a> 
 ##### <a href="https://pub.dev/packages/open_file">open_file:</a> 
 ##### <a href="https://pub.dev/packages/font_awesome_flutter">font_awesome_flutter:</a> 
