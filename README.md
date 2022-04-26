@@ -7,7 +7,7 @@ for proper state management, Arycah has adopted the famous and wildly used state
 the code structure consists of various folders/components which perform various task
 
 welcome to the arycah code.
-#### the code is regularly edited/refactor
+### the code is regularly edited/refactor
 enjoy, do have a good time🔥✌🏽.
 
 <div>
